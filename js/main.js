@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-//   (function fairyDustCursor() {
+//   (function fairyDustCursor() {//这里是鼠标移动有火花的
 
 //     var possibleColors = ["#D61C59", "#E7D84B", "#1B8798"]
 //     var width = window.innerWidth;
