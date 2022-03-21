@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>蓝桥杯原题刷</title>
+      <link href="/2022/03/21/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5D%E8%93%9D%E6%A1%A5%E6%9D%AF%E8%AE%AD%E7%BB%83%E9%A2%98%E9%9B%86/"/>
+      <url>/2022/03/21/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5D%E8%93%9D%E6%A1%A5%E6%9D%AF%E8%AE%AD%E7%BB%83%E9%A2%98%E9%9B%86/</url>
+      
+        <content type="html"><![CDATA[<h2 id="蓝桥杯2021年第十二届省赛真题"><a href="#蓝桥杯2021年第十二届省赛真题" class="headerlink" title="蓝桥杯2021年第十二届省赛真题"></a>蓝桥杯2021年第十二届省赛真题</h2><p>你有一架天平和 N 个砝码，这 N 个砝码重量依次是 W1, W2, · · · , WN。<br>请你计算一共可以称出多少种不同的重量？<br>注意砝码可以放在天平两边。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 蓝桥 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Docker入门</title>
       <link href="/2022/03/21/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5DDocker%E5%85%A5%E9%97%A8/"/>
       <url>/2022/03/21/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5DDocker%E5%85%A5%E9%97%A8/</url>
@@ -360,13 +387,13 @@
       
         <tags>
             
+            <tag> java </tag>
+            
             <tag> 快速入门 </tag>
             
             <tag> Mybatis-plus </tag>
             
             <tag> springboot </tag>
-            
-            <tag> java </tag>
             
         </tags>
       
@@ -393,9 +420,9 @@
       
         <tags>
             
-            <tag> springboot </tag>
-            
             <tag> java </tag>
+            
+            <tag> springboot </tag>
             
             <tag> handler </tag>
             
@@ -538,9 +565,9 @@
       
         <tags>
             
-            <tag> springboot </tag>
-            
             <tag> java </tag>
+            
+            <tag> springboot </tag>
             
             <tag> redis </tag>
             
