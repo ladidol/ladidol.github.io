@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>golang入门 | 小小的博客乐园</title><meta name="keywords" content="入门,go"><meta name="author" content="ladidol"><meta name="copyright" content="ladidol"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言:对go语言挺感兴趣的,所以简单学习一下,这里是对go语言的初级入门 1）变量: 变量练习: package mainimport &quot;fmt&quot;func main()&amp;#123;        &#x2F;&#x2F;1.变量的声明        var age int        &#x2F;&#x2F;2.变量的赋值        age &#x3D; 18        &#x2F;&#x2F;3.变量的使用        fmt.Pr">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>golang入门 | 小小的博客乐园</title><meta name="keywords" content="入门,go"><meta name="author" content="ladidol"><meta name="copyright" content="ladidol"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言:对go语言挺感兴趣的,所以简单学习一下,这里是对go语言的初级入门 go语言中的占位符:          占位符 说明 举例 输出   %v 相应值的默认格式。 Printf(“%v”, name) {xuehui}   %+v 打印结构体时，会添加字段名 Printf(“%+v”, name) {Name:xuehui}   %#v 相应值的Go语法表示 Printf(“#v”, nam">
 <meta property="og:type" content="article">
 <meta property="og:title" content="golang入门">
 <meta property="og:url" content="http://ladfeng.top/2022/03/31/[%E6%9C%AA%E5%AE%8C%E6%88%90]golang%E5%85%A5%E9%97%A8/index.html">
 <meta property="og:site_name" content="小小的博客乐园">
-<meta property="og:description" content="前言:对go语言挺感兴趣的,所以简单学习一下,这里是对go语言的初级入门 1）变量: 变量练习: package mainimport &quot;fmt&quot;func main()&amp;#123;        &#x2F;&#x2F;1.变量的声明        var age int        &#x2F;&#x2F;2.变量的赋值        age &#x3D; 18        &#x2F;&#x2F;3.变量的使用        fmt.Pr">
+<meta property="og:description" content="前言:对go语言挺感兴趣的,所以简单学习一下,这里是对go语言的初级入门 go语言中的占位符:          占位符 说明 举例 输出   %v 相应值的默认格式。 Printf(“%v”, name) {xuehui}   %+v 打印结构体时，会添加字段名 Printf(“%+v”, name) {Name:xuehui}   %#v 相应值的Go语法表示 Printf(“#v”, nam">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://ladfeng.top/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg">
 <meta property="article:published_time" content="2022-03-31T07:09:42.000Z">
-<meta property="article:modified_time" content="2022-03-31T15:06:05.461Z">
+<meta property="article:modified_time" content="2022-04-02T04:30:57.556Z">
 <meta property="article:author" content="ladidol">
 <meta property="article:tag" content="入门">
 <meta property="article:tag" content="go">
@@ -54,7 +54,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2022-03-31 23:06:05'
+  postUpdate: '2022-04-02 12:30:57'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -169,7 +169,203 @@
     </script>
     
     
-<div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/imgs/3备用.png" data-original="/imgs/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">46</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-diamond"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小小的博客乐园</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-diamond"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">golang入门</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-31T07:09:42.000Z" title="发表于 2022-03-31 15:09:42">2022-03-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-03-31T15:06:05.461Z" title="更新于 2022-03-31 23:06:05">2022-03-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%90%8E%E7%AB%AF/go%E5%90%8E%E7%AB%AF/">go后端</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="golang入门"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h2><p>对go语言挺感兴趣的,所以简单学习一下,这里是对go语言的初级入门</p>
+<div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/imgs/3备用.png" data-original="/imgs/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">46</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-diamond"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小小的博客乐园</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-diamond"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">golang入门</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-31T07:09:42.000Z" title="发表于 2022-03-31 15:09:42">2022-03-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-04-02T04:30:57.556Z" title="更新于 2022-04-02 12:30:57">2022-04-02</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%90%8E%E7%AB%AF/go%E5%90%8E%E7%AB%AF/">go后端</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="golang入门"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h2><p>对go语言挺感兴趣的,所以简单学习一下,这里是对go语言的初级入门</p>
+<h3 id="go语言中的占位符"><a href="#go语言中的占位符" class="headerlink" title="go语言中的占位符:"></a>go语言中的占位符:</h3><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>占位符</td>
+<td>说明</td>
+<td>举例</td>
+<td>输出</td>
+</tr>
+<tr>
+<td>%v</td>
+<td>相应值的默认格式。</td>
+<td>Printf(“%v”, name)</td>
+<td>{xuehui}</td>
+</tr>
+<tr>
+<td>%+v</td>
+<td>打印结构体时，会添加字段名</td>
+<td>Printf(“%+v”, name)</td>
+<td>{Name:xuehui}</td>
+</tr>
+<tr>
+<td>%#v</td>
+<td>相应值的Go语法表示</td>
+<td>Printf(“#v”, name)</td>
+<td>main.Human{Name:“xuehui”}</td>
+</tr>
+<tr>
+<td>%T</td>
+<td>相应值的类型的Go语法表示</td>
+<td>Printf(“%T”, name)</td>
+<td>main.Human</td>
+</tr>
+<tr>
+<td>%%</td>
+<td>字面上的百分号，并非值的占位符</td>
+<td>Printf(“%%”)</td>
+<td>%</td>
+</tr>
+<tr>
+<td>%t</td>
+<td>true 或 false</td>
+<td>Printf(“%t”, true)</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>%b</td>
+<td>二进制表示</td>
+<td>Printf(“%b”, 5)</td>
+<td>101</td>
+</tr>
+<tr>
+<td>%c</td>
+<td>相应Unicode码点所表示的字符</td>
+<td>Printf(“%c”, 0x4E2D)</td>
+<td>中</td>
+</tr>
+<tr>
+<td>%d</td>
+<td>十进制表示</td>
+<td>Printf(“%d”, 0x12)</td>
+<td>18</td>
+</tr>
+<tr>
+<td>%o</td>
+<td>八进制表示</td>
+<td>Printf(“%d”, 10)</td>
+<td>12</td>
+</tr>
+<tr>
+<td>%q</td>
+<td>单引号围绕的字符字面值，由Go语法安全地转义</td>
+<td>Printf(“%q”, 0x4E2D)</td>
+<td>‘中’</td>
+</tr>
+<tr>
+<td>%x</td>
+<td>十六进制表示，字母形式为小写 a-f</td>
+<td>Printf(“%x”, 13)</td>
+<td>d</td>
+</tr>
+<tr>
+<td>%X</td>
+<td>十六进制表示，字母形式为大写 A-F</td>
+<td>Printf(“%x”, 13)</td>
+<td>D</td>
+</tr>
+<tr>
+<td>%U</td>
+<td>Unicode格式：U+1234，等同于 “U+%04X”</td>
+<td>Printf(“%U”, 0x4E2D)</td>
+<td>U+4E2D</td>
+</tr>
+<tr>
+<td>%b</td>
+<td>无小数部分的，指数为二的幂的科学计数法， 与 strconv.FormatFloat 的 ‘b’ 转换格式一致。例如 -123456p-78</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>%e</td>
+<td>科学计数法，例如 -1234.456e+78</td>
+<td>Printf(“%e”, 10.2)</td>
+<td>1.02E+01</td>
+</tr>
+<tr>
+<td>%E</td>
+<td>科学计数法，例如 -1234.456E+78</td>
+<td>Printf(“%e”, 10.2)</td>
+<td>1.02E+01</td>
+</tr>
+<tr>
+<td>%f</td>
+<td>有小数点而无指数，例如 123.456</td>
+<td>Printf(“%f”, 10.2)</td>
+<td>10.2</td>
+</tr>
+<tr>
+<td>%g</td>
+<td>根据情况选择 %e 或 %f 以产生更紧凑的（无末尾的0）输出</td>
+<td>Printf(“%g”, 10.20)</td>
+<td>10.2</td>
+</tr>
+<tr>
+<td>%G</td>
+<td>根据情况选择 %E 或 %f 以产生更紧凑的（无末尾的0）输出</td>
+<td>Printf(“%G”, 10.20+2i)</td>
+<td>(10.2+2i)</td>
+</tr>
+<tr>
+<td>%s</td>
+<td>输出字符串表示（string类型或[]byte)</td>
+<td>Printf(“%s”, []byte(“Go语言”))</td>
+<td>Go语言</td>
+</tr>
+<tr>
+<td>%q</td>
+<td>双引号围绕的字符串，由Go语法安全地转义</td>
+<td>Printf(“%q”, “Go语言”)</td>
+<td>“Go语言”</td>
+</tr>
+<tr>
+<td>%x</td>
+<td>十六进制，小写字母，每字节两个字符</td>
+<td>Printf(“%x”, “golang”)</td>
+<td>676f6c616e67</td>
+</tr>
+<tr>
+<td>%X</td>
+<td>十六进制，大写字母，每字节两个字符</td>
+<td>Printf(“%X”, “golang”)</td>
+<td>676F6C616E67</td>
+</tr>
+<tr>
+<td>%p</td>
+<td>十六进制表示，前缀 0x</td>
+<td>Printf(“%p”, &amp;name)</td>
+<td>0x4f57f0</td>
+</tr>
+<tr>
+<td>+</td>
+<td>总打印数值的正负号；对于%q（%+q）保证只输出ASCII编码的字符。</td>
+<td>Printf(“%+q”, “中文”)</td>
+<td>“\u4e2d\u6587”</td>
+</tr>
+<tr>
+<td>-</td>
+<td>在右侧而非左侧填充空格（左对齐该区域）</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>#</td>
+<td>备用格式：为八进制添加前导 0（%#o） 为十六进制添加前导 0x（%#x）或 0X（%#X），为 %p（%#p）去掉前导 0x； 如果可能的话，%q（%#q）会打印原始 （即反引号围绕的）字符串； 如果是可打印字符，%U（%#U）会写出该字符的 Unicode 编码形式（如字符 x 会被打印成 U+0078 ‘x’）。</td>
+<td>Printf(“%#U”, ‘中’)</td>
+<td>U+4E2D</td>
+</tr>
+<tr>
+<td>’ ’</td>
+<td>(空格)为数值中省略的正负号留出空白（% d）； 以十六进制（% x, % X）打印字符串或切片时，在字节之间用空格隔开</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0</td>
+<td>填充前导的0而非空格；对于数字，这会将填充移到正负号之后</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
 <h2 id="1）变量"><a href="#1）变量" class="headerlink" title="1）变量:"></a>1）变量:</h2><p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220331151042733.png" alt="image-20220331151042733"></p>
 <p>变量练习:</p>
 <figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;fmt&quot;</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//1.变量的声明</span></span><br><span class="line">        <span class="keyword">var</span> age <span class="type">int</span></span><br><span class="line">        <span class="comment">//2.变量的赋值</span></span><br><span class="line">        age = <span class="number">18</span></span><br><span class="line">        <span class="comment">//3.变量的使用</span></span><br><span class="line">        fmt.Println(<span class="string">&quot;age = &quot;</span>,age);</span><br><span class="line">        <span class="comment">//声明和赋值可以合成一句：</span></span><br><span class="line">        <span class="keyword">var</span> age2 <span class="type">int</span> = <span class="number">19</span></span><br><span class="line">        fmt.Println(<span class="string">&quot;age2 = &quot;</span>,age2);</span><br><span class="line">        <span class="comment">//不可以在赋值的时候给与不匹配的类型</span></span><br><span class="line">        <span class="keyword">var</span> num <span class="type">int</span> = <span class="number">12.56</span></span><br><span class="line">        fmt.Println(<span class="string">&quot;num = &quot;</span>,num);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -268,15 +464,9 @@
 <h3 id="标识符："><a href="#标识符：" class="headerlink" title="标识符："></a>标识符：</h3><p>【1】标识符：读音  biao zhi fu</p>
 <p>【2】什么是标识符？      变量，方法等,只要是起名字的地方,那个<strong>名字</strong>就是标识符  var age int &#x3D; 19  var price float64 &#x3D; 9.8</p>
 <p>【3】标识符定义规则：</p>
-<p>1.三个可以（组成部分）：数字，字母，下划线_  </p>
-<p>2.四个不可以：不可以以数字开头，严格区分大小写，不能包含空格，不可以使用Go中的保留关键字 </p>
-<p>3.见名知意：增加可读性</p>
-<p>4.下划线”_”本身在Go中是一个特殊的标识符，称为空标识符。可以代表任何其它的标识符，但是它对应的值会被忽略(比如:忽略某个返回值)。所以仅能被作为<strong>占位符</strong>使用，不能单独作为标识符使用。</p>
-<p>就像刚刚用<code>_</code>来忽略error的返回值</p>
-<p>5.可以用如下形式，但是不建议： var int int &#x3D; 10  (int,float32,float64等不算是保留关键字，但是也尽量不要使用)</p>
-<p>6.长度无限制，但是不建议太长  asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasfd</p>
-<p>7.起名规则：</p>
-<p>（1）包名:尽量保持package的名字和目录保持一致，尽量采取有意义的包名，简短，有意义，和标准库不要冲突</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.三个可以（组成部分）：数字，字母，下划线_  </span><br><span class="line">2.四个不可以：不可以以数字开头，严格区分大小写，不能包含空格，不可以使用Go中的保留关键字 </span><br><span class="line">3.见名知意：增加可读性</span><br><span class="line">4.下划线&quot;_&quot;本身在Go中是一个特殊的标识符，称为空标识符。可以代表任何其它的标识符，但是它对应的值会被忽略(比如:忽略某个返回值)。所以仅能被作为**占位符**使用，不能单独作为标识符使用。</span><br><span class="line">就像刚刚用`_`来忽略error的返回值</span><br><span class="line">5.可以用如下形式，但是不建议： var int int = 10  (int,float32,float64等不算是保留关键字，但是也尽量不要使用)</span><br><span class="line">6.长度无限制，但是不建议太长  asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasfd</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="起名规则"><a href="#起名规则" class="headerlink" title="起名规则:"></a>起名规则:</h4><p>（1）包名:尽量保持package的名字和目录保持一致，尽量采取有意义的包名，简短，有意义，和标准库不要冲突</p>
 <p>1.为什么之前在定义源文件的时候，一般我们都用package main 包 ？main包是一个程序的入口包，所以你main函数它所在的包建议定义为main包，如果不定义为main包，那么就不能得到可执行文件。</p>
 <p>2.尽量保持package的名字和目录保持一致</p>
 <p>3.和标准库不要冲突</p>
@@ -352,7 +542,7 @@
 <p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220331215800943.png" alt="image-20220331215800943"></p>
 <p>返回多个：<img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220331215407262.png" alt="image-20220331215407262"></p>
 <p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220331215553070.png" alt="image-20220331215553070"></p>
-<p>golang不支持重载</p>
+<p><strong>golang不支持重载</strong></p>
 <p>基本数据类型和数组<strong>默认都是值传递</strong>的，即进行值拷贝。在函数内修改，不会影响到原来的值。</p>
 <p>以值传递方式的数据类型，如果希望在函数内的变量能修改函数外的变量，可以传入变量的地址&amp;，函数内以指针的方式操作变量。从效果来看类似引用传递。</p>
 <p>如下,直接传入地址,test函数在拿到地址后的对上面的值进行修改:</p>
@@ -397,7 +587,68 @@
 <p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220331230447543.png" alt="image-20220331230447543"></p>
 <p>发现：遇到defer关键字，会将后面的代码语句压入栈中，也会将相关的值同时拷贝入栈中，不会随着函数后面的变化而变化。</p>
 <p>【4】defer应用场景：比如你想关闭某个使用的资源，在使用的时候直接随手defer，因为defer有延迟执行机制（函数执行完毕再执行defer压入栈的语句），所以你用完随手写了关闭，比较省心，省事</p>
-<h3 id="系统常用函数"><a href="#系统常用函数" class="headerlink" title="系统常用函数:"></a>系统常用函数:</h3><h2 id="5）包的引入："><a href="#5）包的引入：" class="headerlink" title="5）包的引入："></a>5）包的引入：</h2><p>【1】使用包的原因：</p>
+<h3 id="系统常用函数"><a href="#系统常用函数" class="headerlink" title="系统常用函数:"></a>系统常用函数:</h3><h4 id="1-字符串相关的函数"><a href="#1-字符串相关的函数" class="headerlink" title="(1)字符串相关的函数:"></a>(1)字符串相关的函数:</h4><p>【1】统计字符串的长度,按字节进行统计：        </p>
+<p>len(str) 使用内置函数也不用导包的，直接用就行</p>
+<p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220402113235609.png" alt="image-20220402113235609"></p>
+<p>【2】字符串遍历：</p>
+<p>​        (1)利用方式1：for-range键值循环：</p>
+<p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220402113307496.png" alt="image-20220402113307496"></p>
+<p>​        （2）r:&#x3D;[]rune(str), 进行数组遍历</p>
+<p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220402113423499.png" alt="image-20220402113423499"></p>
+<p>【3】字符串转整数： <code>n, err := strconv.Atoi(&quot;66&quot;) </code></p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;strconv&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	n, err := strconv.Atoi(<span class="string">&quot;66&quot;</span>)</span><br><span class="line">	fmt.Println(n, err)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">66 &lt;nil&gt;</span><br></pre></td></tr></table></figure>
+
+<p>【4】整数转字符串：<code>str = strconv.Itoa(6887)</code></p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">	<span class="string">&quot;strconv&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="keyword">var</span> str = strconv.Itoa(<span class="number">6887</span>)</span><br><span class="line">	fmt.Println(str)</span><br><span class="line">	fmt.Printf(<span class="string">&quot;这个str的类型是%T&quot;</span>, str)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">6887</span><br><span class="line">这个str的类型是string</span><br></pre></td></tr></table></figure>
+
+<p>【5】查找子串是否在指定的字符串中: <code> strings.Contains(&quot;javaandgolang&quot;, &quot;go&quot;)</code></p>
+<p>【6】统计一个字符串有几个指定的子串:<code>strings.Count(&quot;javaandgolang&quot;,&quot;a&quot;) </code></p>
+<p>【7】不区分大小写的字符串比较:<code> strings.EqualFold(&quot;go&quot; , &quot;Go&quot;)</code></p>
+<p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220402114008225.png" alt="image-20220402114008225"></p>
+<p>【8】返回子串在字符串第一次出现的索引值，如果没有返回-1:<code>strings.lndex(&quot;javaandgolang&quot; , &quot;a&quot;) </code></p>
+<p>【9】字符串的替换：<code>strings.Replace(&quot;goandjavagogo&quot;, &quot;go&quot;, &quot;golang&quot;, n) </code><br>n可以指定你希望替换几个,如果n&#x3D;-1表示全部替换，替换两个n就是2</p>
+<p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220402114151693.png" alt="image-20220402114151693"></p>
+<p>【10】按照指定的某个字符，为分割标识，将一个学符串拆分成字符串数组<code>strings.Split(&quot;go-python-java&quot;, &quot;-&quot;)</code></p>
+<p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220402114218490.png" alt="image-20220402114218490"></p>
+<p>【11】将字符串的字母进行大小写的转换:<br><code>strings.ToLower(&quot;Go&quot;)// go </code><br><code>strings.ToUpper&quot;go&quot;)//Go</code></p>
+<p>【12】将字符串左右两边的空格去掉:<br><code>strings.TrimSpace(&quot;     go and java    &quot;)</code></p>
+<p>【13】将字符串左右两边指定的字符去掉:<br><code>strings.Trim(&quot;~golang~ &quot;, &quot; ~&quot;)  </code></p>
+<p>【14】将字符串左边指定的字符去掉:<br><code>strings.TrimLeft(&quot;~golang~&quot;, &quot;~&quot;)</code></p>
+<p>【15】将字符串右边指定的字符去掉:<br><code>strings.TrimRight(&quot;~golang~&quot;, &quot;~&quot;)</code></p>
+<p>【16】判断字符串是否以指定的字符串开头:<br><code>strings.HasPrefix(&quot;http://java.sun.com/jsp/jstl/fmt&quot;, &quot;http&quot;)</code></p>
+<p>【17】判断字符串是否以指定的字符串结束:<br><code>strings.HasSuffix(&quot;demo.png&quot;, &quot;.png&quot;)</code></p>
+<p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220402114411216.png" alt="image-20220402114411216"></p>
+<h4 id="2-日期时间相关函数"><a href="#2-日期时间相关函数" class="headerlink" title="(2)日期时间相关函数:"></a>(2)日期时间相关函数:</h4><p>【1】时间和日期的函数，需要到入time包，所以你获取当前时间，就要调用函数Now函数：</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">        <span class="string">&quot;fmt&quot;</span></span><br><span class="line">        <span class="string">&quot;time&quot;</span></span><br><span class="line">)</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//时间和日期的函数，需要到入time包，所以你获取当前时间，就要调用函数Now函数：</span></span><br><span class="line">        now := time.Now()</span><br><span class="line">        <span class="comment">//Now()返回值是一个结构体，类型是：time.Time</span></span><br><span class="line">        fmt.Printf(<span class="string">&quot;%v ~~~ 对应的类型为：%T\n&quot;</span>,now,now)</span><br><span class="line">        <span class="comment">//2021-02-08 17:47:21.7600788 +0800 CST m=+0.005983901 ~~~ 对应的类型为：time.Time</span></span><br><span class="line">        <span class="comment">//调用结构体中的方法：</span></span><br><span class="line">        fmt.Printf(<span class="string">&quot;年：%v \n&quot;</span>,now.Year())</span><br><span class="line">        fmt.Printf(<span class="string">&quot;月：%v \n&quot;</span>,now.Month())<span class="comment">//月：February</span></span><br><span class="line">        fmt.Printf(<span class="string">&quot;月：%v \n&quot;</span>,<span class="type">int</span>(now.Month()))<span class="comment">//月：2</span></span><br><span class="line">        fmt.Printf(<span class="string">&quot;日：%v \n&quot;</span>,now.Day())</span><br><span class="line">        fmt.Printf(<span class="string">&quot;时：%v \n&quot;</span>,now.Hour())</span><br><span class="line">        fmt.Printf(<span class="string">&quot;分：%v \n&quot;</span>,now.Minute())</span><br><span class="line">        fmt.Printf(<span class="string">&quot;秒：%v \n&quot;</span>,now.Second())</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>go你好优美呀!</p>
+<p>【2】日期的格式化：<br>（1）将日期以年月日时分秒按照格式输出为字符串：</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Printf将字符串直接输出：</span></span><br><span class="line">fmt.Printf(<span class="string">&quot;当前年月日： %d-%d-%d 时分秒：%d:%d:%d  \n&quot;</span>,now.Year(),now.Month(),</span><br><span class="line">now.Day(),now.Hour(),now.Minute(),now.Second())</span><br><span class="line"><span class="comment">//Sprintf可以得到这个字符串，以便后续使用：</span></span><br><span class="line">datestr := fmt.Sprintf(<span class="string">&quot;当前年月日： %d-%d-%d 时分秒：%d:%d:%d  \n&quot;</span>,now.Year(),now.Month(),</span><br><span class="line">now.Day(),now.Hour(),now.Minute(),now.Second())</span><br><span class="line">fmt.Println(datestr)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">当前年月日： 2022-4-2 时分秒：11:46:46</span><br><span class="line">当前年月日： 2022-4-2 时分秒：11:46:46</span><br></pre></td></tr></table></figure>
+
+<p>（2）按照指定格式：自动识别格式</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//这个参数字符串的各个数字必须是固定的，必须这样写</span></span><br><span class="line">      datestr2 := now.Format(<span class="string">&quot;2006/01/02 15/04/05&quot;</span>)</span><br><span class="line">      fmt.Println(datestr2)</span><br><span class="line">      <span class="comment">//选择任意的组合都是可以的，根据需求自己选择就可以（自己任意组合）。</span></span><br><span class="line">      datestr3 := now.Format(<span class="string">&quot;2006 15:04&quot;</span>)</span><br><span class="line">      fmt.Println(datestr3)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2022/04/02 11/47/52</span><br><span class="line">2022 11:47</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h4 id="3-内置函数"><a href="#3-内置函数" class="headerlink" title="(3)内置函数:"></a>(3)内置函数:</h4><p>【1】什么是内置函数&#x2F;内建函数：<br>Golang设计者为了编程方便，提供了一些函数，这些函数不用导包可以直接使用，我们称为Go的内置函数&#x2F;内建函数。</p>
+<p>【2】内置函数存放位置：<br>在builtin包下，使用内置函数的，直接用就行</p>
+<p>【3】常用函数：<br>（1）len函数：<br>统计字符串的长度,按字节进行统计</p>
+<p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220402115041102.png" alt="image-20220402115041102"></p>
+<p>（2）new函数：分配内存，主要用来分配值类型（int系列, float系列, bool, string、数组和结构体struct）</p>
+<p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220402115237661.png" alt="image-20220402115237661"></p>
+<p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220402115247683.png" alt="image-20220402115247683"></p>
+<p>（3）make函数：<br>分配内存，主要用来分配引用类型（指针、slice切片、map、管道chan、interface 等）</p>
+<h2 id="5）包的引入："><a href="#5）包的引入：" class="headerlink" title="5）包的引入："></a>5）包的引入：</h2><p>【1】使用包的原因：</p>
 <p>（1）我们不可能把所有的函数放在同一个源文件中，可以分门别类的把函数放在不同的原文件中 </p>
 <p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220331223101289.png" alt="image-20220331223101289"></p>
 <p>（2）解决同名问题：两个人都想定义一个同名的函数，在同一个文件中是不可以定义相同名字的函数的。此时可以用包来区分 </p>
@@ -419,7 +670,8 @@
 <p>5.包到底是什么：<br>（1）在程序层面，所有使用相同  package 包名  的源文件组成的代码模块<br>（2）在源文件层面就是一个文件夹</p>
 <p>6.可以给包取别名，取别名后，原来的包名就不能使用了</p>
 <p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220331223833452.png" alt="image-20220331223833452"></p>
-<h2 id="6）初始化函数init-："><a href="#6）初始化函数init-：" class="headerlink" title="6）初始化函数init()："></a>6）初始化函数init()：</h2><p>【1】init函数：初始化函数，可以用来进行一些初始化的操作<br>每一个源文件都可以包含一个init函数，该函数会在main函数执行前，被Go运行框架调用。</p>
+<h2 id="6）初始化函数init-："><a href="#6）初始化函数init-：" class="headerlink" title="6）初始化函数init()："></a>6）初始化函数init()：</h2><p><strong>类似于java中的构造函数</strong></p>
+<p>【1】init函数：初始化函数，可以用来进行一些初始化的操作<br>每一个源文件都可以包含一个init函数，该函数会在main函数执行前，被Go运行框架调用。</p>
 <p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220331223954751.png" alt="image-20220331223954751"></p>
 <p>【2】全局变量定义，init函数，main函数的执行流程？</p>
 <p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220331224122916.png" alt="image-20220331224122916"></p>
@@ -430,7 +682,32 @@
 <p>由此可知:</p>
 <p>先对import包里面的东西进行初始化,再对main包进行操作;</p>
 <p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220331224410742.png" alt="image-20220331224410742"></p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">ladidol</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://ladfeng.top/2022/03/31/[%E6%9C%AA%E5%AE%8C%E6%88%90]golang%E5%85%A5%E9%97%A8/">http://ladfeng.top/2022/03/31/[%E6%9C%AA%E5%AE%8C%E6%88%90]golang%E5%85%A5%E9%97%A8/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://ladfeng.top" target="_blank">小小的博客乐园</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%85%A5%E9%97%A8/">入门</a><a class="post-meta__tags" href="/tags/go/">go</a></div><div class="post_share"><div class="social-share" data-image="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dspringboot%E6%95%B4%E5%90%88shiro%E5%88%9D%E5%A7%8B%E8%BF%87%E7%A8%8B/"><img class="prev-cover" src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">shiro的整合的&quot;心路历程&quot;</div></div></a></div><div class="next-post pull-right"><a href="/2022/03/30/%E5%B0%86jar%E5%8C%85%E9%83%A8%E7%BD%B2%E5%88%B0docker%E4%B8%8A%E5%B9%B6%E8%BF%90%E8%A1%8C/"><img class="next-cover" src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">将jar包部署到docker上</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/03/21/Docker%E5%85%A5%E9%97%A8/" title="Docker入门"><img class="cover" src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-21</div><div class="title">Docker入门</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/imgs/3备用.png" data-original="/imgs/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ladidol</div><div class="author-info__description">这是一个小小小枸杞</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">46</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/ladidol"><i class="fab fa-github"></i><span>Follow On Github</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">本站主要用于学习惯和分享,和自娱自乐罢了</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1%EF%BC%89%E5%8F%98%E9%87%8F"><span class="toc-number">2.</span> <span class="toc-text">1）变量:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E5%88%B6%E7%9A%84%E4%BB%8B%E7%BB%8D%EF%BC%9A"><span class="toc-number">2.1.</span> <span class="toc-text">进制的介绍：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.</span> <span class="toc-text">整数类型:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%AE%E7%82%B9%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.3.</span> <span class="toc-text">浮点类型:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#go%E7%9A%84%E5%AD%97%E7%AC%A6"><span class="toc-number">2.4.</span> <span class="toc-text">go的字符:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#bool%E7%B1%BB%E5%9E%8B%EF%BC%9A"><span class="toc-number">2.5.</span> <span class="toc-text">bool类型：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC%EF%BC%9A"><span class="toc-number">2.6.</span> <span class="toc-text">基本数据类型的默认值：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2%EF%BC%9A"><span class="toc-number">2.7.</span> <span class="toc-text">基本类型之间的转换：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E6%88%90string"><span class="toc-number">2.8.</span> <span class="toc-text">基本数据类型转换成string</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#string%E8%BD%AC%E6%8D%A2%E6%88%90%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.9.</span> <span class="toc-text">string转换成基本数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.10.</span> <span class="toc-text">复杂数据类型:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E9%92%88"><span class="toc-number">2.10.1.</span> <span class="toc-text">指针</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6%EF%BC%9A"><span class="toc-number">2.11.</span> <span class="toc-text">标识符：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%EF%BC%89%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">3.</span> <span class="toc-text">2）运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">3.1.</span> <span class="toc-text">算术运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">3.2.</span> <span class="toc-text">赋值运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">3.3.</span> <span class="toc-text">关系运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">3.4.</span> <span class="toc-text">逻辑运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AD%89%E7%AD%89"><span class="toc-number">3.5.</span> <span class="toc-text">等等</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7%E8%A1%A8"><span class="toc-number">3.6.</span> <span class="toc-text">运算符优先级表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%88%E7%AB%AF%E8%BE%93%E5%85%A5%E5%87%BD%E6%95%B0"><span class="toc-number">3.7.</span> <span class="toc-text">终端输入函数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%EF%BC%89%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%EF%BC%9A"><span class="toc-number">4.</span> <span class="toc-text">3）流程控制：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#if%E8%AF%AD%E5%8F%A5%EF%BC%9A"><span class="toc-number">4.1.</span> <span class="toc-text">if语句：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#switch%E8%AF%AD%E5%8F%A5%EF%BC%9A"><span class="toc-number">4.2.</span> <span class="toc-text">switch语句：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84"><span class="toc-number">4.3.</span> <span class="toc-text">循环结构:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E5%A7%8Bfor%E5%BE%AA%E7%8E%AF"><span class="toc-number">4.3.1.</span> <span class="toc-text">原始for循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%94%AE%E5%80%BC%E9%81%8D%E5%8E%86for%E5%BE%AA%E7%8E%AF%EF%BC%9A"><span class="toc-number">4.3.2.</span> <span class="toc-text">键值遍历for循环：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">4.4.</span> <span class="toc-text">流程控制中的关键字:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%EF%BC%89%E5%87%BD%E6%95%B0"><span class="toc-number">5.</span> <span class="toc-text">4）函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%87%BD%E6%95%B0"><span class="toc-number">5.1.</span> <span class="toc-text">基本函数:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0"><span class="toc-number">5.2.</span> <span class="toc-text">匿名函数:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AD%E5%8C%85-%E6%9C%89%E7%82%B9%E5%A4%8D%E6%9D%82%E4%BA%86"><span class="toc-number">5.3.</span> <span class="toc-text">闭包(有点复杂了):</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#defer%E5%85%B3%E9%94%AE%E5%AD%97-%E6%8E%A8%E8%BF%9F"><span class="toc-number">5.4.</span> <span class="toc-text">defer关键字(推迟):</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0"><span class="toc-number">5.5.</span> <span class="toc-text">系统常用函数:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%EF%BC%89%E5%8C%85%E7%9A%84%E5%BC%95%E5%85%A5%EF%BC%9A"><span class="toc-number">6.</span> <span class="toc-text">5）包的引入：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%EF%BC%89%E5%88%9D%E5%A7%8B%E5%8C%96%E5%87%BD%E6%95%B0init-%EF%BC%9A"><span class="toc-number">7.</span> <span class="toc-text">6）初始化函数init()：</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/01/java%20bean/" title="java bean浅析"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="java bean浅析"/></a><div class="content"><a class="title" href="/2022/04/01/java%20bean/" title="java bean浅析">java bean浅析</a><time datetime="2022-04-01T02:25:22.000Z" title="发表于 2022-04-01 10:25:22">2022-04-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dspringboot%E6%95%B4%E5%90%88shiro%E4%B8%93%E9%A2%98/" title="shiro权限管理"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="shiro权限管理"/></a><div class="content"><a class="title" href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dspringboot%E6%95%B4%E5%90%88shiro%E4%B8%93%E9%A2%98/" title="shiro权限管理">shiro权限管理</a><time datetime="2022-03-31T12:10:26.000Z" title="发表于 2022-03-31 20:10:26">2022-03-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dspringboot%E6%95%B4%E5%90%88shiro%E5%88%9D%E5%A7%8B%E8%BF%87%E7%A8%8B/" title="shiro的整合的&quot;心路历程&quot;"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="shiro的整合的&quot;心路历程&quot;"/></a><div class="content"><a class="title" href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dspringboot%E6%95%B4%E5%90%88shiro%E5%88%9D%E5%A7%8B%E8%BF%87%E7%A8%8B/" title="shiro的整合的&quot;心路历程&quot;">shiro的整合的&quot;心路历程&quot;</a><time datetime="2022-03-31T12:10:26.000Z" title="发表于 2022-03-31 20:10:26">2022-03-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dgolang%E5%85%A5%E9%97%A8/" title="golang入门"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="golang入门"/></a><div class="content"><a class="title" href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dgolang%E5%85%A5%E9%97%A8/" title="golang入门">golang入门</a><time datetime="2022-03-31T07:09:42.000Z" title="发表于 2022-03-31 15:09:42">2022-03-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/30/%E5%B0%86jar%E5%8C%85%E9%83%A8%E7%BD%B2%E5%88%B0docker%E4%B8%8A%E5%B9%B6%E8%BF%90%E8%A1%8C/" title="将jar包部署到docker上"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="将jar包部署到docker上"/></a><div class="content"><a class="title" href="/2022/03/30/%E5%B0%86jar%E5%8C%85%E9%83%A8%E7%BD%B2%E5%88%B0docker%E4%B8%8A%E5%B9%B6%E8%BF%90%E8%A1%8C/" title="将jar包部署到docker上">将jar包部署到docker上</a><time datetime="2022-03-30T10:26:08.000Z" title="发表于 2022-03-30 18:26:08">2022-03-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By ladidol</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+<h2 id="7）错误处理"><a href="#7）错误处理" class="headerlink" title="7）错误处理"></a>7）错误处理</h2><h4 id="【1】错误处理-x2F-捕获机制："><a href="#【1】错误处理-x2F-捕获机制：" class="headerlink" title="【1】错误处理&#x2F;捕获机制："></a>【1】错误处理&#x2F;捕获机制：</h4><p>go中追求代码优雅，引入机制：defer+recover机制处理错误<br>内置函数recover:</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;fmt&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	test()</span><br><span class="line">	fmt.Println(<span class="string">&quot;已经执行上面的除法方法&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">test</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">		err := <span class="built_in">recover</span>()</span><br><span class="line">		<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">			fmt.Println(<span class="string">&quot;错误已经捕获到了&quot;</span>)</span><br><span class="line">			fmt.Println(<span class="string">&quot;err是：&quot;</span>, err)</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;()</span><br><span class="line">	num1 := <span class="number">10</span></span><br><span class="line">	num2 := <span class="number">0</span></span><br><span class="line">	result := num1 / num2</span><br><span class="line">	fmt.Println(result)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结构:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">错误已经捕获到了</span><br><span class="line">err是： runtime error: integer divide by zero</span><br><span class="line">已经执行上面的除法方法     </span><br></pre></td></tr></table></figure>
+
+<p>优点：提高程序健壮性</p>
+<p>先简单介绍一下这个异常</p>
+<h4 id="【2】自定义错误："><a href="#【2】自定义错误：" class="headerlink" title="【2】自定义错误："></a>【2】自定义错误：</h4><p>需要调用errors包下的New函数：函数返回error类型</p>
+<p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220402122252229.png" alt="image-20220402122252229"></p>
+<p>代码：</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;errors&quot;</span></span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	err := test()</span><br><span class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		fmt.Println(<span class="string">&quot;自定义错误: &quot;</span>, err)</span><br><span class="line">	&#125;</span><br><span class="line">	fmt.Println(<span class="string">&quot;上面的除法函数执行了...&quot;</span>)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">test</span><span class="params">()</span></span> (err <span class="type">error</span>) &#123;</span><br><span class="line">	num1 := <span class="number">10</span></span><br><span class="line">	num2 := <span class="number">0</span></span><br><span class="line">	<span class="keyword">if</span> num2 == <span class="number">0</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> errors.New(<span class="string">&quot;除数不能为0!&quot;</span>)</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		result := num1 / num2</span><br><span class="line">		fmt.Println(result)</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">自定义错误:  除数不能为0!</span><br><span class="line">上面的除法函数执行了...</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h4 id="【3】终止函数进行"><a href="#【3】终止函数进行" class="headerlink" title="【3】终止函数进行:"></a>【3】终止函数进行:</h4><p>有一种情况：程序出现错误以后，后续代码就没有必要执行，想让程序中断，退出程序：借助：builtin包下内置函数：<code>panic</code></p>
+<p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220402122830223.png" alt="image-20220402122830223"></p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">&quot;errors&quot;</span></span><br><span class="line">	<span class="string">&quot;fmt&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	err := test()</span><br><span class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		fmt.Println(<span class="string">&quot;自定义错误: &quot;</span>, err)</span><br><span class="line">		<span class="built_in">panic</span>(err)<span class="comment">//终止程序进行</span></span><br><span class="line">	&#125;</span><br><span class="line">	fmt.Println(<span class="string">&quot;上面的除法函数执行成功了...&quot;</span>)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">test</span><span class="params">()</span></span> (err <span class="type">error</span>) &#123;</span><br><span class="line">	num1 := <span class="number">10</span></span><br><span class="line">	num2 := <span class="number">0</span></span><br><span class="line">	<span class="keyword">if</span> num2 == <span class="number">0</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> errors.New(<span class="string">&quot;除数不能为0!&quot;</span>)</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		result := num1 / num2</span><br><span class="line">		fmt.Println(result)</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">自定义错误:  除数不能为0!</span><br><span class="line">panic: 除数不能为0!  </span><br></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">ladidol</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://ladfeng.top/2022/03/31/[%E6%9C%AA%E5%AE%8C%E6%88%90]golang%E5%85%A5%E9%97%A8/">http://ladfeng.top/2022/03/31/[%E6%9C%AA%E5%AE%8C%E6%88%90]golang%E5%85%A5%E9%97%A8/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://ladfeng.top" target="_blank">小小的博客乐园</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%85%A5%E9%97%A8/">入门</a><a class="post-meta__tags" href="/tags/go/">go</a></div><div class="post_share"><div class="social-share" data-image="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dspringboot%E6%95%B4%E5%90%88shiro%E5%88%9D%E5%A7%8B%E8%BF%87%E7%A8%8B/"><img class="prev-cover" src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">shiro的整合的&quot;心路历程&quot;</div></div></a></div><div class="next-post pull-right"><a href="/2022/03/30/%E5%B0%86jar%E5%8C%85%E9%83%A8%E7%BD%B2%E5%88%B0docker%E4%B8%8A%E5%B9%B6%E8%BF%90%E8%A1%8C/"><img class="next-cover" src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">将jar包部署到docker上</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/03/21/Docker%E5%85%A5%E9%97%A8/" title="Docker入门"><img class="cover" src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-21</div><div class="title">Docker入门</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/imgs/3备用.png" data-original="/imgs/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ladidol</div><div class="author-info__description">这是一个小小小枸杞</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">46</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/ladidol"><i class="fab fa-github"></i><span>Follow On Github</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">本站主要用于学习惯和分享,和自娱自乐罢了</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#go%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E5%8D%A0%E4%BD%8D%E7%AC%A6"><span class="toc-number">1.1.</span> <span class="toc-text">go语言中的占位符:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1%EF%BC%89%E5%8F%98%E9%87%8F"><span class="toc-number">2.</span> <span class="toc-text">1）变量:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E5%88%B6%E7%9A%84%E4%BB%8B%E7%BB%8D%EF%BC%9A"><span class="toc-number">2.1.</span> <span class="toc-text">进制的介绍：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.</span> <span class="toc-text">整数类型:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%AE%E7%82%B9%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.3.</span> <span class="toc-text">浮点类型:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#go%E7%9A%84%E5%AD%97%E7%AC%A6"><span class="toc-number">2.4.</span> <span class="toc-text">go的字符:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#bool%E7%B1%BB%E5%9E%8B%EF%BC%9A"><span class="toc-number">2.5.</span> <span class="toc-text">bool类型：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC%EF%BC%9A"><span class="toc-number">2.6.</span> <span class="toc-text">基本数据类型的默认值：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2%EF%BC%9A"><span class="toc-number">2.7.</span> <span class="toc-text">基本类型之间的转换：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E6%88%90string"><span class="toc-number">2.8.</span> <span class="toc-text">基本数据类型转换成string</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#string%E8%BD%AC%E6%8D%A2%E6%88%90%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.9.</span> <span class="toc-text">string转换成基本数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.10.</span> <span class="toc-text">复杂数据类型:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E9%92%88"><span class="toc-number">2.10.1.</span> <span class="toc-text">指针</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6%EF%BC%9A"><span class="toc-number">2.11.</span> <span class="toc-text">标识符：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B5%B7%E5%90%8D%E8%A7%84%E5%88%99"><span class="toc-number">2.11.1.</span> <span class="toc-text">起名规则:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%EF%BC%89%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">3.</span> <span class="toc-text">2）运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">3.1.</span> <span class="toc-text">算术运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">3.2.</span> <span class="toc-text">赋值运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">3.3.</span> <span class="toc-text">关系运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">3.4.</span> <span class="toc-text">逻辑运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AD%89%E7%AD%89"><span class="toc-number">3.5.</span> <span class="toc-text">等等</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7%E8%A1%A8"><span class="toc-number">3.6.</span> <span class="toc-text">运算符优先级表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%88%E7%AB%AF%E8%BE%93%E5%85%A5%E5%87%BD%E6%95%B0"><span class="toc-number">3.7.</span> <span class="toc-text">终端输入函数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%EF%BC%89%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%EF%BC%9A"><span class="toc-number">4.</span> <span class="toc-text">3）流程控制：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#if%E8%AF%AD%E5%8F%A5%EF%BC%9A"><span class="toc-number">4.1.</span> <span class="toc-text">if语句：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#switch%E8%AF%AD%E5%8F%A5%EF%BC%9A"><span class="toc-number">4.2.</span> <span class="toc-text">switch语句：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84"><span class="toc-number">4.3.</span> <span class="toc-text">循环结构:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E5%A7%8Bfor%E5%BE%AA%E7%8E%AF"><span class="toc-number">4.3.1.</span> <span class="toc-text">原始for循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%94%AE%E5%80%BC%E9%81%8D%E5%8E%86for%E5%BE%AA%E7%8E%AF%EF%BC%9A"><span class="toc-number">4.3.2.</span> <span class="toc-text">键值遍历for循环：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">4.4.</span> <span class="toc-text">流程控制中的关键字:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%EF%BC%89%E5%87%BD%E6%95%B0"><span class="toc-number">5.</span> <span class="toc-text">4）函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%87%BD%E6%95%B0"><span class="toc-number">5.1.</span> <span class="toc-text">基本函数:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0"><span class="toc-number">5.2.</span> <span class="toc-text">匿名函数:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AD%E5%8C%85-%E6%9C%89%E7%82%B9%E5%A4%8D%E6%9D%82%E4%BA%86"><span class="toc-number">5.3.</span> <span class="toc-text">闭包(有点复杂了):</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#defer%E5%85%B3%E9%94%AE%E5%AD%97-%E6%8E%A8%E8%BF%9F"><span class="toc-number">5.4.</span> <span class="toc-text">defer关键字(推迟):</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0"><span class="toc-number">5.5.</span> <span class="toc-text">系统常用函数:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E5%85%B3%E7%9A%84%E5%87%BD%E6%95%B0"><span class="toc-number">5.5.1.</span> <span class="toc-text">(1)字符串相关的函数:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0"><span class="toc-number">5.5.2.</span> <span class="toc-text">(2)日期时间相关函数:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0"><span class="toc-number">5.5.3.</span> <span class="toc-text">(3)内置函数:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%EF%BC%89%E5%8C%85%E7%9A%84%E5%BC%95%E5%85%A5%EF%BC%9A"><span class="toc-number">6.</span> <span class="toc-text">5）包的引入：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%EF%BC%89%E5%88%9D%E5%A7%8B%E5%8C%96%E5%87%BD%E6%95%B0init-%EF%BC%9A"><span class="toc-number">7.</span> <span class="toc-text">6）初始化函数init()：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%EF%BC%89%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86"><span class="toc-number">8.</span> <span class="toc-text">7）错误处理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E3%80%901%E3%80%91%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86-x2F-%E6%8D%95%E8%8E%B7%E6%9C%BA%E5%88%B6%EF%BC%9A"><span class="toc-number">8.0.1.</span> <span class="toc-text">【1】错误处理&#x2F;捕获机制：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E3%80%902%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E9%94%99%E8%AF%AF%EF%BC%9A"><span class="toc-number">8.0.2.</span> <span class="toc-text">【2】自定义错误：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E3%80%903%E3%80%91%E7%BB%88%E6%AD%A2%E5%87%BD%E6%95%B0%E8%BF%9B%E8%A1%8C"><span class="toc-number">8.0.3.</span> <span class="toc-text">【3】终止函数进行:</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/01/java%20bean/" title="java bean浅析"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="java bean浅析"/></a><div class="content"><a class="title" href="/2022/04/01/java%20bean/" title="java bean浅析">java bean浅析</a><time datetime="2022-04-01T02:25:22.000Z" title="发表于 2022-04-01 10:25:22">2022-04-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dspringboot%E6%95%B4%E5%90%88shiro%E4%B8%93%E9%A2%98/" title="shiro权限管理"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="shiro权限管理"/></a><div class="content"><a class="title" href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dspringboot%E6%95%B4%E5%90%88shiro%E4%B8%93%E9%A2%98/" title="shiro权限管理">shiro权限管理</a><time datetime="2022-03-31T12:10:26.000Z" title="发表于 2022-03-31 20:10:26">2022-03-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dspringboot%E6%95%B4%E5%90%88shiro%E5%88%9D%E5%A7%8B%E8%BF%87%E7%A8%8B/" title="shiro的整合的&quot;心路历程&quot;"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="shiro的整合的&quot;心路历程&quot;"/></a><div class="content"><a class="title" href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dspringboot%E6%95%B4%E5%90%88shiro%E5%88%9D%E5%A7%8B%E8%BF%87%E7%A8%8B/" title="shiro的整合的&quot;心路历程&quot;">shiro的整合的&quot;心路历程&quot;</a><time datetime="2022-03-31T12:10:26.000Z" title="发表于 2022-03-31 20:10:26">2022-03-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dgolang%E5%85%A5%E9%97%A8/" title="golang入门"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="golang入门"/></a><div class="content"><a class="title" href="/2022/03/31/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dgolang%E5%85%A5%E9%97%A8/" title="golang入门">golang入门</a><time datetime="2022-03-31T07:09:42.000Z" title="发表于 2022-03-31 15:09:42">2022-03-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/30/%E5%B0%86jar%E5%8C%85%E9%83%A8%E7%BD%B2%E5%88%B0docker%E4%B8%8A%E5%B9%B6%E8%BF%90%E8%A1%8C/" title="将jar包部署到docker上"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="将jar包部署到docker上"/></a><div class="content"><a class="title" href="/2022/03/30/%E5%B0%86jar%E5%8C%85%E9%83%A8%E7%BD%B2%E5%88%B0docker%E4%B8%8A%E5%B9%B6%E8%BF%90%E8%A1%8C/" title="将jar包部署到docker上">将jar包部署到docker上</a><time datetime="2022-03-30T10:26:08.000Z" title="发表于 2022-03-30 18:26:08">2022-03-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By ladidol</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
   endLoading: () => {
     document.body.style.overflow = 'auto';
     document.getElementById('loading-box').classList.add("loaded")
@@ -447,14 +724,19 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
       el: '#vcomment',
       appId: 'yCA2jFnRuIUXINItIXDuuGgx-9Nh9j0Va',
       appKey: 'u4C7GUNrW6Lqmqe1axkRqKTt',
-      avatar: 'monsterid',
+      avatar: 'wavatar',
       serverURLs: '',
-      enableQQ: 'true',
+      enableQQ: true,
       placeholder: '评论支持Markdown语法，暂时只能使用随机头像',
       pageSize: '10',
+      master: '9f8e9371a0cbeaa8737f5f1baa1d0f10',
+      tagMeta: ["博主","小伙伴","访客"],
+      visitor: 'true',
+      //md5jiami.51240.com ,md5加密推荐这个网站
+      friends: ["8f5657bb65c4fb1e2621401dd5003f5b"],
       emojiMaps: "",
       path: window.location.pathname,
-      visitor: false
+      visitor: true
     }, null))
   }
 
@@ -462,8 +744,8 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
   else getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js').then(initValine)
 }
 
-if ('Valine' === 'Valine' || !false) {
-  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
   else setTimeout(loadValine, 0)
 } else {
   function loadOtherComment () {

@@ -190,14 +190,19 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
       el: '#vcomment',
       appId: 'yCA2jFnRuIUXINItIXDuuGgx-9Nh9j0Va',
       appKey: 'u4C7GUNrW6Lqmqe1axkRqKTt',
-      avatar: 'monsterid',
+      avatar: 'wavatar',
       serverURLs: '',
-      enableQQ: 'true',
+      enableQQ: true,
       placeholder: '评论支持Markdown语法，暂时只能使用随机头像',
       pageSize: '10',
+      master: '9f8e9371a0cbeaa8737f5f1baa1d0f10',
+      tagMeta: ["博主","小伙伴","访客"],
+      visitor: 'true',
+      //md5jiami.51240.com ,md5加密推荐这个网站
+      friends: ["8f5657bb65c4fb1e2621401dd5003f5b"],
       emojiMaps: "",
       path: window.location.pathname,
-      visitor: false
+      visitor: true
     }, null))
   }
 
@@ -205,8 +210,8 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
   else getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js').then(initValine)
 }
 
-if ('Valine' === 'Valine' || !false) {
-  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
   else setTimeout(loadValine, 0)
 } else {
   function loadOtherComment () {
