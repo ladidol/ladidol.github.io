@@ -3252,27 +3252,27 @@ function bot_ui_ini() {
         })
     });
     var sure = function () {
-        botui.message.add({delay: 600, content: "那好,请听我慢慢讲"}).then(function () {
+        botui.message.add({delay: 1600, content: "那好,请听我慢慢讲"}).then(function () {
             secondpart()
         })
     }, end = function () {
         botui.message.add({
-            delay: 600,
+            delay: 1600,
             content: "![...](https://view.moezx.cc/images/2018/05/06/a1c4cd0452528b572af37952489372b6.md.jpg)"
         })
     }, secondpart = function () {
-        botui.message.add({delay: 1500, content: "hello，我是一个在校大学生，现在什么都还不会，还只是个初学者"}).then(function () {
-            botui.message.add({delay: 1500, content: "现在在cuit的echo实验室里"}).then(function () {
-                botui.message.add({delay: 1200, content: "希望我能学到点东西"}).then(function () {
+        botui.message.add({delay: 3000, content: "hello，我是一个在校大学生，现在什么都还不会，还只是个初学者"}).then(function () {
+            botui.message.add({delay: 2500, content: "现在在cuit的echo实验室里"}).then(function () {
+                botui.message.add({delay: 2200, content: "希望我能学到点东西"}).then(function () {
                     botui.message.add({
-                        delay: 1500,
+                        delay: 2500,
                         content: "其实我也很贪玩，平时喜欢王者，无聊还喜欢看电影"
                     }).then(function () {
                         botui.message.add({
-                            delay: 1500,
+                            delay: 2500,
                             content: "说到看电影，我什么类型的电影都看的，你可以看看我博客上的电影介绍页（如果感兴趣的话）"
                         }).then(function () {
-                            botui.message.add({delay: 1800, content: "最近也缺电影看，请问你有好看的电影吗，可以推荐一下吗q(≧▽≦q)"}).then(function () {
+                            botui.message.add({delay: 2800, content: "最近也缺电影看，请问你有好看的电影吗，可以推荐一下吗q(≧▽≦q)"}).then(function () {
                                 botui.action.button({
                                     delay: 1100,
                                     action: [{
@@ -3293,14 +3293,14 @@ function bot_ui_ini() {
             })
         })
     }, thirdpart = function () {
-        botui.message.add({delay: 1e3, content: "我还喜欢听音乐，音乐在我上学的大部分时间里陪伴着我，我也感觉很快乐"}).then(function () {
-            botui.action.button({delay: 1500, action: [{text: "你喜欢听什么类型的呢？", value: "why-cat"}]}).then(function (a) {
+        botui.message.add({delay: 2000, content: "我还喜欢听音乐，音乐在我上学的大部分时间里陪伴着我，我也感觉很快乐"}).then(function () {
+            botui.action.button({delay: 2500, action: [{text: "你喜欢听什么类型的呢？", value: "why-cat"}]}).then(function (a) {
                 fourthpart()
             })
         })
     }, fourthpart = function () {
-        botui.message.add({delay: 1e3, content: "我也是随意的，啥子类型都听听，我一直都觉得，情歌都很好听，只是听的话太容易共情了"}).then(function () {
-            botui.message.add({delay: 1100, content: "所以呢，我也经常听rap，电音啥的，纯音乐在学习安静的时候喜欢听"}).then(function () {
+        botui.message.add({delay: 2000, content: "我也是随意的，啥子类型都听听，我一直都觉得，情歌都很好听，只是听的话太容易共情了"}).then(function () {
+            botui.message.add({delay: 2000, content: "所以呢，我也经常听rap，电音啥的，纯音乐在学习安静的时候喜欢听"}).then(function () {
                 botui.action.button({
                     delay: 1500,
                     action: [{text: "哈哈哈哈", value: "why-domain"}]
