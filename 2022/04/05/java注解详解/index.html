@@ -1,0 +1,383 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>简单理解java注解 | 小小的博客乐园</title><meta name="keywords" content="注解"><meta name="author" content="ladidol"><meta name="copyright" content="ladidol"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言:Annotation 中文译过来就是注解、标释的意思，在 Java 中注解是一个很重要的知识点，但经常还是有点让新手不容易理解。老手有时候也不知道 初学者可以这样理解注解：想像代码具有生命，注解就是对于代码中某些鲜活个体的贴上去的一张标签。简化来讲，注解如同一张标签。 在未开始学习任何注解具体语法而言，你可以把注解看成一张标签。这有助于你快速地理解它的大致作用。如果初学者在学习过程有大脑放空">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简单理解java注解">
+<meta property="og:url" content="http://ladfeng.top/2022/04/05/java%E6%B3%A8%E8%A7%A3%E8%AF%A6%E8%A7%A3/index.html">
+<meta property="og:site_name" content="小小的博客乐园">
+<meta property="og:description" content="前言:Annotation 中文译过来就是注解、标释的意思，在 Java 中注解是一个很重要的知识点，但经常还是有点让新手不容易理解。老手有时候也不知道 初学者可以这样理解注解：想像代码具有生命，注解就是对于代码中某些鲜活个体的贴上去的一张标签。简化来讲，注解如同一张标签。 在未开始学习任何注解具体语法而言，你可以把注解看成一张标签。这有助于你快速地理解它的大致作用。如果初学者在学习过程有大脑放空">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://ladfeng.top/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg">
+<meta property="article:published_time" content="2022-04-05T06:18:18.000Z">
+<meta property="article:modified_time" content="2022-04-06T08:48:32.311Z">
+<meta property="article:author" content="ladidol">
+<meta property="article:tag" content="注解">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ladfeng.top/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/BlueSgler/mycdn/favicon.png"><link rel="canonical" href="http://ladfeng.top/2022/04/05/java%E6%B3%A8%E8%A7%A3%E8%AF%A6%E8%A7%A3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '简单理解java注解',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-06 16:48:32'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_1.css"><meta name="generator" content="Hexo 6.1.0"></head><body>
+    
+<div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/imgs/3备用.png" data-original="/imgs/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">58</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">71</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博客</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-diamond"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/sport/"><i class="fa-fw fa fa-paper-plane"></i><span> 运动记录</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小小的博客乐园</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博客</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-diamond"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/sport/"><i class="fa-fw fa fa-paper-plane"></i><span> 运动记录</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">简单理解java注解</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-04-05T06:18:18.000Z" title="发表于 2022-04-05 14:18:18">2022-04-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-04-06T08:48:32.311Z" title="更新于 2022-04-06 16:48:32">2022-04-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%90%8E%E7%AB%AF/java%E5%90%8E%E7%AB%AF/">java后端</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="简单理解java注解"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h2><p>Annotation 中文译过来就是注解、标释的意思，在 Java 中注解是一个很重要的知识点，但经常还是有点让新手不容易理解。<del>老手有时候也不知道</del></p>
+<p><strong>初学者可以这样理解注解：想像代码具有生命，注解就是对于代码中某些鲜活个体的贴上去的一张标签。简化来讲，注解如同一张标签。</strong></p>
+<p>在未开始学习任何注解具体语法而言，你可以把注解看成一张标签。这有助于你快速地理解它的大致作用。如果初学者在学习过程有大脑放空的时候，请不要慌张，对自己说：</p>
+<p>注解，标签。注解，标签。</p>
+<h2 id="注解语法"><a href="#注解语法" class="headerlink" title="注解语法"></a><strong>注解语法</strong></h2><p>因为平常开发少见，相信有不少的人员会认为注解的地位不高。其实同 classs 和 interface 一样，注解也属于一种类型。它是在 Java SE 5.0 版本中开始引入的概念。</p>
+<p>注解通过 @interface 关键字进行定义:</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> TestAnnotation &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="注解的应用"><a href="#注解的应用" class="headerlink" title="注解的应用"></a><strong>注解的应用</strong></h2><p>上面创建了一个注解，那么注解的的使用方法是什么呢。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@TestAnnotation</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>创建一个类 Test,然后在类定义的地方加上<code>@TestAnnotation</code>就可以用 <code>TestAnnotation</code> 注解这个类了。</p>
+<p>你可以简单理解为将<code> TestAnnotation</code> 这张标签贴到 Test 这个类上面。</p>
+<p>不过，要想注解能够正常工作，还需要介绍一下一个新的概念那就是<strong>元注解</strong>。</p>
+<h2 id="元注解"><a href="#元注解" class="headerlink" title="元注解"></a><strong>元注解</strong></h2><p>元注解是什么意思呢？</p>
+<p>元注解是可以注解到注解上的注解，或者说元注解是一种基本注解，但是它能够应用到其它的注解上面。</p>
+<p>如果难于理解的话，你可以这样理解。元注解也是一张标签，但是它是一张特殊的标签，它的作用和目的就是给其他普通的标签进行解释说明的。</p>
+<p>元标签有 <strong>@Retention、@Documented、@Target、@Inherited、@Repeatable</strong> 5 种。</p>
+<h4 id="Retention"><a href="#Retention" class="headerlink" title="@Retention"></a><strong>@Retention</strong></h4><p>Retention 的英文意为保留期的意思。当 @Retention 应用到一个注解上的时候，它解释说明了这个注解的的存活时间。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">RetentionPolicy.SOURCE 注解只在源码阶段保留，在编译器进行编译时它将被丢弃忽视。</span><br><span class="line">RetentionPolicy.CLASS 注解只被保留到编译进行的时候，它并不会被加载到 JVM 中。</span><br><span class="line">RetentionPolicy.RUNTIME 注解可以保留到程序运行的时候，它会被加载进入到 JVM 中，所以在程序运行时可以获取到它们。</span><br></pre></td></tr></table></figure>
+
+<h4 id="Documented"><a href="#Documented" class="headerlink" title="@Documented"></a><strong>@Documented</strong></h4><p>顾名思义，这个元注解肯定是和文档有关。它的作用是能够将注解中的元素包含到 Javadoc 中去。</p>
+<h4 id="Target"><a href="#Target" class="headerlink" title="@Target"></a><strong>@Target</strong></h4><p>Target 是目标的意思，@Target 指定了注解运用的地方。</p>
+<p>你可以这样理解，当一个注解被 @Target 注解时，这个注解就被限定了运用的场景。</p>
+<p>类比到标签，原本标签是你想张贴到哪个地方就到哪个地方，但是因为 @Target 的存在，它张贴的地方就非常具体了，比如只能张贴到方法上、类上、方法参数上等等。@Target 有下面的取值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ElementType.ANNOTATION_TYPE 可以给一个注解进行注解</span><br><span class="line">ElementType.CONSTRUCTOR 可以给构造方法进行注解</span><br><span class="line">ElementType.FIELD 可以给属性进行注解</span><br><span class="line">ElementType.LOCAL_VARIABLE 可以给局部变量进行注解</span><br><span class="line">ElementType.METHOD 可以给方法进行注解</span><br><span class="line">ElementType.PACKAGE 可以给一个包进行注解</span><br><span class="line">ElementType.PARAMETER 可以给一个方法内的参数进行注解</span><br><span class="line">ElementType.TYPE 可以给一个类型进行注解，比如类、接口、枚举</span><br></pre></td></tr></table></figure>
+
+<h4 id="Inherited"><a href="#Inherited" class="headerlink" title="@Inherited"></a><strong>@Inherited</strong></h4><p>Inherited 是继承的意思，但是它并不是说注解本身可以继承，而是说如果一个超类被 @Inherited 注解过的注解进行注解的话，那么如果它的子类没有被任何注解应用的话，那么这个子类就继承了超类的注解。<br>说的比较抽象。代码来解释。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Inherited</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@interface</span> Test &#123;</span><br><span class="line">    </span><br><span class="line">&#125;<span class="comment">//这里就是,表示test这个注解被@Inherited修饰</span></span><br><span class="line">===========================================</span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">A</span> &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">===========================================</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">B</span> <span class="keyword">extends</span> <span class="title class_">A</span> &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注解 Test 被 @Inherited 修饰，之后类 A 被 Test 注解，类 B 继承 A,类 B 也拥有 Test 这个注解。</p>
+<h4 id="Repeatable"><a href="#Repeatable" class="headerlink" title="@Repeatable"></a><strong>@Repeatable</strong></h4><p>Repeatable 自然是可重复的意思。@Repeatable 是 Java 1.8 才加进来的，所以算是一个新的特性。</p>
+<p>什么样的注解会多次应用呢？通常是注解的值可以同时取多个。</p>
+<p>举个例子，一个人他既是程序员又是产品经理,同时他还是个画家。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//容器注解, 专门拿来给注解当容器的</span></span><br><span class="line"><span class="meta">@interface</span> Persons &#123;</span><br><span class="line">    Person[]  value();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Repeatable(Persons.class)</span></span><br><span class="line"><span class="meta">@interface</span> Person&#123;</span><br><span class="line">    String <span class="title function_">role</span><span class="params">()</span> <span class="keyword">default</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@Person(role=&quot;artist&quot;)</span></span><br><span class="line"><span class="meta">@Person(role=&quot;coder&quot;)</span></span><br><span class="line"><span class="meta">@Person(role=&quot;PM&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SuperMan</span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>按照规定，它里面必须要有一个 value 的属性，属性类型是一个被 @Repeatable 注解过的注解数组，注意它是数组。</p>
+<p>如果不好理解的话，可以这样理解。Persons 是一张总的标签，上面贴满了 Person 这种同类型但内容不一样的标签。把 Persons 给一个 SuperMan 贴上，相当于同时给他贴了程序员、产品经理、画家的标签。</p>
+<p>我们可能对于 @Person(role&#x3D;”PM”) 括号里面的内容感兴趣，它其实就是给 Person 这个注解的 role 属性赋值为 PM ，大家不明白正常，马上就讲到注解的属性这一块。</p>
+<h2 id="注解的属性"><a href="#注解的属性" class="headerlink" title="注解的属性"></a><strong>注解的属性</strong></h2><p>注解的属性也叫做成员变量。注解只有成员变量，没有方法。注解的成员变量在注解的定义中以“无形参的方法”形式来声明，其方法名定义了该成员变量的名字，其返回值定义了该成员变量的类型。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Target(ElementType.TYPE)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> TestAnnotation &#123;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">id</span><span class="params">()</span>;</span><br><span class="line">    String <span class="title function_">msg</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码定义了 TestAnnotation 这个注解中拥有 id 和 msg 两个属性。在使用的时候，我们应该给它们进行赋值。</p>
+<p>赋值的方式是在注解的括号内以 value&#x3D;”” 形式，多个属性之前用 ，隔开。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@TestAnnotation(id=3,msg=&quot;hello annotation&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，在注解中定义属性时它的类型必须是 8 种基本数据类型外加 类、接口、注解及它们的数组。</p>
+<p>注解中属性可以有默认值，默认值需要用 default 关键值指定。比如：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Target(ElementType.TYPE)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> TestAnnotation &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">id</span><span class="params">()</span> <span class="keyword">default</span> -<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">msg</span><span class="params">()</span> <span class="keyword">default</span> <span class="string">&quot;Hi&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>TestAnnotation 中 id 属性默认值为 -1，msg 属性默认值为 Hi。<br>它可以这样应用。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@TestAnnotation()</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>因为有默认值，所以无需要再在 @TestAnnotation 后面的括号里面进行赋值了，这一步可以省略。</p>
+<p>另外，还有一种情况。如果一个注解内仅仅只有一个名字为 value 的属性时，应用这个注解时可以直接接属性值填写到括号内。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Check &#123;</span><br><span class="line">    String <span class="title function_">value</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，Check 这个注解只有 value 这个属性。所以可以这样应用。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Check(&quot;hi&quot;)</span></span><br><span class="line"><span class="type">int</span> a;</span><br></pre></td></tr></table></figure>
+
+<p>这和下面的效果是一样的</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Check(value=&quot;hi&quot;)</span></span><br><span class="line"><span class="type">int</span> a;</span><br></pre></td></tr></table></figure>
+
+<p>最后，还需要注意的一种情况是一个注解没有任何属性。比如</p>
+<p>那么在应用这个注解的时候，括号都可以省略。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Perform</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testMethod</span><span class="params">()</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Java-预置的注解"><a href="#Java-预置的注解" class="headerlink" title="Java 预置的注解"></a><strong>Java 预置的注解</strong></h2><p>学习了上面相关的知识，我们已经可以自己定义一个注解了。其实 Java 语言本身已经提供了几个现成的注解。</p>
+<p> <strong>@Deprecated、@Override、@SuppressWarnings、@SafeVarargs、@FunctionalInterface</strong></p>
+<h4 id="Deprecated"><a href="#Deprecated" class="headerlink" title="@Deprecated"></a><strong>@Deprecated</strong></h4><p>源码:</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Target(value=&#123;CONSTRUCTOR, FIELD, LOCAL_VARIABLE, METHOD, PACKAGE, PARAMETER, TYPE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Deprecated &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这个元素是用来标记过时的元素，想必大家在日常开发中经常碰到。编译器在编译阶段遇到这个注解时会发出提醒警告，告诉开发者正在调用一个过时的元素比如过时的方法、过时的类、过时的成员变量。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hero</span> &#123;</span><br><span class="line">    <span class="meta">@Deprecated</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">say</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Noting has to say!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">speak</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;I have a dream!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>定义了一个 Hero 类，它有两个方法 say() 和 speak() ，其中 say() 被 @Deprecated 注解。然后我们在 IDE 中分别调用它们。</p>
+<p><img src="/imgs/3备用.png" data-original="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/image-20220406150347966.png" alt="image-20220406150347966"></p>
+<p>可以看到，say() 方法上面被一条直线划了一条，这其实就是编译器识别后的提醒效果。</p>
+<h4 id="Override"><a href="#Override" class="headerlink" title="@Override"></a><strong>@Override</strong></h4><p>这个大家应该很熟悉了，提示子类要复写父类中被 @Override 修饰的方法</p>
+<p>源码:</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Target(ElementType.METHOD)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.SOURCE)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Override &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="SuppressWarnings"><a href="#SuppressWarnings" class="headerlink" title="@SuppressWarnings"></a><strong>@SuppressWarnings</strong></h4><p>阻止警告的意思。之前说过调用被 @Deprecated 注解的方法后，编译器会警告提醒，而有时候开发者会忽略这种警告，他们可以在调用的地方通过 @SuppressWarnings 达到目的。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SuppressWarnings(&quot;deprecation&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">test1</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="type">Hero</span> <span class="variable">hero</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Hero</span>();</span><br><span class="line">    hero.say();</span><br><span class="line">    hero.speak();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>源码:</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Target(&#123;TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, LOCAL_VARIABLE&#125;)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.SOURCE)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> SuppressWarnings &#123;</span><br><span class="line">    String[] value();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其内部有一个String数组, 主要接收值如下:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deprecation：使用了不赞成使用的类或方法时的警告；</span><br><span class="line">unchecked：执行了未检查的转换时的警告，例如当使用集合时没有用泛型</span><br><span class="line">(Generics) 来指定集合保存的类型;</span><br><span class="line">fallthrough：当 Switch 程序块直接通往下一种情况而没有 Break时的警告;</span><br><span class="line">path：在类路径、源文件路径等中有不存在的路径时的警告; serial：当在可序列化的类上缺少</span><br><span class="line">serialVersionUID 定义时的警告;</span><br><span class="line">finally：任何 finally 子句不能正常完成时的警告;</span><br><span class="line">all：关于以上所有情况的警告。</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h4 id="SafeVarargs"><a href="#SafeVarargs" class="headerlink" title="@SafeVarargs"></a><strong>@SafeVarargs</strong></h4><p>参数安全类型注解。它的目的是提醒开发者不要用参数做一些不安全的操作,它的存在会阻止编译器产生 unchecked 这样的警告。它是在 Java 1.7 的版本中加入的。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SafeVarargs</span> <span class="comment">// Not actually safe!</span></span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">m</span><span class="params">(List&lt;String&gt;... stringLists)</span> &#123;</span><br><span class="line">    Object[] array = stringLists;</span><br><span class="line">    List&lt;Integer&gt; tmpList = Arrays.asList(<span class="number">42</span>);</span><br><span class="line">    array[<span class="number">0</span>] = tmpList; <span class="comment">// Semantically invalid, but compiles without warnings</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> stringLists[<span class="number">0</span>].get(<span class="number">0</span>); <span class="comment">// Oh no, ClassCastException at runtime!</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面的代码中，编译阶段不会报错，但是运行时会抛出 ClassCastException 这个异常，所以它虽然告诉开发者要妥善处理，但是开发者自己还是搞砸了。</p>
+<p>Java 官方文档说，未来的版本会授权编译器对这种不安全的操作产生错误警告。</p>
+<h4 id="FunctionalInterface"><a href="#FunctionalInterface" class="headerlink" title="@FunctionalInterface"></a><strong>@FunctionalInterface</strong></h4><p>函数式接口注解，这个是 Java 1.8 版本引入的新特性。函数式编程很火，所以 Java 8 也及时添加了这个特性。</p>
+<p>源码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Target(ElementType.TYPE)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> FunctionalInterface &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>函数式接口 (Functional Interface) 就是一个具有一个方法的普通接口。<br>比如</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@FunctionalInterface</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">Runnable</span> &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * When an object implementing interface &lt;code&gt;Runnable&lt;/code&gt; is used</span></span><br><span class="line"><span class="comment">     * to create a thread, starting the thread causes the object&#x27;s</span></span><br><span class="line"><span class="comment">     * &lt;code&gt;run&lt;/code&gt; method to be called in that separately executing</span></span><br><span class="line"><span class="comment">     * thread.</span></span><br><span class="line"><span class="comment">     * &lt;p&gt;</span></span><br><span class="line"><span class="comment">     * The general contract of the method &lt;code&gt;run&lt;/code&gt; is that it may</span></span><br><span class="line"><span class="comment">     * take any action whatsoever.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@see</span>     java.lang.Thread#run()</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">run</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我们进行线程开发中常用的 Runnable 就是一个典型的函数式接口，上面源码可以看到它就被 @FunctionalInterface 注解。</p>
+<p>可能有人会疑惑，函数式接口标记有什么用，这个原因是函数式接口可以很容易转换为 Lambda 表达式。这是另外的主题了，有兴趣的同学请自己搜索相关知识点学习。</p>
+<h2 id="注解的提取"><a href="#注解的提取" class="headerlink" title="注解的提取"></a><strong>注解的提取</strong></h2><p>博文前面的部分讲了注解的基本语法，现在是时候检测我们所学的内容了。</p>
+<p>我通过用标签来比作注解，前面的内容是讲怎么写注解，然后贴到哪个地方去，而现在我们要做的工作就是检阅这些标签内容。 形象的比喻就是你把这些注解标签在合适的时候撕下来，然后检阅上面的内容信息。</p>
+<p>要想正确检阅注解，离不开一个手段，那就是反射。</p>
+<h2 id="注解与反射"><a href="#注解与反射" class="headerlink" title="注解与反射"></a><strong>注解与反射</strong></h2><p>注解通过反射获取。首先可以通过 Class 对象的 isAnnotationPresent() 方法判断它是否应用了某个注解</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">isAnnotationPresent</span><span class="params">(Class&lt;? extends Annotation&gt; annotationClass)</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后通过 getAnnotation() 方法来获取 Annotation 对象。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> &lt;A <span class="keyword">extends</span> <span class="title class_">Annotation</span>&gt; A <span class="title function_">getAnnotation</span><span class="params">(Class&lt;A&gt; annotationClass)</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>或者是 getAnnotations() 方法。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> Annotation[] getAnnotations() &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>前一种方法返回指定类型的注解，后一种方法返回注解到这个元素上的所有注解。</p>
+<p>如果获取到的 Annotation 如果不为 null，则就可以调用它们的属性方法了。比如</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@TestAnnotation(id=12,msg = &quot;兴趣使然的小小&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">boolean</span> <span class="variable">hasAnnotation</span> <span class="operator">=</span> Test.class.isAnnotationPresent(TestAnnotation.class);</span><br><span class="line">        <span class="keyword">if</span> ( hasAnnotation ) &#123;</span><br><span class="line">            <span class="type">TestAnnotation</span> <span class="variable">testAnnotation</span> <span class="operator">=</span> Test.class.getAnnotation(TestAnnotation.class);</span><br><span class="line">            System.out.println(<span class="string">&quot;id:&quot;</span>+testAnnotation.id());</span><br><span class="line">            System.out.println(<span class="string">&quot;msg:&quot;</span>+testAnnotation.msg());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>程序的运行结果是：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">id:12</span><br><span class="line">msg:兴趣使然的小小</span><br></pre></td></tr></table></figure>
+
+<p>这个正是 TestAnnotation 中 id 和 msg 的值。</p>
+<p>上面的例子中，只是检阅出了注解在类上的注解，其实属性、方法上的注解照样是可以的。同样还是要假手于反射。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> manipatic;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.*;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Field;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Method;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@Target(ElementType.FIELD)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@interface</span> Check&#123;</span><br><span class="line">    String <span class="title function_">value</span><span class="params">()</span> <span class="keyword">default</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@Target(ElementType.METHOD)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@interface</span> Perform&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Target(ElementType.TYPE)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@interface</span> TestAnnotation &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">id</span><span class="params">()</span> <span class="keyword">default</span> -<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">msg</span><span class="params">()</span> <span class="keyword">default</span> <span class="string">&quot;Hi&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@TestAnnotation(msg = &quot;hello, annotation! &quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="meta">@Check(value=&quot;hi&quot;)</span></span><br><span class="line">    <span class="type">int</span> a;</span><br><span class="line">    <span class="meta">@Perform</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testMethod</span><span class="params">()</span>&#123;&#125;</span><br><span class="line">    <span class="meta">@SuppressWarnings(&quot;deprecation&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">test1</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="type">Hero</span> <span class="variable">hero</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Hero</span>();</span><br><span class="line">        hero.say();</span><br><span class="line">        hero.speak();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">boolean</span> <span class="variable">hasAnnotation</span> <span class="operator">=</span> Test.class.isAnnotationPresent(TestAnnotation.class);</span><br><span class="line">        <span class="keyword">if</span> ( hasAnnotation ) &#123;</span><br><span class="line">            <span class="type">TestAnnotation</span> <span class="variable">testAnnotation</span> <span class="operator">=</span> Test.class.getAnnotation(TestAnnotation.class);</span><br><span class="line">            <span class="comment">//获取类的注解</span></span><br><span class="line">            System.out.println(<span class="string">&quot;id:&quot;</span>+testAnnotation.id());</span><br><span class="line">            System.out.println(<span class="string">&quot;msg:&quot;</span>+testAnnotation.msg());</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="type">Field</span> <span class="variable">a</span> <span class="operator">=</span> Test.class.getDeclaredField(<span class="string">&quot;a&quot;</span>);</span><br><span class="line">            a.setAccessible(<span class="literal">true</span>);</span><br><span class="line">            <span class="comment">//获取一个成员变量上的注解</span></span><br><span class="line">            <span class="type">Check</span> <span class="variable">check</span> <span class="operator">=</span> a.getAnnotation(Check.class);</span><br><span class="line">            <span class="keyword">if</span> ( check != <span class="literal">null</span> ) &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;check value:&quot;</span>+check.value());</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="type">Method</span> <span class="variable">testMethod</span> <span class="operator">=</span> Test.class.getDeclaredMethod(<span class="string">&quot;testMethod&quot;</span>);</span><br><span class="line">            <span class="keyword">if</span> ( testMethod != <span class="literal">null</span> ) &#123;</span><br><span class="line">                <span class="comment">// 获取方法中的注解</span></span><br><span class="line">                Annotation[] ans = testMethod.getAnnotations();</span><br><span class="line">                <span class="keyword">for</span>( <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;i &lt; ans.length;i++) &#123;</span><br><span class="line">                    System.out.println(<span class="string">&quot;method testMethod annotation:&quot;</span>+ans[i].annotationType().getSimpleName());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (NoSuchFieldException e) &#123;</span><br><span class="line">            <span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            System.out.println(e.getMessage());</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SecurityException e) &#123;</span><br><span class="line">            <span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            System.out.println(e.getMessage());</span><br><span class="line">        &#125; <span class="keyword">catch</span> (NoSuchMethodException e) &#123;</span><br><span class="line">            <span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            System.out.println(e.getMessage());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*结果</span></span><br><span class="line"><span class="comment">id:-1</span></span><br><span class="line"><span class="comment">msg:hello, annotation! </span></span><br><span class="line"><span class="comment">check value:hi</span></span><br><span class="line"><span class="comment">method testMethod annotation:Perform</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，如果一个注解要在运行时被成功提取，那么 @Retention(RetentionPolicy.RUNTIME) 是必须的。</p>
+<h2 id="注解的使用场景"><a href="#注解的使用场景" class="headerlink" title="注解的使用场景"></a><strong>注解的使用场景</strong></h2><p>我相信博文讲到这里大家都很熟悉了注解，但是有不少同学肯定会问，注解到底有什么用呢？</p>
+<p>对啊注解到底有什么用？</p>
+<p>我们不妨将目光放到 Java 官方文档上来。</p>
+<p>文章开始的时候，我用标签来类比注解。但标签比喻只是我的手段，而不是目的。为的是让大家在初次学习注解时能够不被那些抽象的新概念搞懵。既然现在，我们已经对注解有所了解，我们不妨再仔细阅读官方最严谨的文档</p>
+<blockquote>
+<p>注解是一系列元数据，它提供数据用来解释程序代码，但是注解并非是所解释的代码本身的一部分。注解对于代码的运行效果没有直接影响。</p>
+<p>注解有许多用处，主要如下：</p>
+</blockquote>
+<ul>
+<li>提供信息给编译器： 编译器可以利用注解来探测错误和警告信息</li>
+<li>编译阶段时的处理： 软件工具可以用来利用注解信息来生成代码、Html文档或者做其它相应处理。</li>
+<li>运行时的处理： 某些注解可以在程序运行的时候接受代码的提取<br>值得注意的是，注解不是代码本身的一部分。</li>
+</ul>
+<p>注解无法改变代码本身，注解只是某些工具的的工具。</p>
+<p>还是回到官方文档的解释上，注解主要针对的是编译器和其它工具软件(SoftWare tool)。</p>
+<p>当开发者使用了Annotation 修饰了类、方法、Field 等成员之后，这些 Annotation 不会自己生效，必须由开发者提供相应的代码来提取并处理 Annotation 信息。这些处理提取和处理 Annotation 的代码统称为 APT（Annotation Processing Tool)。</p>
+<h2 id="亲手自定义注解完成某个目的"><a href="#亲手自定义注解完成某个目的" class="headerlink" title="亲手自定义注解完成某个目的"></a><strong>亲手自定义注解完成某个目的</strong></h2><p>我要写一个测试框架，测试程序员的代码有无明显的异常。</p>
+<p>—— 程序员 A : 我写了一个类，它的名字叫做 NoBug，因为它所有的方法都没有错误。<br>—— 我：自信是好事，不过为了防止意外，让我测试一下如何？<br>—— 程序员 A: 怎么测试？<br>—— 我：把你写的代码的方法都加上 @Jiecha 这个注解就好了。<br>—— 程序员 A: 好的。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> manuscript;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">NoBug</span> &#123;</span><br><span class="line">    <span class="meta">@XiaoXiao</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">suanShu</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;1234567890&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@XiaoXiao</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">jiafa</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;1+1=&quot;</span> + <span class="number">1</span> + <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@XiaoXiao</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">jiefa</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;1-1=&quot;</span> + (<span class="number">1</span> - <span class="number">1</span>));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@XiaoXiao</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">chengfa</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;3 x 5=&quot;</span> + <span class="number">3</span> * <span class="number">5</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@XiaoXiao</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">chufa</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;6 / 0=&quot;</span> + <span class="number">6</span> / <span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">ziwojieshao</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;我写的程序没有 bug!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面的代码，有些方法上面运用了 @XiaoXiao 注解。</p>
+<p>这个注解是我写的测试软件框架中定义的注解。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.annotation.Retention;</span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.RetentionPolicy;</span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> XiaoXiao &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后，我再编写一个测试类 TestTool 就可以测试 NoBug 相应的方法了。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> manuscript;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Method;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TestTool</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">        <span class="type">NoBug</span> <span class="variable">testobj</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">NoBug</span>();</span><br><span class="line">        <span class="type">Class</span> <span class="variable">clazz</span> <span class="operator">=</span> testobj.getClass();</span><br><span class="line">        Method[] method = clazz.getDeclaredMethods();</span><br><span class="line">        <span class="comment">//用来记录测试产生的 log 信息</span></span><br><span class="line">        <span class="type">StringBuilder</span> <span class="variable">log</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuilder</span>();</span><br><span class="line">        <span class="comment">// 记录异常的次数</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">errornum</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> ( Method m: method ) &#123;</span><br><span class="line">            <span class="comment">// 只有被 @XiaoXiao 标注过的方法才进行测试</span></span><br><span class="line">            <span class="keyword">if</span> ( m.isAnnotationPresent( XiaoXiao.class )) &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    <span class="comment">//如果是private方法的话，就需要调用这个setAccessible()</span></span><br><span class="line">                    m.setAccessible(<span class="literal">true</span>);</span><br><span class="line">                    <span class="comment">//调用对应的对象的方法</span></span><br><span class="line">                    m.invoke(testobj, <span class="literal">null</span>);</span><br><span class="line">                &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                    <span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">                    <span class="comment">//e.printStackTrace();</span></span><br><span class="line">                    errornum++;</span><br><span class="line">                    log.append(m.getName());</span><br><span class="line">                    log.append(<span class="string">&quot; &quot;</span>);</span><br><span class="line">                    log.append(<span class="string">&quot;has error:&quot;</span>);</span><br><span class="line">                    log.append(<span class="string">&quot;\n\r  caused by &quot;</span>);</span><br><span class="line">                    <span class="comment">//记录测试过程中，发生的异常的名称</span></span><br><span class="line">                    log.append(e.getCause().getClass().getSimpleName());</span><br><span class="line">                    log.append(<span class="string">&quot;\n\r&quot;</span>);</span><br><span class="line">                    <span class="comment">//记录测试过程中，发生的异常的具体信息</span></span><br><span class="line">                    log.append(e.getCause().getMessage());</span><br><span class="line">                    log.append(<span class="string">&quot;\n\r&quot;</span>);</span><br><span class="line">                &#125; </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        log.append(clazz.getSimpleName());</span><br><span class="line">        log.append(<span class="string">&quot; has  &quot;</span>);</span><br><span class="line">        log.append(errornum);</span><br><span class="line">        log.append(<span class="string">&quot; error.&quot;</span>);</span><br><span class="line">        <span class="comment">// 生成测试报告</span></span><br><span class="line">        System.out.println(log.toString());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    1234567890</span></span><br><span class="line"><span class="comment">1+1=11</span></span><br><span class="line"><span class="comment">3 x 5=15</span></span><br><span class="line"><span class="comment">1-1=0</span></span><br><span class="line"><span class="comment">chufa has error:</span></span><br><span class="line"><span class="comment">  caused by ArithmeticException</span></span><br><span class="line"><span class="comment">/ by zero</span></span><br><span class="line"><span class="comment">NoBug has  1 error.</span></span><br><span class="line"><span class="comment">     */</span></span><br></pre></td></tr></table></figure>
+
+<p>测试的结果是：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1234567890</span><br><span class="line">1+1=11</span><br><span class="line">3 x 5=15</span><br><span class="line">1-1=0</span><br><span class="line">chufa has error:</span><br><span class="line">  caused by ArithmeticException</span><br><span class="line">/ by zero</span><br><span class="line">NoBug has  1 error.</span><br></pre></td></tr></table></figure>
+
+<p>提示 NoBug 类中的 chufa() 这个方法有异常，这个异常名称叫做 ArithmeticException，原因是运算过程中进行了除 0 的操作。</p>
+<p>所以，NoBug 这个类有 Bug。</p>
+<p>这样，通过注解我完成了我自己的目的，那就是对别人的代码进行测试。</p>
+<p>所以，再问我注解什么时候用？我只能告诉你，这取决于你想利用它干什么用。</p>
+<h2 id="注解应用实例"><a href="#注解应用实例" class="headerlink" title="注解应用实例"></a><strong>注解应用实例</strong></h2><p>注解运用的地方太多了，如：<br>JUnit 这个是一个测试框架，典型使用方法如下：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ExampleUnitTest</span> &#123;</span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">addition_isCorrect</span><span class="params">()</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">        assertEquals(<span class="number">4</span>, <span class="number">2</span> + <span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>@Test 标记了要进行测试的方法 addition_isCorrect().</p>
+<p>还有例如ssm框架等运用了大量的注解。</p>
+<p>如果想在深入了解一下注解的话,可以看一下这个博主写的<a target="_blank" rel="noopener" href="https://blog.csdn.net/CSDN_SAVIOR/article/details/122471544?utm_source=app&app_version=5.1.1&code=app_1562916241&uLinkId=usr1mkqgl919blen">戳这里</a></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h2><ul>
+<li>如果注解难于理解，你就把它类同于标签，标签为了解释事物，注解为了解释代码。</li>
+<li>注解的基本语法，创建如同接口，但是多了个 @ 符号。</li>
+<li>注解的元注解。</li>
+<li>注解的属性。</li>
+<li>注解主要给编译器及工具类型的软件用的。</li>
+<li>注解的提取需要借助于 Java 的反射技术，反射比较慢，所以注解使用时也需要谨慎计较时间成本。</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">ladidol</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://ladfeng.top/2022/04/05/java%E6%B3%A8%E8%A7%A3%E8%AF%A6%E8%A7%A3/">http://ladfeng.top/2022/04/05/java%E6%B3%A8%E8%A7%A3%E8%AF%A6%E8%A7%A3/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://ladfeng.top" target="_blank">小小的博客乐园</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%B3%A8%E8%A7%A3/">注解</a></div><div class="post_share"><div class="social-share" data-image="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/04/05/%E5%88%AB%E4%BA%BA%E7%BB%99%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E5%BB%BA%E8%AE%AE/"><img class="prev-cover" src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">生活在成都的真实生活状态是怎么样的?</div></div></a></div><div class="next-post pull-right"><a href="/2022/04/04/%5B%E5%BE%85%E5%AE%8C%E6%88%90%5Dshiro%E8%BF%9B%E9%98%B6/"><img class="next-cover" src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">shiro进阶</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/imgs/3备用.png" data-original="/imgs/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ladidol</div><div class="author-info__description">这是一个小小小枸杞</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">58</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">71</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/ladidol"><i class="fab fa-github"></i><span>Follow On Github</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">本站主要用于学习和分享,和自娱自乐罢了</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E8%A7%A3%E8%AF%AD%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">注解语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text">注解的应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%83%E6%B3%A8%E8%A7%A3"><span class="toc-number">4.</span> <span class="toc-text">元注解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Retention"><span class="toc-number">4.0.1.</span> <span class="toc-text">@Retention</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Documented"><span class="toc-number">4.0.2.</span> <span class="toc-text">@Documented</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target"><span class="toc-number">4.0.3.</span> <span class="toc-text">@Target</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Inherited"><span class="toc-number">4.0.4.</span> <span class="toc-text">@Inherited</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Repeatable"><span class="toc-number">4.0.5.</span> <span class="toc-text">@Repeatable</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="toc-number">5.</span> <span class="toc-text">注解的属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java-%E9%A2%84%E7%BD%AE%E7%9A%84%E6%B3%A8%E8%A7%A3"><span class="toc-number">6.</span> <span class="toc-text">Java 预置的注解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Deprecated"><span class="toc-number">6.0.1.</span> <span class="toc-text">@Deprecated</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Override"><span class="toc-number">6.0.2.</span> <span class="toc-text">@Override</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SuppressWarnings"><span class="toc-number">6.0.3.</span> <span class="toc-text">@SuppressWarnings</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SafeVarargs"><span class="toc-number">6.0.4.</span> <span class="toc-text">@SafeVarargs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FunctionalInterface"><span class="toc-number">6.0.5.</span> <span class="toc-text">@FunctionalInterface</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E8%A7%A3%E7%9A%84%E6%8F%90%E5%8F%96"><span class="toc-number">7.</span> <span class="toc-text">注解的提取</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E8%A7%A3%E4%B8%8E%E5%8F%8D%E5%B0%84"><span class="toc-number">8.</span> <span class="toc-text">注解与反射</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E8%A7%A3%E7%9A%84%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-number">9.</span> <span class="toc-text">注解的使用场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%B2%E6%89%8B%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3%E5%AE%8C%E6%88%90%E6%9F%90%E4%B8%AA%E7%9B%AE%E7%9A%84"><span class="toc-number">10.</span> <span class="toc-text">亲手自定义注解完成某个目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E8%A7%A3%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B"><span class="toc-number">11.</span> <span class="toc-text">注解应用实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">12.</span> <span class="toc-text">总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/06/%E5%89%8D%E7%AB%AF%E4%B8%8A%E6%9C%BA%E4%BB%A3%E7%A0%81%E6%B1%87%E6%80%BB/" title="前端上机代码汇总"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前端上机代码汇总"/></a><div class="content"><a class="title" href="/2022/04/06/%E5%89%8D%E7%AB%AF%E4%B8%8A%E6%9C%BA%E4%BB%A3%E7%A0%81%E6%B1%87%E6%80%BB/" title="前端上机代码汇总">前端上机代码汇总</a><time datetime="2022-04-06T13:29:41.000Z" title="发表于 2022-04-06 21:29:41">2022-04-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/06/%5B%E5%BE%85%E5%AE%8C%E6%88%90%5Dspringboot%E4%B8%ADaspect%E6%B3%A8%E8%A7%A3%E7%9A%84%E4%BD%BF%E7%94%A8/" title="(未完成)springboot中aspect注解的使用"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="(未完成)springboot中aspect注解的使用"/></a><div class="content"><a class="title" href="/2022/04/06/%5B%E5%BE%85%E5%AE%8C%E6%88%90%5Dspringboot%E4%B8%ADaspect%E6%B3%A8%E8%A7%A3%E7%9A%84%E4%BD%BF%E7%94%A8/" title="(未完成)springboot中aspect注解的使用">(未完成)springboot中aspect注解的使用</a><time datetime="2022-04-06T06:54:53.000Z" title="发表于 2022-04-06 14:54:53">2022-04-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/05/java%E6%9E%9A%E4%B8%BE%E7%B1%BB%E8%AF%A6%E8%A7%A3/" title="java枚举类详解"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="java枚举类详解"/></a><div class="content"><a class="title" href="/2022/04/05/java%E6%9E%9A%E4%B8%BE%E7%B1%BB%E8%AF%A6%E8%A7%A3/" title="java枚举类详解">java枚举类详解</a><time datetime="2022-04-05T07:43:05.000Z" title="发表于 2022-04-05 15:43:05">2022-04-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/05/%E5%88%AB%E4%BA%BA%E7%BB%99%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E5%BB%BA%E8%AE%AE/" title="生活在成都的真实生活状态是怎么样的?"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="生活在成都的真实生活状态是怎么样的?"/></a><div class="content"><a class="title" href="/2022/04/05/%E5%88%AB%E4%BA%BA%E7%BB%99%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E5%BB%BA%E8%AE%AE/" title="生活在成都的真实生活状态是怎么样的?">生活在成都的真实生活状态是怎么样的?</a><time datetime="2022-04-05T07:09:14.000Z" title="发表于 2022-04-05 15:09:14">2022-04-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/05/java%E6%B3%A8%E8%A7%A3%E8%AF%A6%E8%A7%A3/" title="简单理解java注解"><img src="/imgs/3备用.png" data-original="/imgs/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="简单理解java注解"/></a><div class="content"><a class="title" href="/2022/04/05/java%E6%B3%A8%E8%A7%A3%E8%AF%A6%E8%A7%A3/" title="简单理解java注解">简单理解java注解</a><time datetime="2022-04-05T06:18:18.000Z" title="发表于 2022-04-05 14:18:18">2022-04-05</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By ladidol</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'yCA2jFnRuIUXINItIXDuuGgx-9Nh9j0Va',
+      appKey: 'u4C7GUNrW6Lqmqe1axkRqKTt',
+      avatar: 'wavatar',
+      serverURLs: '',
+      enableQQ: true,
+      placeholder: 'hi，如果要评论的话，请一定写上自己的基本信息，不然身份都是匿名者！评论支持Markdown语法，暂时只能使用随机头像。',
+      pageSize: '10',
+      master: '9f8e9371a0cbeaa8737f5f1baa1d0f10',
+      tagMeta: ["博主","小伙伴","访客"],
+      visitor: 'true',
+      //md5jiami.51240.com ,md5加密推荐这个网站
+      friends: ["8f5657bb65c4fb1e2621401dd5003f5b","c94e74ad7b2afcda9e661919adb66076",
+      "56e41b3fa26fbd1f720a2cd3fd9423fb","f690c9dffa8c8b592fe45e8750712b24"],
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script type="text/javascript" src="/js/fairyDustCursor.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="/%5Bobject%20Object%5D" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body></html>
