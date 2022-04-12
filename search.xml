@@ -1493,13 +1493,13 @@
       
         <tags>
             
-            <tag> java </tag>
-            
             <tag> 快速入门 </tag>
             
             <tag> Mybatis-plus </tag>
             
             <tag> springboot </tag>
+            
+            <tag> java </tag>
             
         </tags>
       
@@ -1526,9 +1526,9 @@
       
         <tags>
             
-            <tag> java </tag>
-            
             <tag> springboot </tag>
+            
+            <tag> java </tag>
             
             <tag> handler </tag>
             
@@ -1642,9 +1642,9 @@
       
         <tags>
             
-            <tag> java </tag>
-            
             <tag> springboot </tag>
+            
+            <tag> java </tag>
             
             <tag> redis </tag>
             
