@@ -47,9 +47,9 @@
             
             <tag> springboot </tag>
             
-            <tag> 错误 </tag>
-            
             <tag> ssm </tag>
+            
+            <tag> 易错点 </tag>
             
         </tags>
       
@@ -58,11 +58,11 @@
     
     
     <entry>
-      <title>4月23日要交的英语作业</title>
-      <link href="/2022/04/19/%5B%E7%B4%A7%E6%80%A5%E9%87%8D%E8%A6%81%5D4%E6%9C%8823%E5%8F%B7%E8%A6%81%E4%BA%A4%E7%9A%84%E8%8B%B1%E8%AF%AD%E4%BD%9C%E4%B8%9A/"/>
-      <url>/2022/04/19/%5B%E7%B4%A7%E6%80%A5%E9%87%8D%E8%A6%81%5D4%E6%9C%8823%E5%8F%B7%E8%A6%81%E4%BA%A4%E7%9A%84%E8%8B%B1%E8%AF%AD%E4%BD%9C%E4%B8%9A/</url>
+      <title>LambdaQueryWrapper条件查询</title>
+      <link href="/2022/04/19/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5DLambdaQueryWrapper%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/"/>
+      <url>/2022/04/19/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5DLambdaQueryWrapper%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</url>
       
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="a0ad9d811ceaad4357cdb5141e8518b031dadd89d25c907e04fdff7963040e17">c92271cf075fe1244ae5c161f435c00375a87bb1e36068ac5b80d60ec8ff344e0430b312ad9ca4af3887a62f63a320348f0deb2bd3ec2a1b0d37a60668c50e796f62d7bbbb741e4a6b974bfd093fd864b75088a00802c48f0892afc4a2c8e26a005617c135c3d7a261070a38c0966c7216c54024e28a65eceec404d68e7b26a66f917a0d88f896b1623509b982d1f41c343d108d0159881821135644a7df075f6e52e5ad75afe5436a037e70f831b2d94f565c5d004a5d97cf831eb3bae208887fd64d1331481b1f322dac5d1a308ae964f349b731eed362ebd37be103edd0c1202a10aa243a5fe7e46a8f0ac1847042b4f3e073ee2a95e520123fe93ec8464e37be377fdd94402530f283d159b5daf132647da77a50e204ee2f486801d7b1efa5fa6b8888d4e00e073ee47fee49be5b601e87494a7d004852575c9f5a20203cfffc78b8bba8a29b8cf38cd4392b387fddbd9de28e3f56e18b1bdc455d56f9b31f3506e1dcd78dba1f2f6c1460dd4647d98f647dacd8e39e145e4e83429a367009b6ca46bdbd1fe09494f56bc4a5f07cd9c4056e631df76dd59ce0f75e3d02c26a8671e091a40b0a7fcce2c26cea38f2e7319bafbf3ac844935b0dcc69825fbae990ab3d72adb0befc67e552d39aed1df61322af73a48f2f00fea8ab920bde254db34c944822e716fbcd8f1271e8daf345d6cc99f5c757d3e3fc82acda3669d13834f1f5a1bd26c21ec1da0f0b65f0110e19be28b684061dc7876116a0fa51588c627dfe33e12723d0191e448b9f0ee209a3a2302763d63e77fc3374df253917bd2c36e9118d197518d146de27204625896ebbb06430e41d283ff18e43481c0deaaf921c0c7d1654aab0ccfe86eb0471549e4d703a824b8c6da3610bd50cba2415776420a3bba69e11b8d14c5a801b9416c79d256267955f113e0f04ae564ea6f4de2bf09738a351911f1b5f7fcba79cd67f33a378fabcbb303e86ff811ab061f14adc897f4e155c72e73005d90c3f1265cb6fd25c87494748855879a73bf58e9d82614e2de71035a5239351577dbab7246cc95d98240207576164bb370298550830272a7cf5fd045d2d34b66b808fbef31c3f17e28cd128111ec74ebd5d94124a5cc121fdb6bcbd471af2ee550e664fac3ee40a18a7a5f7595f74ca16cf7893cafcb35d40ff72f067a105a1c29c306336d89524ee511469c0343d4ac5598704e84db53ec5cde6515b99e782cbeb06d1ff1c1a5d5a838a0ed6984a046cde1f8214437a0efd6ef857372541fa0b3e6d3f6981fe6308273f005a6c021f77ebe8d965a50660e408d40cecd48b0f1db7122f20ec4a4eebf371e7fa68f55a0bd75cd923ec135d6c6f96c3316f44d947995f3a28d0d8da5960ebf62c6aa13d91e545fd7c39ff08aa30687944b09046a3bdddd9acd3548edbde4c53c61e439320b1d00e0b52aab088ff55022122d476469d542b</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，博主可能还没写完，所以这里需要密码。</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+        <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> Page&lt;Merchants&gt; <span class="title function_">shopList</span><span class="params">(MerchantRequest info)</span> &#123;</span><br><span class="line">        LambdaQueryWrapper&lt;Merchant&gt; queryWrapper = <span class="keyword">new</span> <span class="title class_">LambdaQueryWrapper</span>&lt;&gt;();</span><br><span class="line">        <span class="comment">// 模糊搜索条件</span></span><br><span class="line">        <span class="keyword">if</span> (StringUtils.notEmpty(info.getKeyword())) &#123;</span><br><span class="line">            queryWrapper.and(c -&gt; c.like(Merchant::getMallName, info.getKeyword())</span><br><span class="line">                    .or().like(Merchant::getOwnerId, info.getKeyword())</span><br><span class="line">                    .or().like(Merchant::getOwnerName, info.getKeyword()));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 时间范围查询</span></span><br><span class="line">        <span class="keyword">if</span> (StringUtils.notEmpty(info.getCreateTimeStart()) &amp;&amp; StringUtils.notEmpty(info.getCreateTimeEnd())) &#123;</span><br><span class="line">            queryWrapper.ge(Merchant::getCreateTime, info.getCreateTimeStart());</span><br><span class="line">            queryWrapper.le(Merchant::getCreateTime, info.getCreateTimeEnd());</span><br><span class="line">        &#125;</span><br><span class="line"><span class="comment">// 排序条件</span></span><br><span class="line">        <span class="keyword">if</span> (StringUtils.notEmpty(info.getSort()) &amp;&amp; StringUtils.notEmpty(info.getOrder())) &#123;</span><br><span class="line">            <span class="comment">// sort ---&gt; &quot;create_time&quot; , order -&gt; desc,asc</span></span><br><span class="line">            queryWrapper.last(<span class="string">&quot; order by &quot;</span>.concat(info.getSort()).concat(<span class="string">&quot; &quot;</span>).concat(info.getOrder()));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> merchantService.page(<span class="keyword">new</span> <span class="title class_">Page</span>&lt;&gt;(info.getPage(), info.getSize()), queryWrapper);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> Page&lt;Prize&gt; <span class="title function_">getPrizeByEverything</span><span class="params">(Integer currentPage, Integer pageSize, PrizeUpdateDTO prizeUpdateDTO)</span> &#123;</span><br><span class="line">    LambdaQueryWrapper&lt;Prize&gt; queryWrapper = <span class="keyword">new</span> <span class="title class_">LambdaQueryWrapper</span>&lt;&gt;();</span><br><span class="line">    queryWrapper</span><br><span class="line">            .like(Strings.isNotBlank(prizeUpdateDTO.getPrizeName()),Prize::getPrizeName,prizeUpdateDTO.getPrizeName())</span><br><span class="line">            .like(Strings.isNotBlank(prizeUpdateDTO.getPrizeWinner()),Prize::getPrizeWinner,prizeUpdateDTO.getPrizeWinner())</span><br><span class="line">            .like(Strings.isNotBlank(prizeUpdateDTO.getClazz()),Prize::getClbum,prizeUpdateDTO.getClazz())</span><br><span class="line">            .like(Strings.isNotBlank(prizeUpdateDTO.getGrade()),Prize::getGrade,prizeUpdateDTO.getGrade())</span><br><span class="line">            .like(Strings.isNotBlank(prizeUpdateDTO.getProfession()),Prize::getProfession,prizeUpdateDTO.getProfession())</span><br><span class="line">            .like(Strings.isNotEmpty(prizeUpdateDTO.getPrizeTime()),Prize::getPrizeTime,prizeUpdateDTO.getPrizeTime());</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    Page&lt;Prize&gt; prizePage = <span class="keyword">new</span> <span class="title class_">Page</span>&lt;&gt;(currentPage, pageSize);</span><br><span class="line">    prizeMapper.selectPage(prizePage,queryWrapper);</span><br><span class="line">    <span class="keyword">return</span> prizePage;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -108,33 +108,6 @@
     
     
     <entry>
-      <title>(未完成)j2ee上机任务汇总(中)</title>
-      <link href="/2022/04/18/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dj2ee%E4%B8%8A%E6%9C%BA%E4%BB%BB%E5%8A%A1%E6%B1%87%E6%80%BB(%E4%B8%AD)/"/>
-      <url>/2022/04/18/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dj2ee%E4%B8%8A%E6%9C%BA%E4%BB%BB%E5%8A%A1%E6%B1%87%E6%80%BB(%E4%B8%AD)/</url>
-      
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="f4918e94febdc842734c49986474a622604fc3467c5f236711d06a920ec9427b">c92271cf075fe1244ae5c161f435c003d27ecbda7ceb8b7a9afb1afb02623f7c</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，博主可能还没写完，所以这里需要密码。</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-      <categories>
-          
-          <category> 后端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 上机 </tag>
-            
-            <tag> servlet </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>ajax</title>
       <link href="/2022/04/18/ajax/"/>
       <url>/2022/04/18/ajax/</url>
@@ -160,6 +133,33 @@
     
     
     <entry>
+      <title>(未完成)j2ee上机任务汇总(中)</title>
+      <link href="/2022/04/18/j2ee%E4%B8%8A%E6%9C%BA%E4%BB%BB%E5%8A%A1%E6%B1%87%E6%80%BB(%E4%B8%AD)/"/>
+      <url>/2022/04/18/j2ee%E4%B8%8A%E6%9C%BA%E4%BB%BB%E5%8A%A1%E6%B1%87%E6%80%BB(%E4%B8%AD)/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h2><p>这里主要是自己大二的学校课程下的上机任务[中]! </p><p>2022年4月20日08:33:54</p><h2 id="war包"><a href="#war包" class="headerlink" title="war包:"></a>war包:</h2><h3 id="第8个war包"><a href="#第8个war包" class="headerlink" title="第8个war包:"></a>第8个war包:</h3><h4 id="试验相关要求"><a href="#试验相关要求" class="headerlink" title="试验相关要求:"></a>试验相关要求:</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span></span><br><span class="line"></span><br><span class="line">自行完成相应的动作和思考</span><br><span class="line">0.读完程序中的文档，即注释，如果有相关问题，则直接回答问题。</span><br><span class="line"></span><br><span class="line">本项目模拟一个购物车的业务</span><br><span class="line">1 javabean的规范</span><br><span class="line">2 javabean作为数据封装用</span><br><span class="line">3 javabean作为业务逻辑组件用</span><br><span class="line">4 servlet作为业务控制器用</span><br><span class="line">5 servlet直接向客户端输出HTML页面和数据结果</span><br><span class="line">6 html和jsp都没有，没有页面，但我们也看到了输出的网页界面，思考jsp的本质，用servlet也可以输出页面</span><br><span class="line">7 errors:易踩到的坑：绝对路径与相对路径</span><br><span class="line">在页面内部的HTML中的连接地址，只能认为是客户端的</span><br><span class="line">在servlet内部的转发地址，肯定是在服务端的</span><br><span class="line">客户端的根在站点</span><br><span class="line">服务端的根在应用程序</span><br><span class="line">而：一个站点可以有多个web应用程序</span><br><span class="line"></span><br><span class="line">8 please首先请求showProduct控制器，验证和思考业务本身</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure><p>正常的运用到了javabean，对商品对象进行了封装, 全war包没有前端静态资源, 但是也实现了前端的页面效果:</p><p>通过:<code>PrintWriter out=response.getWriter();</code></p><p>写html等到浏览器:</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">out.println(<span class="string">&quot;&lt;html&gt;&quot;</span>);</span><br><span class="line">out.println(<span class="string">&quot;&lt;head&gt;&lt;title&gt;ShowCartServlet&lt;/title&gt;&lt;/head&gt;&quot;</span>);</span><br><span class="line">out.println(<span class="string">&quot;&lt;body bgcolor=\&quot;#ffffff\&quot;&gt;&quot;</span>);</span><br><span class="line">out.println(<span class="string">&quot;&lt;p&gt;&lt;h1&gt;你目前没有购买任何商品&lt;/h1&gt;&lt;/p&gt;&quot;</span>);</span><br><span class="line">out.println(<span class="string">&quot;&lt;p&gt;&lt;a href=\&quot;&quot;</span>+response.encodeUrl(<span class="string">&quot;./show&quot;</span>)+<span class="string">&quot;\&quot;&gt;返回产品显示页&lt;/a&gt;&lt;/p&gt;&quot;</span>);</span><br><span class="line">out.println(<span class="string">&quot;&lt;/body&gt;&lt;/html&gt;&quot;</span>);</span><br></pre></td></tr></table></figure><p>商家对象只有唯一, 卖家可以有很多, 分别对应服务器和客户端的关系:</p><p>所以将商家提供的资源products存进context上下文中, 保证为全局变量, 所有人共享, 买一份少一份!</p><hr><p>本app还用到了一个对products对象操作的封装, 将商品数量<code>增、减、显示</code>封装到了一个业务组件中<code>shopcart</code></p><hr><p>如果加入数据库, 则</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">init</span><span class="params">()</span> <span class="keyword">throws</span> ServletException&#123;</span><br><span class="line"><span class="comment">// 用HashMap来做商店，初始化各种商品，供所有用户来购买</span></span><br><span class="line"><span class="comment">// 初始时，商品库存数量均为100个</span></span><br><span class="line">products=<span class="keyword">new</span> <span class="title class_">HashMap</span>();</span><br><span class="line">products.put(<span class="string">&quot;001&quot;</span>,<span class="keyword">new</span> <span class="title class_">Product</span>(<span class="string">&quot;001&quot;</span>,<span class="string">&quot;海信电视机&quot;</span>,<span class="string">&quot;58英寸，LED液晶显示，安卓操作系统，2014年上市&quot;</span>,<span class="number">6999.00</span>,<span class="number">100</span>));</span><br><span class="line">products.put(<span class="string">&quot;002&quot;</span>,<span class="keyword">new</span> <span class="title class_">Product</span>(<span class="string">&quot;002&quot;</span>,<span class="string">&quot;海尔洗衣机&quot;</span>,<span class="string">&quot;洗涤容量6Kg，滚筒式，LED显示屏，内筒材料为不锈钢&quot;</span>,<span class="number">3999.00</span>,<span class="number">100</span>));</span><br><span class="line">products.put(<span class="string">&quot;003&quot;</span>,<span class="keyword">new</span> <span class="title class_">Product</span>(<span class="string">&quot;003&quot;</span>,<span class="string">&quot;格力空调&quot;</span>,<span class="string">&quot;三级变频，壁式挂机，超静音，超长质保，强力除湿&quot;</span>,<span class="number">3269.00</span>,<span class="number">100</span>));</span><br><span class="line">products.put(<span class="string">&quot;004&quot;</span>,<span class="keyword">new</span> <span class="title class_">Product</span>(<span class="string">&quot;004&quot;</span>,<span class="string">&quot;海尔热水器&quot;</span>,<span class="string">&quot;横式，专利金刚三层胆，专利金刚三层胆，60L&quot;</span>,<span class="number">2780.00</span>,<span class="number">100</span>));</span><br><span class="line">products.put(<span class="string">&quot;005&quot;</span>,<span class="keyword">new</span> <span class="title class_">Product</span>(<span class="string">&quot;005&quot;</span>,<span class="string">&quot;西门子冰箱&quot;</span>,<span class="string">&quot;三门冰箱，电脑控温，总容积为231-280L，能效等级为一级&quot;</span>,<span class="number">5780.00</span>,<span class="number">100</span>));</span><br><span class="line">ServletContext context=getServletContext();</span><br><span class="line"><span class="comment">// 商店置于APP全局中，所有人共享可用，买走1份少1份</span></span><br><span class="line">context.setAttribute(<span class="string">&quot;products&quot;</span>,products);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这段表示数据库中商品的初始化部分!,如果要对数据库中的products进行操作的话则需要用到类似jdbc, mybatis,jpa,等技术</p><h3 id="第9个war包"><a href="#第9个war包" class="headerlink" title="第9个war包:"></a>第9个war包:</h3><h4 id="试验相关要求-1"><a href="#试验相关要求-1" class="headerlink" title="试验相关要求:"></a>试验相关要求:</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span></span><br><span class="line">自行完成相应的动作和思考</span><br><span class="line">0.读完程序中的文档，即注释，如果有相关问题，则直接回答问题。</span><br><span class="line"></span><br><span class="line">进行一个最简单的用户登录的模拟</span><br><span class="line">1 界面如何组织参数输入</span><br><span class="line">2 参数如何传到服务器上进行相应的处理</span><br><span class="line">3 一个servlet从接请求到给响应要做些什么事情？</span><br><span class="line">4自己要慢慢熟悉在前端用html里的form的方式向后台提交数据，提交请求</span><br><span class="line"><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure><p>实验大致流程:</p><p>访问:</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://localhost:8080/09/login.html</span><br></pre></td></tr></table></figure><p>打开f12可以知道, 有发出请求:</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">请求 URL: http://localhost:8080/09/login?username=%E5%85%B4%E8%B6%A3%E4%BD%BF%E7%84%B6%E7%9A%84%E5%B0%8F%E5%B0%8F&amp;password=nihao</span><br><span class="line">//中文会出现百分号形式的编码</span><br></pre></td></tr></table></figure><p><img src="https://qiniu.ladidol.top/img/image-20220420093528990.png" alt="image-20220420093528990"></p><p><img src="https://qiniu.ladidol.top/img/image-20220420093827552.png" alt="image-20220420093827552"></p><h3 id="第10个war包"><a href="#第10个war包" class="headerlink" title="第10个war包:"></a>第10个war包:</h3><h4 id="试验相关要求-2"><a href="#试验相关要求-2" class="headerlink" title="试验相关要求:"></a>试验相关要求:</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&lt;pre&gt;</span><br><span class="line"></span><br><span class="line">自行完成相应的动作和思考</span><br><span class="line"><span class="number">0.</span>读完程序中的文档，即注释，如果有相关问题，则直接回答问题。</span><br><span class="line"><span class="number">01</span> 最简单的示例，用eclipse生成servlet</span><br><span class="line"><span class="number">02</span> 再生成一个servlet</span><br><span class="line"><span class="number">03</span> 第三个servlet</span><br><span class="line"><span class="number">04</span> 第四个servlet</span><br><span class="line"><span class="number">05</span> 第五个servlet</span><br><span class="line"><span class="number">06</span> MyServletDefault默认的servlet</span><br><span class="line"><span class="number">07</span> 自定义出错信息【出错页统一规划】</span><br><span class="line">不看注解 ，看web.xml文件的配置</span><br><span class="line"></span><br><span class="line">&lt;/pre&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure><p>这个war主要分析一下web.xml就行:</p><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>Servlet01<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/abc/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span> <span class="comment">&lt;!-- 后置通配符 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>Servlet02<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>Servlet03<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/abc<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span> <span class="comment">&lt;!-- 硬指定访问路径 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>Servlet04<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>*.do<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span> <span class="comment">&lt;!-- 前置通配符 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>Servlet05<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>*.action<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span> <span class="comment">&lt;!-- 前置通配符 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">welcome-file-list</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">welcome-file</span>&gt;</span>index.html<span class="tag">&lt;/<span class="name">welcome-file</span>&gt;</span> <span class="comment">&lt;!-- 默认首页匹配顺序 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">welcome-file</span>&gt;</span>index.htm<span class="tag">&lt;/<span class="name">welcome-file</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">welcome-file</span>&gt;</span>index.jsp<span class="tag">&lt;/<span class="name">welcome-file</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">welcome-file</span>&gt;</span>default.html<span class="tag">&lt;/<span class="name">welcome-file</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">welcome-file</span>&gt;</span>default.htm<span class="tag">&lt;/<span class="name">welcome-file</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">welcome-file</span>&gt;</span>default.jsp<span class="tag">&lt;/<span class="name">welcome-file</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">welcome-file-list</span>&gt;</span></span><br></pre></td></tr></table></figure><p>根据web.xml文件中的<code>&lt;url-pattern&gt;</code>标签中的路径要求,来指向不同的servlet,</p><p>值得注意的是,这里面, </p><p><img src="https://qiniu.ladidol.top/img/image-20220420095933215.png" alt="image-20220420095933215"></p><p>需要吧<code>/*</code>这个映射注释掉,才能访问<code>*.do``*.action</code></p><h3 id="第11个war包"><a href="#第11个war包" class="headerlink" title="第11个war包:"></a>第11个war包:</h3><h4 id="试验相关要求-3"><a href="#试验相关要求-3" class="headerlink" title="试验相关要求:"></a>试验相关要求:</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span></span><br><span class="line">自行完成相应的动作和思考</span><br><span class="line">00 读完程序中的文档，即注释，如果有相关问题，则直接回答问题。</span><br><span class="line">01 注意包名的设计和使用</span><br><span class="line">02 注意非同包的类的引入</span><br><span class="line">03 能不能自己设计一个界面，让用户登录更美观一些？</span><br><span class="line">04 用户名和密码能不能用get方式发起请求来传参？</span><br><span class="line">05 传一个数组，该怎么组织数据呢？</span><br><span class="line">06 字符串匹配检查是用的什么方法？</span><br><span class="line">07 碰到问题，开会脑筋，解决问题，记录问题，小结收获----良好的学习和积累习惯</span><br><span class="line">08 相对路径和绝对路径：网站根目录和应用程序项目的根目录的差别</span><br><span class="line">09 客户端的请求地址和服务器端的转发地址在根路径上的差别</span><br><span class="line">10  最后一个逗号的处理，还有别的方式吗 ParamsServletPlus</span><br><span class="line">11  思考，页面的跳转和servlet组件之间的跳转，有何差别？(略)</span><br><span class="line">12  请求行中有那些行数【键值对】有什么用？</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/shi779276212/article/details/92795085">包名的设计和使用 </a></p><p>用户和密码一般不用get方式来发起请求,<a href="https://blog.csdn.net/javamxd/article/details/28602523">戳这里</a></p><p>简单来说就是get方式会将密码和账号暴露在浏览器请求地址上</p><p><img src="https://qiniu.ladidol.top/img/image-20220420111459540.png" alt="image-20220420111459540"></p><p>post则会隐藏起来:</p><p><img src="https://qiniu.ladidol.top/img/image-20220420111806864.png" alt="image-20220420111806864"></p><p>这里是从登录url跳转到表单提交的servlet映射上去了,但是都没有暴露我提交的<code>用户名和密码</code></p><p>从源码上面可以看出来:</p><p><img src="https://qiniu.ladidol.top/img/image-20220420112009582.png" alt="image-20220420112009582"></p><hr><p>后端接收数组</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 获取参数名为“hobby”的值</span></span><br><span class="line">String[] hobbys = request.getParameterValues(<span class="string">&quot;hobby&quot;</span>);</span><br></pre></td></tr></table></figure><hr><p>当有转发的时候:</p><p>例如请求Request URL: </p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://localhost:8080/11/RequestParamsServlet?username=ladidol&amp;password=&amp;hobby=sing&amp;hobby=dance</span><br></pre></td></tr></table></figure><p>后端其实过程就是先请求<code>/RequestParamsServlet</code>的接收servlet再请求<code>/ParamsServlet</code>的响应servlet.</p><hr><p>去掉最后一个<code>,</code>的代码:</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; hobbis.length; i++) &#123;</span><br><span class="line">    sb.append(hobbis[i]+<span class="string">&quot;,&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 处理最后一个逗号</span></span><br><span class="line">str = sb.substring(<span class="number">0</span>, sb.length()-<span class="number">1</span>);</span><br></pre></td></tr></table></figure><p>其他常用方法:</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; hobbys.length-<span class="number">1</span>; i++) &#123;</span><br><span class="line">out.print(hobbys[i] + <span class="string">&quot;, &quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">out.print(hobbys[hobbys.length-<span class="number">1</span>]);</span><br></pre></td></tr></table></figure><hr><blockquote><p><strong>请求行</strong>：</p><p>①是请求方法，GET和POST是最常见的HTTP方法，除此以外还包括DELETE、HEAD、OPTIONS、PUT、TRACE。</p><p>②为请求对应的URL地址，它和报文头的Host属性组成完整的请求URL。</p><p>③是协议名称及版本号。</p><p><strong>请求头：</strong></p><p>④是HTTP的报文头，报文头包含若干个属性，格式为“属性名:属性值”，服务端据此获取客户端的信息。</p><p>与缓存相关的规则信息，均包含在header中</p><p><strong>请求体：</strong></p><p>⑤是报文体，它将一个页面表单中的组件值通过param1&#x3D;value1&amp;param2&#x3D;value2的键值对形式编码成一个格式化串，它承载多个请求参数的数据。不但报文体可以传递请求参数，请求URL也可以通过类似于“&#x2F;chapter15&#x2F;user.html? param1&#x3D;value1&amp;param2&#x3D;value2”的方式传递请求参数。</p></blockquote><h3 id="第12个war包"><a href="#第12个war包" class="headerlink" title="第12个war包:"></a>第12个war包:</h3><h4 id="试验相关要求-4"><a href="#试验相关要求-4" class="headerlink" title="试验相关要求:"></a>试验相关要求:</h4><p>略!详情请看第10个war包</p><p>那我就在这里补充一下转发和重定向的区别:</p><p>转发:</p><p><img src="https://qiniu.ladidol.top/img/CSDN_1650440343474.jpg" alt="CSDN_1650440343474"></p><p>重定向:</p><p><img src="https://qiniu.ladidol.top/img/CSDN_1650440346990.jpg" alt="CSDN_1650440346990"></p><h3 id="第13个war包"><a href="#第13个war包" class="headerlink" title="第13个war包:"></a>第13个war包:</h3><h4 id="试验相关要求-5"><a href="#试验相关要求-5" class="headerlink" title="试验相关要求:"></a>试验相关要求:</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span></span><br><span class="line">自行完成相应的动作和思考</span><br><span class="line">0 读完程序中的文档，即注释，如果有相关问题，则直接回答问题。</span><br><span class="line">1 过滤器的配置和Servlet一样，但执行的不是业务功能，而是过滤功能</span><br><span class="line">2 一般情况下，用Filter来过滤Servlet，而Servlet用于控制，那么Filter则用于控制前后的预设和善后处理</span><br><span class="line">3 因此，Filter做有意义的工作，一定是从Servlet对应的url-pattern入手，换句话来描述，就是你要经过这个Servlet处理，得先经过Filter的预处理</span><br><span class="line"><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/pan_junbiao/article/details/88353292">(2条消息) Servlet过滤器_pan_junbiao的博客-CSDN博客_servlet过滤器</a></p><p><img src="https://qiniu.ladidol.top/img/image-20220420140956756.png" alt="image-20220420140956756"></p><p>在拦截器中:</p><p>实现<code>Filter接口</code>需要实现响应的<code>doFilter</code>方法(并且持有 <code>FilterChain</code>参数)</p><p><img src="https://qiniu.ladidol.top/img/image-20220420141512737.png" alt="image-20220420141512737"></p><p>拦截器中:</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 相当于是模拟预设工作</span></span><br><span class="line">System.out.println(<span class="string">&quot;2019001001 这是准备工作.....&quot;</span>);</span><br><span class="line"><span class="comment">// 放行【如果没有下面的doFilter过程，即为拦截了】，放行后可以到达servlet</span></span><br><span class="line">chain.doFilter(request, response);</span><br><span class="line"><span class="comment">// 相当于是模拟善后工作【servlet工作完后，再回到这里】</span></span><br><span class="line">System.out.println(<span class="string">&quot;2019001001 这是善后工作.....&quot;</span>);</span><br></pre></td></tr></table></figure><p>servlet:</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 模拟核心业务</span></span><br><span class="line">System.out.println(<span class="string">&quot;2019001001，我的Servlet在工作...&quot;</span>);</span><br></pre></td></tr></table></figure><p>在web.xml文件中:</p><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 配置过滤器，注意，是对URL进行拦截或是过滤 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>MyFilter01<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>filter.MyFilter01<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>MyFilter01<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/MyServlet<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 配置servlet，即核心业务  --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>MyServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>servlet.MyServlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>MyServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/MyServlet<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure><p>可以看出,这个简易的filter, 在配置文件中, 需要配置<code>filter</code>和<code>filter-mapping</code></p><p>且过滤url和servlet相对应!</p><h3 id="第14个war包"><a href="#第14个war包" class="headerlink" title="第14个war包:"></a>第14个war包:</h3><h4 id="试验相关要求-6"><a href="#试验相关要求-6" class="headerlink" title="试验相关要求:"></a>试验相关要求:</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span></span><br><span class="line">自行完成相应的动作和思考</span><br><span class="line">0.读完程序中的文档，即注释，如果有相关问题，则直接回答问题。</span><br><span class="line"></span><br><span class="line">1 多次过滤的配置</span><br><span class="line">2 不管多少次过滤，最后的核心业务仍然交给Servlet来控制处理</span><br><span class="line">3 多级过滤器，进入顺序和退出顺序 要好好体会，要深入理解</span><br><span class="line">4 就算是做预处理业务，也可以把工作做细，做专一</span><br><span class="line">5 软件工程追求的是单一，模块化，最后才可以复用</span><br><span class="line">---将核心业务与周边业务剥离，才能更好地去关注本身</span><br><span class="line">6 那么，多个过滤器存在时，怎么设置谁先过滤，谁后过滤呢？</span><br><span class="line">7 当过滤器是两边包围时，遵循的是先进后出的原则</span><br><span class="line">8 思考，周边业务【即过滤过程】本身有没有先后顺序</span><br><span class="line">如果：核心业务是约会，之前是先洗漱，再化妆，还是可以先化妆，再洗漱？</span><br><span class="line">如果：核心业务是吃饭，之前是先拿碗，还是先拿筷子？</span><br><span class="line">9 建议改造过滤器和业务处理器，即filter和servlet，</span><br><span class="line">在console输出相应的插旗，来观察两级过滤动作和业务动作的执行过程。</span><br><span class="line">10 注意，在web.xml中filter和servlet的配置很相似</span><br><span class="line">只是约定</span><br><span class="line">在写法上，servlet写法，与filter写法不一样</span><br><span class="line">在使用上，servlet处理业务，filter过滤业务，各司其职</span><br><span class="line"><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure><blockquote><p>测试之间要先知道filterChain（过滤链）是干嘛的。</p><p>一个过滤器处理完后，会把request和response对象通过filterchain传递给下一个过滤器，如果没有下一个过滤器，则会直接开始执行业务代码，</p></blockquote><p>经过测试,多个filter过滤器是根据filter在web.xml中的配置先后顺序,执行先后顺序</p><p><img src="https://qiniu.ladidol.top/img/image-20220420144234066.png" alt="image-20220420144234066"></p><p>前后顺序对称, <code>filter先开始的后结束,后开始的先结束</code></p><p>然后对filter的详细解释, 老师的实验要求, 就写的十分nice, 资瓷郑老师!</p><h3 id="第15个war包"><a href="#第15个war包" class="headerlink" title="第15个war包:"></a>第15个war包:</h3><h4 id="试验相关要求-7"><a href="#试验相关要求-7" class="headerlink" title="试验相关要求:"></a>试验相关要求:</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span></span><br><span class="line"> 自行完成相应的动作和思考</span><br><span class="line"> 0.读完程序中的文档，即注释，如果有相关问题，则直接回答问题。</span><br><span class="line"> 1 复习pojo如何封装？</span><br><span class="line"> 2 复习过滤器如何配置？如何设置通配？</span><br><span class="line"> 3 复习Servlet控制器如何配置？</span><br><span class="line"> 4 登录业务一般要做什么？</span><br><span class="line"> 5 退出业务一般要做什么？</span><br><span class="line"> 6 cookie是什么，一般用于干什么？它在客户端，但服务器端如何控制它？</span><br><span class="line">  自行搜索并学习cookie的原理</span><br><span class="line"> 7 自动登录的简单原理是什么？</span><br><span class="line"> 8 过滤器如何完成自动登录的预先处理动作，再转给Servlet控制?</span><br><span class="line"> 9 第一次就能自动登录吗？ </span><br><span class="line">相关技术：</span><br><span class="line"> EL表达式</span><br><span class="line"> JSTL标签</span><br><span class="line"> basePath获取方式</span><br><span class="line"> 使用绝对路径的建议</span><br><span class="line"> 保持时间是以秒为单位的</span><br><span class="line"><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure><blockquote><p> 4 登录业务一般要做什么？<br> 就是判断密码账号是否正确, 有验证码的还要判断验证码登录!</p></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="string">&quot;fhzheng&quot;</span>.equals(username) &amp;&amp; <span class="string">&quot;123546&quot;</span>.equals(password)) &#123;</span><br></pre></td></tr></table></figure><blockquote><p> 5 退出业务一般要做什么？<br> 这里就是把用户信息从session中移除掉</p></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 移除session</span></span><br><span class="line">request.getSession().removeAttribute(<span class="string">&quot;user&quot;</span>);</span><br><span class="line"><span class="comment">// 创建cookie</span></span><br><span class="line"><span class="type">Cookie</span> <span class="variable">cookie</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Cookie</span>(<span class="string">&quot;autologin&quot;</span>, <span class="string">&quot;msg&quot;</span>);</span><br><span class="line">cookie.setPath(request.getContextPath());</span><br><span class="line"><span class="comment">// 将cookie置为过期</span></span><br><span class="line">cookie.setMaxAge(<span class="number">0</span>);</span><br><span class="line">response.addCookie(cookie);</span><br><span class="line"></span><br></pre></td></tr></table></figure><blockquote><p> 6 cookie是什么，一般用于干什么？它在客户端，但服务器端如何控制它？<br>  自行搜索并学习cookie的原理</p></blockquote><p>详情见我的另一篇博客<a href="https://blog.csdn.net/qq_51705526/article/details/123939721?spm=1001.2014.3001.5501">戳这里</a></p><blockquote><p> cookies按老师说的, 就是一个键值对集合的数据结构</p></blockquote><p>自动登录逻辑:</p><p>先登录一下：</p><p><img src="https://qiniu.ladidol.top/img/image-20220420190434201.png" alt="image-20220420190434201"></p><p>通过浏览器抓包，得到登录后会返回set-Cookie的数据，这里面包含有autologin的键值对</p><p>再次访问这个页面的时候</p><p><img src="https://qiniu.ladidol.top/img/image-20220420190547312.png" alt="image-20220420190547312"></p><p><img src="https://qiniu.ladidol.top/img/image-20220420190629789.png"></p><p>主要是根据<code>AutoLoginFilter</code>这个将请求中的cookie中的用户信息给拿到,放到session对象中，从而就有了user对象</p><p>这样只要有这段cookie在，你就一直能访问这个页面！</p><blockquote><ol><li>创建cookie   Cookie c &#x3D;new Cookie(“uname”,”Kitty”);</li><li>response.addCookie(c);添加cookie到服务器端。可以使用抓包工具查看到；</li><li>response.addCookie(c)一旦执行，服务器端会自动发回消息头set-cookie给浏览器，set-cookie是会携带cookie键值对的，uname&#x3D;kitty。创建的cookie就会保存在浏览器。所以创建的cookie是会保存在浏览器上的</li></ol></blockquote><h3 id="END"><a href="#END" class="headerlink" title="END:"></a>END:</h3><p>因为笔者能力有限，这些主要是用于自己的笔记！可能有点粗糙！</p><p>感谢阅读！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 后端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 上机 </tag>
+            
+            <tag> servlet </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>j2ee上机任务汇总(上)</title>
       <link href="/2022/04/17/j2ee%E4%B8%8A%E6%9C%BA%E4%BB%BB%E5%8A%A1%E6%B1%87%E6%80%BB(%E4%B8%8A)/"/>
       <url>/2022/04/17/j2ee%E4%B8%8A%E6%9C%BA%E4%BB%BB%E5%8A%A1%E6%B1%87%E6%80%BB(%E4%B8%8A)/</url>
@@ -169,7 +169,7 @@
       
       <categories>
           
-          <category> 后端 </category>
+          <category> 后 </category>
           
       </categories>
       
@@ -223,7 +223,7 @@
       
       <categories>
           
-          <category> maven </category>
+          <category> 后端 </category>
           
       </categories>
       
@@ -250,8 +250,6 @@
           
           <category> 后端 </category>
           
-          <category> swagger </category>
-          
       </categories>
       
       
@@ -276,8 +274,6 @@
       <categories>
           
           <category> 前端 </category>
-          
-          <category> web前端基础 </category>
           
       </categories>
       
@@ -306,8 +302,6 @@
           
           <category> 后端 </category>
           
-          <category> java后端 </category>
-          
       </categories>
       
       
@@ -335,8 +329,6 @@
           
           <category> 后端 </category>
           
-          <category> java </category>
-          
       </categories>
       
       
@@ -360,14 +352,14 @@
       
       <categories>
           
-          <category> 加密文章 </category>
+          <category> 小贴士 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 加密文章 </tag>
+            <tag> 小贴士 </tag>
             
             <tag> 记录 </tag>
             
@@ -387,7 +379,7 @@
       
       <categories>
           
-          <category> git </category>
+          <category> 前端 </category>
           
       </categories>
       
@@ -414,7 +406,7 @@
           
           <category> 后端 </category>
           
-          <category> springboot </category>
+          <category> sprin </category>
           
       </categories>
       
@@ -443,10 +435,6 @@
           
           <category> 后端 </category>
           
-          <category> java </category>
-          
-          <category> springboot </category>
-          
       </categories>
       
       
@@ -474,8 +462,6 @@
           
           <category> 后端 </category>
           
-          <category> 注解 </category>
-          
       </categories>
       
       
@@ -501,14 +487,14 @@
       
       <categories>
           
-          <category> 加密文章 </category>
+          <category> 小贴士 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 加密文章 </tag>
+            <tag> 记录 </tag>
             
             <tag> 加分证明 </tag>
             
@@ -528,14 +514,16 @@
       
       <categories>
           
-          <category> 加密文章 </category>
+          <category> 后端 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 加密文章 </tag>
+            <tag> SpringSecurity </tag>
+            
+            <tag> 安全 </tag>
             
         </tags>
       
@@ -554,8 +542,6 @@
       <categories>
           
           <category> 前端 </category>
-          
-          <category> web前端基础 </category>
           
       </categories>
       
@@ -584,8 +570,6 @@
           
           <category> 前端 </category>
           
-          <category> web前端基础 </category>
-          
       </categories>
       
       
@@ -613,8 +597,6 @@
           
           <category> 前端 </category>
           
-          <category> 上机 </category>
-          
       </categories>
       
       
@@ -641,8 +623,6 @@
       <categories>
           
           <category> 后端 </category>
-          
-          <category> java后端 </category>
           
       </categories>
       
@@ -698,8 +678,6 @@
           
           <category> 后端 </category>
           
-          <category> java后端 </category>
-          
       </categories>
       
       
@@ -725,8 +703,6 @@
           
           <category> 后端 </category>
           
-          <category> shiro </category>
-          
       </categories>
       
       
@@ -750,14 +726,14 @@
       
       <categories>
           
-          <category> 加密文章 </category>
+          <category> 后端 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 加密文章 </tag>
+            <tag> 学习路线 </tag>
             
         </tags>
       
@@ -776,8 +752,6 @@
       <categories>
           
           <category> 后端 </category>
-          
-          <category> go后端 </category>
           
       </categories>
       
@@ -804,9 +778,7 @@
       
       <categories>
           
-          <category> linux </category>
-          
-          <category> 安装软件 </category>
+          <category> 后端 </category>
           
       </categories>
       
@@ -816,6 +788,8 @@
             <tag> linux </tag>
             
             <tag> 常用命令 </tag>
+            
+            <tag> 安装 </tag>
             
         </tags>
       
@@ -833,14 +807,14 @@
       
       <categories>
           
-          <category> 加密文章 </category>
+          <category> 小贴士 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 加密文章 </tag>
+            <tag> 小贴士 </tag>
             
             <tag> 记录 </tag>
             
@@ -861,8 +835,6 @@
       <categories>
           
           <category> 后端 </category>
-          
-          <category> shiro </category>
           
       </categories>
       
@@ -941,14 +913,14 @@
       
       <categories>
           
-          <category> 加密文章 </category>
+          <category> 前端 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 加密文章 </tag>
+            <tag> http </tag>
             
         </tags>
       
@@ -995,8 +967,6 @@
           
           <category> 后端 </category>
           
-          <category> java基础 </category>
-          
       </categories>
       
       
@@ -1024,8 +994,6 @@
           
           <category> 后端 </category>
           
-          <category> go后端 </category>
-          
       </categories>
       
       
@@ -1052,8 +1020,6 @@
       <categories>
           
           <category> 后端 </category>
-          
-          <category> java后端 </category>
           
       </categories>
       
@@ -1085,9 +1051,9 @@
       
         <tags>
             
-            <tag> 算法 </tag>
-            
             <tag> 分治 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -1106,8 +1072,6 @@
       <categories>
           
           <category> 后端 </category>
-          
-          <category> Java后端 </category>
           
       </categories>
       
@@ -1166,9 +1130,9 @@
       
         <tags>
             
-            <tag> 算法 </tag>
-            
             <tag> 分治 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -1187,8 +1151,6 @@
       <categories>
           
           <category> 后端 </category>
-          
-          <category> Java后端 </category>
           
       </categories>
       
@@ -1214,10 +1176,6 @@
       <categories>
           
           <category> 后端 </category>
-          
-          <category> java后端 </category>
-          
-          <category> 登录 </category>
           
       </categories>
       
@@ -1246,8 +1204,6 @@
           
           <category> 后端 </category>
           
-          <category> java后端 </category>
-          
       </categories>
       
       
@@ -1273,7 +1229,32 @@
       
       <categories>
           
-          <category> 加密文章 </category>
+          <category> 后端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习路线 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学长的面经汇总</title>
+      <link href="/2022/03/24/%5B%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%5D%E5%AD%A6%E9%95%BF%E7%9A%84%E9%9D%A2%E7%BB%8F%E6%B1%87%E6%80%BB/"/>
+      <url>/2022/03/24/%5B%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%5D%E5%AD%A6%E9%95%BF%E7%9A%84%E9%9D%A2%E7%BB%8F%E6%B1%87%E6%80%BB/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="141a5d9228acde1572d1a0e272591dceb1e7d3b41090b8dfb006b88aa69be1d3">c92271cf075fe1244ae5c161f435c003a8840a878c31d67271965e5b503895f1991d18e227238b4315061b8582d45c1259524635c76b694672b7fd9ab271d43186321687473b3a040c3e0d41cba55dd3e3628f8ff6ab43ccc78690f69f55c6240124995b9b1f79903e7757d7c871f6b66a27f6e8e3166b9deaf373dcfd40d72062edff2711b6cbdae4325fae6ca37c59ad66d63e954fe11a93780737b806919ae35cd5157eba6cce67912840e469b1948bec16ef59fd31c505f08992121a210dc2dc859d9ee6424dc676c4fd9dbc9a28e1eed822cc2619596cc6b9033c4d450fcebf10dbc4c5ee19a19e91226d1a648bc77e453c99d531cc37f0ddceb9b16873c069bdc0a8f66e9738e168195c06ed7cff68ef3249d7433de52599004fa60af92abf416e2706914c640c56386f20fb2108acf7d51256b1d6433eb95f9417a818236a9036dbe4fb03922fff042a54a0c1d86fd0687f3b01506581cad8cfdd59a465de4b86042e5a6e398424bd4b8d90d928a83642d59ae76fc098c5a8cb56d37a96e5b0660d9f236d38547a4b4e476eea5dd08d01e3890bb55de8f92e42ec8fdd3918631bfdbd381e0fd07824d0e993cbc17f46afae579a8ff8632b93e955bdbbe5d31a73b13be2811af6e7664d457ddab72b5b8d9ee4f1f95dd23a9a960800510ab97d70baea84e8e8990a57e7ad4ac916e529e84b24e3ac6bcb10001882ae1cc43be39663a89b7cc0e151b9644a7e79b5bb63a61af541df20ef77664b6e12672b684844ba4a7a1eee541a3e9f3678e5b714620baa13cee2fb3fc91b4bf8691989f93b405c7515289f6a347b470692dbdf08ebb8d063f2a30d76098d7863a0dddbb7ce577cf608405de0fae0f18d9138d5f6a5b4f4e87a9a7556a495d5cc4034c2572ed6f47a7e9e9f6502b7f9410bdd2e6396495a99dc1be1c46b7a2013ee96a71e276c521c36bdd8bfc3db8c28b9e83179b85a3dee0684ffb16e22ad2a65d2af300fe48b461e43d2fe66bb85350e2991e63525ca4a401012f2c0c655720cbbc8ec8fbd0e3dd9c9c7df0d5080dd43e56044d5db77af1a59ee358ccb13808c3086ae38326d05ab35a1681ba6f4bbf26c8c4e4da8d7b231df7906875301b32bec3169135209056fbc952285eb6e09e36ea6c688504b1b1c470d0adfc9f4196de88eb367e1091ac58c4f09cf66f56e77b7e66a9b4566c436806de8a4a06352d0597fc54e899da42a2b8d8355d116defbe450e9f8fc7c303afa44f474cfad9145012746ee3eb5c08694d77664e48e32d5841919e3e23cd610884970d7051daa02c73e9f2c564d6c2eda75acb684cb9c7007e0bab3b646e1b90e53a1903f2fa9e21fd29be9bd8ceaa52f9db1d0c787afb2a27e9c6252d2be0f53a5e7ef4afb678a811c68d7b52e237b27fc6ddc0495522526dec29727506de19f3c43c276bf4757091e6b73cfde2450cf18266b93386b1ed37138b2546145faf86f04bd086e05f174ff6b1810ef5875f66e0f1834d74fdf5eec657e0d1032f4a89e8349fea2d4506879a2022478096bbbbc341364bf86ebe77243838d4299832c9de81767dbca538ce07d3f28c9f4c397f75b67839c0278176e75fa22edf6547512031c31255578e85358dca4e1e4acc0183745ec6df49c1e985b967af38e6418e2c71822fafac56f6b9f7c3801c5d75382be5aef491c293f64ce8dd835fd6eeef6fb682ecb82baadb216b4edaa3a043126267f9b754182e74aab9bbb1a217147f085a2fdbebf3cc2fa3c6c34cc82695a9bb08dd42dc0d172b54bd58cf9bcbb33b8b46a41188e49edf881501ffbcedaea24c4c222caf9b3c172e85ec0a699fa52125e9631cf760842b929f7edeb875723d7f4543e456d5430e5757a0b2dce820a162c58d61ee52ed2b90e183c5c7a18e16e36ae8d7fbc44b5d2546f9e26ea3628effac6a5a18accc0b7185db134bfd42c9535532eadec726c5da8fdbec46376e4642de12df8a2796d555c41150b25a08ab70a1edd9b1a24adf7faa4b4270f85356de131ed4cec09ae55e4dea3ca02381cde9f4401cc93ec8e6240b43b37633b26c140e8697ec15d6eb2cf8acdb96e1432239dff4604dc34e15cc5fe7ccce211fad70e3b127c8a3ccc6796ee6e6e4ab600edd66b3efccac8d9e839aaccb66a096f04ff28f48e3f1a2899cdfe4d6b0088ed78324699deb278d79ec967695e01644699eead0088807793afa7d8585f357f63c55f5b58ffe512d2b2c5a39cd6d5a6e969ec5e71456e4ef3dd8ed70d8a9cbc3641cf73b50d8deae4bce896c631779120e86155742bb4a3c384376f2332d669e4c5479487c954786b146eaf0041934a234dc2e3e1f249a565934aeb0ffe6bf9220a437a9a2fda2fed3ea3d4ba9d9b082b58b6a5450150de16d634afbbca9636e77295e96522e81ab3fdadb1e66f62fbea299d9ec6cb4a64be43b1c646ad862ea705c90f038da4ab5dac1fbc026296a0f10705ca0189dc8ef4ce945a207b3bb70394c5b6fc26f64adf79cb81ea2a170ccf1cadf5f577f1ba53f622903fe1680d718e6276cb86b95287508ad1c3b03e2a0dae15002c5a66c04b336201c3199384eec5d9d9b89feb35ac086f85d6a557ab040415d9e859f1ffc1a9ea47bdd815921f9ec2976ac2f4ed74ed319dba98adf64fc5ea8a1e4d806922720208d1eff4604c719f6606de6e8263d37f16ae216f865eddaf9cd4510c80b993c9a95ebea14f32cbb89553182700141a34c86b2588cee096a5a05c7cb0661eb9b882e9cc79f8ae9b75f49cf4dbaa8bf0c38cf4f80d9c6c8cd77cb787e8e7871273a5909fb00184759e0b9ecea932b6f87ee2ac2f0d3c1a3a7e3aa4b3f7b104937bd0c13855d923817eb8440d9ec172709a01559f1ca2c8a361ad9db8f104d379bce0d97a79768c913b8082480f9514b09b1cc73582ab16f56711c5bff978c103a511eb12c7179f177d4cfe745f1dd52b9519d8fd3682732a864da1ad4e0c2669be8ae2c762b74dedfbae5b456c8e60716001c09d75bb30c9c08e4f62fdb159f03b2f8c87804ea0e12c24fe98d43e3c8eda74a5a0eb7630315c253abab8d171d9c6b2445533e58703d94fcc237e54d39689d89bd349080b8f3fd97e98de2c28239edcc778a982cd2de72d76c4410fa77853ed8ae11ac6329b856d06801f00c1495d6a7244abdf621d9897dbb8453fe352d1ba8a4434a0e897cff89c47bf85e7ffd1cedb9e65884ffe4cf9209647d27c54e9b1804b8fc0576ac293f9b8e9d519b5a32a3b9b090687bc9e717d29da60c4d1d1a0f0f342b035986ee6ff4dda773200abf078d9e171f7c1c4bdc2b8d9f3f7be64e3c22ba01d66a2c06155e8b912df1d411e8dce6b2f35fee5a30aad56149aed4a7ed858457aaabc70eba7f04d4c875fa6700ecfebbbdb48b691dd8a97ad8e668964eaaee45a2e8f704e214d9a7f762575873182239905222050b81ad1699986f1f50740da6335d919bb39221f617ff04eeac61887db36951674f34c05d7b520002c93ad5c720a2a2376352e4745df3cac1f64ee23651603a61b9ffb5f53e2b4aba8df0533411201a7514ec8e17493dc585f11026b6cf09a0e93e5942b561a77f7638a1fabc12cd0b82b108cf2992198da8487e14e35017e1e39049efecadf41e4b33f6df485b5b397b44bc7559026298a58ea4db1a12208bb58a35f4d75f4649c0571479fa5020f0d2c640b8500549d1822752e257f12a0cef542044b3b390a9f345e33660dd328f988f1241f30b2f688bf62d2da33ed58cd172a2214c941053341c3b3e859366e78fb55c50fece2e4eca61ed011461a5c31b624ddc667075e59fa3b488d16813e366e37dfa8cd7bf8d60bb75915377dcde83c4ac2f5f933a8efde90d8b4de2d9fd1d456508be2ede064662d6bd8a658bae4d76b01d4349daba4a8a889f67ef5237a87a63b1f43e8a085cfc9bec870e9e3ee4f3dc3e9a766d5984429be004915f54243e6a3f9a332ea7c72e3638d0cacc4a2bd60ef840617b6494884ebad1a4332a363ab6e402b7548cb1765244b562a7b7fc52cdf33d511fc03a77aabed7582b61723c746911a195701eebfc7be382992782c58e92dc7d5dc5288472e94ad9a9205933b1423426cc3435d31880e5a0488f145a6115c44f5028eca2b15292f872e0b3150549eb8cc5f72aa71611afe8fe5d2619ff3fa0b1e42cea2fe2e218adb23fb69e883c8f94612cfb060e4ee8b78456a4a1bd7120dea44df21d203e4a3c7735ee288a2f42d5b6907a96a095cf6b241b2c4c5baf43654361897c925635242fd58144b15a41d5e3f11056c0471524da0fe431aa2b6f2be1ea994e130cd960b1de04263f55451a6</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，这里可能涉及到一些个人隐私，所以这里需要密码。</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 学长学姐 </category>
           
       </categories>
       
@@ -1281,6 +1262,8 @@
         <tags>
             
             <tag> 加密文章 </tag>
+            
+            <tag> 大厂面经 </tag>
             
         </tags>
       
@@ -1316,33 +1299,6 @@
     
     
     <entry>
-      <title>学长的面经汇总</title>
-      <link href="/2022/03/24/%5B%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%5D%E5%AD%A6%E9%95%BF%E7%9A%84%E9%9D%A2%E7%BB%8F%E6%B1%87%E6%80%BB/"/>
-      <url>/2022/03/24/%5B%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%5D%E5%AD%A6%E9%95%BF%E7%9A%84%E9%9D%A2%E7%BB%8F%E6%B1%87%E6%80%BB/</url>
-      
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="141a5d9228acde1572d1a0e272591dceb1e7d3b41090b8dfb006b88aa69be1d3">c92271cf075fe1244ae5c161f435c003a8840a878c31d67271965e5b503895f1991d18e227238b4315061b8582d45c1259524635c76b694672b7fd9ab271d43186321687473b3a040c3e0d41cba55dd3e3628f8ff6ab43ccc78690f69f55c6240124995b9b1f79903e7757d7c871f6b66a27f6e8e3166b9deaf373dcfd40d72062edff2711b6cbdae4325fae6ca37c59ad66d63e954fe11a93780737b806919ae35cd5157eba6cce67912840e469b1948bec16ef59fd31c505f08992121a210dc2dc859d9ee6424dc676c4fd9dbc9a28e1eed822cc2619596cc6b9033c4d450fcebf10dbc4c5ee19a19e91226d1a648bc77e453c99d531cc37f0ddceb9b16873c069bdc0a8f66e9738e168195c06ed7cff68ef3249d7433de52599004fa60af92abf416e2706914c640c56386f20fb2108acf7d51256b1d6433eb95f9417a818236a9036dbe4fb03922fff042a54a0c1d86fd0687f3b01506581cad8cfdd59a465de4b86042e5a6e398424bd4b8d90d928a83642d59ae76fc098c5a8cb56d37a96e5b0660d9f236d38547a4b4e476eea5dd08d01e3890bb55de8f92e42ec8fdd3918631bfdbd381e0fd07824d0e993cbc17f46afae579a8ff8632b93e955bdbbe5d31a73b13be2811af6e7664d457ddab72b5b8d9ee4f1f95dd23a9a960800510ab97d70baea84e8e8990a57e7ad4ac916e529e84b24e3ac6bcb10001882ae1cc43be39663a89b7cc0e151b9644a7e79b5bb63a61af541df20ef77664b6e12672b684844ba4a7a1eee541a3e9f3678e5b714620baa13cee2fb3fc91b4bf8691989f93b405c7515289f6a347b470692dbdf08ebb8d063f2a30d76098d7863a0dddbb7ce577cf608405de0fae0f18d9138d5f6a5b4f4e87a9a7556a495d5cc4034c2572ed6f47a7e9e9f6502b7f9410bdd2e6396495a99dc1be1c46b7a2013ee96a71e276c521c36bdd8bfc3db8c28b9e83179b85a3dee0684ffb16e22ad2a65d2af300fe48b461e43d2fe66bb85350e2991e63525ca4a401012f2c0c655720cbbc8ec8fbd0e3dd9c9c7df0d5080dd43e56044d5db77af1a59ee358ccb13808c3086ae38326d05ab35a1681ba6f4bbf26c8c4e4da8d7b231df7906875301b32bec3169135209056fbc952285eb6e09e36ea6c688504b1b1c470d0adfc9f4196de88eb367e1091ac58c4f09cf66f56e77b7e66a9b4566c436806de8a4a06352d0597fc54e899da42a2b8d8355d116defbe450e9f8fc7c303afa44f474cfad9145012746ee3eb5c08694d77664e48e32d5841919e3e23cd610884970d7051daa02c73e9f2c564d6c2eda75acb684cb9c7007e0bab3b646e1b90e53a1903f2fa9e21fd29be9bd8ceaa52f9db1d0c787afb2a27e9c6252d2be0f53a5e7ef4afb678a811c68d7b52e237b27fc6ddc0495522526dec29727506de19f3c43c276bf4757091e6b73cfde2450cf18266b93386b1ed37138b2546145faf86f04bd086e05f174ff6b1810ef5875f66e0f1834d74fdf5eec657e0d1032f4a89e8349fea2d4506879a2022478096bbbbc341364bf86ebe77243838d4299832c9de81767dbca538ce07d3f28c9f4c397f75b67839c0278176e75fa22edf6547512031c31255578e85358dca4e1e4acc0183745ec6df49c1e985b967af38e6418e2c71822fafac56f6b9f7c3801c5d75382be5aef491c293f64ce8dd835fd6eeef6fb682ecb82baadb216b4edaa3a043126267f9b754182e74aab9bbb1a217147f085a2fdbebf3cc2fa3c6c34cc82695a9bb08dd42dc0d172b54bd58cf9bcbb33b8b46a41188e49edf881501ffbcedaea24c4c222caf9b3c172e85ec0a699fa52125e9631cf760842b929f7edeb875723d7f4543e456d5430e5757a0b2dce820a162c58d61ee52ed2b90e183c5c7a18e16e36ae8d7fbc44b5d2546f9e26ea3628effac6a5a18accc0b7185db134bfd42c9535532eadec726c5da8fdbec46376e4642de12df8a2796d555c41150b25a08ab70a1edd9b1a24adf7faa4b4270f85356de131ed4cec09ae55e4dea3ca02381cde9f4401cc93ec8e6240b43b37633b26c140e8697ec15d6eb2cf8acdb96e1432239dff4604dc34e15cc5fe7ccce211fad70e3b127c8a3ccc6796ee6e6e4ab600edd66b3efccac8d9e839aaccb66a096f04ff28f48e3f1a2899cdfe4d6b0088ed78324699deb278d79ec967695e01644699eead0088807793afa7d8585f357f63c55f5b58ffe512d2b2c5a39cd6d5a6e969ec5e71456e4ef3dd8ed70d8a9cbc3641cf73b50d8deae4bce896c631779120e86155742bb4a3c384376f2332d669e4c5479487c954786b146eaf0041934a234dc2e3e1f249a565934aeb0ffe6bf9220a437a9a2fda2fed3ea3d4ba9d9b082b58b6a5450150de16d634afbbca9636e77295e96522e81ab3fdadb1e66f62fbea299d9ec6cb4a64be43b1c646ad862ea705c90f038da4ab5dac1fbc026296a0f10705ca0189dc8ef4ce945a207b3bb70394c5b6fc26f64adf79cb81ea2a170ccf1cadf5f577f1ba53f622903fe1680d718e6276cb86b95287508ad1c3b03e2a0dae15002c5a66c04b336201c3199384eec5d9d9b89feb35ac086f85d6a557ab040415d9e859f1ffc1a9ea47bdd815921f9ec2976ac2f4ed74ed319dba98adf64fc5ea8a1e4d806922720208d1eff4604c719f6606de6e8263d37f16ae216f865eddaf9cd4510c80b993c9a95ebea14f32cbb89553182700141a34c86b2588cee096a5a05c7cb0661eb9b882e9cc79f8ae9b75f49cf4dbaa8bf0c38cf4f80d9c6c8cd77cb787e8e7871273a5909fb00184759e0b9ecea932b6f87ee2ac2f0d3c1a3a7e3aa4b3f7b104937bd0c13855d923817eb8440d9ec172709a01559f1ca2c8a361ad9db8f104d379bce0d97a79768c913b8082480f9514b09b1cc73582ab16f56711c5bff978c103a511eb12c7179f177d4cfe745f1dd52b9519d8fd3682732a864da1ad4e0c2669be8ae2c762b74dedfbae5b456c8e60716001c09d75bb30c9c08e4f62fdb159f03b2f8c87804ea0e12c24fe98d43e3c8eda74a5a0eb7630315c253abab8d171d9c6b2445533e58703d94fcc237e54d39689d89bd349080b8f3fd97e98de2c28239edcc778a982cd2de72d76c4410fa77853ed8ae11ac6329b856d06801f00c1495d6a7244abdf621d9897dbb8453fe352d1ba8a4434a0e897cff89c47bf85e7ffd1cedb9e65884ffe4cf9209647d27c54e9b1804b8fc0576ac293f9b8e9d519b5a32a3b9b090687bc9e717d29da60c4d1d1a0f0f342b035986ee6ff4dda773200abf078d9e171f7c1c4bdc2b8d9f3f7be64e3c22ba01d66a2c06155e8b912df1d411e8dce6b2f35fee5a30aad56149aed4a7ed858457aaabc70eba7f04d4c875fa6700ecfebbbdb48b691dd8a97ad8e668964eaaee45a2e8f704e214d9a7f762575873182239905222050b81ad1699986f1f50740da6335d919bb39221f617ff04eeac61887db36951674f34c05d7b520002c93ad5c720a2a2376352e4745df3cac1f64ee23651603a61b9ffb5f53e2b4aba8df0533411201a7514ec8e17493dc585f11026b6cf09a0e93e5942b561a77f7638a1fabc12cd0b82b108cf2992198da8487e14e35017e1e39049efecadf41e4b33f6df485b5b397b44bc7559026298a58ea4db1a12208bb58a35f4d75f4649c0571479fa5020f0d2c640b8500549d1822752e257f12a0cef542044b3b390a9f345e33660dd328f988f1241f30b2f688bf62d2da33ed58cd172a2214c941053341c3b3e859366e78fb55c50fece2e4eca61ed011461a5c31b624ddc667075e59fa3b488d16813e366e37dfa8cd7bf8d60bb75915377dcde83c4ac2f5f933a8efde90d8b4de2d9fd1d456508be2ede064662d6bd8a658bae4d76b01d4349daba4a8a889f67ef5237a87a63b1f43e8a085cfc9bec870e9e3ee4f3dc3e9a766d5984429be004915f54243e6a3f9a332ea7c72e3638d0cacc4a2bd60ef840617b6494884ebad1a4332a363ab6e402b7548cb1765244b562a7b7fc52cdf33d511fc03a77aabed7582b61723c746911a195701eebfc7be382992782c58e92dc7d5dc5288472e94ad9a9205933b1423426cc3435d31880e5a0488f145a6115c44f5028eca2b15292f872e0b3150549eb8cc5f72aa71611afe8fe5d2619ff3fa0b1e42cea2fe2e218adb23fb69e883c8f94612cfb060e4ee8b78456a4a1bd7120dea44df21d203e4a3c7735ee288a2f42d5b6907a96a095cf6b241b2c4c5baf43654361897c925635242fd58144b15a41d5e3f11056c0471524da0fe431aa2b6f2be1ea994e130cd960b1de04263f55451a6</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，这里可能涉及到一些个人隐私，所以这里需要密码。</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-      <categories>
-          
-          <category> 加密文章 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 加密文章 </tag>
-            
-            <tag> 大厂面经 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>(未完成)sso简单实现</title>
       <link href="/2022/03/24/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dsso%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/"/>
       <url>/2022/03/24/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dsso%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/</url>
@@ -1352,14 +1308,16 @@
       
       <categories>
           
-          <category> 加密文章 </category>
+          <category> 后端 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 加密文章 </tag>
+            <tag> sso </tag>
+            
+            <tag> 登录 </tag>
             
         </tags>
       
@@ -1406,18 +1364,16 @@
           
           <category> 后端 </category>
           
-          <category> java后端 </category>
-          
       </categories>
       
       
         <tags>
             
+            <tag> java后端 </tag>
+            
             <tag> springclouds </tag>
             
             <tag> 微服务 </tag>
-            
-            <tag> java后端 </tag>
             
         </tags>
       
@@ -1434,8 +1390,6 @@
       
       
       <categories>
-          
-          <category> 私密文章 </category>
           
           <category> gitlab </category>
           
@@ -1551,8 +1505,6 @@
           
           <category> 后端 </category>
           
-          <category> docker </category>
-          
       </categories>
       
       
@@ -1561,33 +1513,6 @@
             <tag> Docker </tag>
             
             <tag> 入门 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>restful接口设计规范</title>
-      <link href="/2022/03/21/restful/"/>
-      <url>/2022/03/21/restful/</url>
-      
-        <content type="html"><![CDATA[<h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p>本文学习 RESTful API 设计相关的一些原则和规范。</p><p>少量的API在使用时不知不觉，但是当后续API不断增加了，需求变动也会导致API版本的变化。主要是为了可以进行规范化开发，并非是只能使用该规范，其他做法亦可，只是作为前人大佬已经在实践中进行总结整理。学习好的编程设计规范总是便捷有利的。</p><h2 id="二、常见规范"><a href="#二、常见规范" class="headerlink" title="二、常见规范"></a>二、常见规范</h2><h3 id="1、协议和域名"><a href="#1、协议和域名" class="headerlink" title="1、协议和域名"></a>1、协议和域名</h3><p>API通讯使用http协议，如果能使用https尽量使用https。</p><p>尽量使用独立域名，</p><p><a href="https://ladfeng.top/">https://ladfeng.top</a></p><p><a href="http://ladfeng.top/">http://ladfeng.top</a></p><p>如果不能使用可以以api 打头区分访问</p><p><a href="https://ladfeng.top/api">https://ladfeng.top/api</a></p><h3 id="2、版本变化"><a href="#2、版本变化" class="headerlink" title="2、版本变化"></a>2、版本变化</h3><p>常见的三种版本方式：</p><ol><li>在uri中放版本信息：<code>GET /v1/users/1</code></li><li>Accept Header：<code>Accept: application/json+v1</code></li><li>自定义 Header：<code>X-Api-Version: 1</code></li></ol><p>推荐用第一种，虽然没有那么优雅，最明显最方便。</p><h3 id="3、URI资源"><a href="#3、URI资源" class="headerlink" title="3、URI资源"></a>3、URI资源</h3><h3 id="3、URI资源-1"><a href="#3、URI资源-1" class="headerlink" title="3、URI资源"></a>3、URI资源</h3><h4 id="（1）URI概念"><a href="#（1）URI概念" class="headerlink" title="（1）URI概念"></a>（1）URI概念</h4><p>URI 表示资源，资源一般对应服务器端领域模型中的实体类。<br>URI规范</p><ul><li>不用大写;</li><li>用中杠<code>-</code>而不用下杠<code>_</code>;</li><li>参数列表要encode;</li><li>URI中的名词表示资源集合，使用复数形式;</li><li>避免层级过深</li><li>带上版本号</li></ul><h4 id="（2）资源路径"><a href="#（2）资源路径" class="headerlink" title="（2）资源路径"></a>（2）资源路径</h4><p><strong>资源集合：</strong></p><p>所有动物园</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/zoos/　　　　</span><br></pre></td></tr></table></figure><p>id为1的动物园内的所有动物</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">/zoos/1/animals</span><br></pre></td></tr></table></figure><p><strong>单个资源：</strong></p><p>比如：id为1的动物园</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">/zoos/1      </span><br></pre></td></tr></table></figure><p>id为1,2,3的动物园</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">/zoos/1;2;3   </span><br></pre></td></tr></table></figure><p><strong>层级过深资源：</strong></p><p>过深的导航容易导致url膨胀，不易维护，如 <code>GET /zoos/1/areas/3/animals/4</code>，尽量使用查询参数代替路径中的实体导航，如<code>GET /animals?zoo=1&amp;area=3</code>;</p><h3 id="4、操作类型"><a href="#4、操作类型" class="headerlink" title="4、操作类型"></a>4、操作类型</h3><p>对于资源的具体操作类型，由HTTP动词表示。</p><p>常用的HTTP动词有下面五个。</p><table><thead><tr><th align="left">HTTP动作</th><th align="left">含义</th><th align="left">对应的SQL操作</th></tr></thead><tbody><tr><td align="left">GET</td><td align="left">从服务器取出资源（一项或多项）</td><td align="left">SELECT</td></tr><tr><td align="left">POST</td><td align="left">在服务器新建一个资源。</td><td align="left">CREATE</td></tr><tr><td align="left">PUT</td><td align="left">在服务器更新资源（客户端提供改变后的完整资源）</td><td align="left">UPDATE</td></tr><tr><td align="left">PATCH</td><td align="left">在服务器更新资源（客户端提供改变的属性）</td><td align="left">UPDATE</td></tr><tr><td align="left">DELETE</td><td align="left">从服务器删除资源。</td><td align="left">DELETE</td></tr><tr><td align="left">HEAD</td><td align="left">获取资源的元数据。</td><td align="left"></td></tr><tr><td align="left">OPTIONS</td><td align="left">获取信息，关于资源的哪些属性是客户端可以改变的。</td><td align="left"></td></tr></tbody></table><p>示例：</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">GET /zoos：列出所有动物园</span><br><span class="line">POST /zoos：新建一个动物园</span><br><span class="line">GET /zoos/ID：获取某个指定动物园的信息</span><br><span class="line">PUT /zoos/ID：更新某个指定动物园的信息（提供该动物园的全部信息）</span><br><span class="line">PATCH /zoos/ID：更新某个指定动物园的信息（提供该动物园的部分信息）</span><br><span class="line">DELETE /zoos/ID：删除某个动物园</span><br><span class="line">GET /zoos/ID/animals：列出某个指定动物园的所有动物</span><br><span class="line">DELETE /zoos/ID/animals/ID：删除某个指定动物园的指定动物</span><br></pre></td></tr></table></figure><h3 id="5、条件过滤"><a href="#5、条件过滤" class="headerlink" title="5、条件过滤"></a>5、条件过滤</h3><p>记录数量很多，不能全返回，需要对数据进行过滤。API应该提供参数，过滤返回结果。</p><p>下面是一些常见的参数（分页条件、查询条件）</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">?limit=10：指定返回记录的数量</span><br><span class="line">?offset=10：指定返回记录的开始位置。</span><br><span class="line">?page=2&amp;per_page=100：指定第几页，以及每页的记录数。</span><br><span class="line">?sortby=name&amp;order=asc：指定返回结果按照哪个属性排序，以及排序顺序。</span><br><span class="line">?animal_type_id=1：指定筛选条件</span><br></pre></td></tr></table></figure><p>参数的设计允许存在冗余，即允许API路径和URL参数偶尔有重复。比如，GET &#x2F;zoo&#x2F;ID&#x2F;animals 与 GET &#x2F;animals?zoo_id&#x3D;ID 的含义是相同的。</p><h3 id="6、状态码"><a href="#6、状态码" class="headerlink" title="6、状态码"></a>6、状态码</h3><h4 id="（1）常规状态码"><a href="#（1）常规状态码" class="headerlink" title="（1）常规状态码"></a>（1）常规状态码</h4><p>常规的状态主要是参考 HTTP 状态码。</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">200 OK - [GET]：服务器成功返回用户请求的数据，该操作是幂等的（Idempotent）。</span><br><span class="line">201 CREATED - [POST/PUT/PATCH]：用户新建或修改数据成功。</span><br><span class="line">202 Accepted - [*]：表示一个请求已经进入后台排队（异步任务）</span><br><span class="line">204 NO CONTENT - [DELETE]：用户删除数据成功。</span><br><span class="line">400 INVALID REQUEST - [POST/PUT/PATCH]：用户发出的请求有错误，服务器没有进行新建或修改数据的操作，该操作是幂等的。</span><br><span class="line">401 Unauthorized - [*]：表示用户没有权限（令牌、用户名、密码错误）。</span><br><span class="line">403 Forbidden - [*] 表示用户得到授权（与401错误相对），但是访问是被禁止的。</span><br><span class="line">404 NOT FOUND - [*]：用户发出的请求针对的是不存在的记录，服务器没有进行操作，该操作是幂等的。</span><br><span class="line">406 Not Acceptable - [GET]：用户请求的格式不可得（比如用户请求JSON格式，但是只有XML格式）。</span><br><span class="line">410 Gone -[GET]：用户请求的资源被永久删除，且不会再得到的。</span><br><span class="line">422 Unprocesable entity - [POST/PUT/PATCH] 当创建一个对象时，发生一个验证错误。</span><br><span class="line">500 INTERNAL SERVER ERROR - [*]：服务器发生错误，用户将无法判断发出的请求是否成功。</span><br></pre></td></tr></table></figure><p><a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">HTTP状态码</a></p><h4 id="（2）业务类状态码"><a href="#（2）业务类状态码" class="headerlink" title="（2）业务类状态码"></a>（2）业务类状态码</h4><p>系统较多的时候，将系统码也带上，使用数字的定义也可以参考HTTP进行设计。</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">业务系统码+四位数字</span><br></pre></td></tr></table></figure><p>具体的可以根据需求来。</p><h4 id="（3）错误与异常"><a href="#（3）错误与异常" class="headerlink" title="（3）错误与异常"></a>（3）错误与异常</h4><p>发生错误或异常时：</p><ol><li><p>不响应2xx开头的状态码，客户端可能会缓存成功的http请求；</p></li><li><p>正确设置http状态码，遵循HTTP协议规范；</p></li><li><p>Response body 需要提供的信息</p><ol><li><p>错误的代码，方便定位日志，排查问题；</p></li><li><p>直接正面的描述错误的文本。</p></li></ol></li></ol><p>如果状态码是4xx，就应该向用户返回出错信息。一般来说，返回的信息中将error作为键名，出错信息作为键值即可。</p><table><thead><tr><th align="left">状态码</th><th align="left">场景</th></tr></thead><tbody><tr><td align="left">400</td><td align="left">参数校验失败</td></tr><tr><td align="left">401</td><td align="left">未验证的用户，未登录</td></tr><tr><td align="left">403</td><td align="left">无权限</td></tr><tr><td align="left">404</td><td align="left">资源不存在</td></tr><tr><td align="left">500</td><td align="left">非业务类异常</td></tr></tbody></table><p>业务类异常，一般自定义Exception，见词知义。</p><p>常规异常：</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span><span class="string">&quot;failed&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span><span class="number">400</span>，</span><br><span class="line">    <span class="attr">&quot;error&quot;</span><span class="punctuation">:</span> <span class="string">&quot;参数xxx校验失败&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>业务类异常：系统名为ABCD</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span><span class="string">&quot;failed&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span>ABCD2001，</span><br><span class="line">    <span class="attr">&quot;error&quot;</span><span class="punctuation">:</span> <span class="string">&quot;XXX数据已经过期。&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><h4 id="（4）正常返回"><a href="#（4）正常返回" class="headerlink" title="（4）正常返回"></a>（4）正常返回</h4><p>正常返回，减少数据层级。</p><p>判断操作成功失败的标记 和操作的单个数据</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;success&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="number">200</span>，</span><br><span class="line">    <span class="attr">&quot;msg&quot;</span><span class="punctuation">:</span> <span class="string">&quot;操作成功&quot;</span>，</span><br><span class="line">    <span class="attr">&quot;data&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span><span class="string">&quot;1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span><span class="string">&quot;zhangxiaocai&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>msg可选。</p><p>分页查询</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;paging&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span><span class="attr">&quot;limit&quot;</span><span class="punctuation">:</span><span class="number">10</span><span class="punctuation">,</span><span class="attr">&quot;offset&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">,</span><span class="attr">&quot;total&quot;</span><span class="punctuation">:</span><span class="number">119</span><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;data&quot;</span><span class="punctuation">:</span><span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="punctuation">&#123;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="punctuation">&#123;</span><span class="punctuation">&#125;</span>...<span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>操作与响应</p><table><thead><tr><th align="left">HTTP操作</th><th align="left">响应格式</th></tr></thead><tbody><tr><td align="left">GET</td><td align="left">状态标记+集合、单个对象</td></tr><tr><td align="left">POST</td><td align="left">状态标记+新增成功的对象</td></tr><tr><td align="left">PUT&#x2F;PATCH</td><td align="left">状态标记+更新成功的对象</td></tr><tr><td align="left">DELETE</td><td align="left">状态标记</td></tr></tbody></table><h4 id="（5）异步任务"><a href="#（5）异步任务" class="headerlink" title="（5）异步任务"></a>（5）异步任务</h4><p>对耗时的异步任务，服务器端接受客户端传递的参数后，应返回创建成功的任务资源，其中包含了任务的执行状态。客户端可以轮训该任务获得最新的执行进度。</p><p>比如常见信息：</p><p>任务ID，任务执行状态，发起人。<br>请求：</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">GET /task/3    </span><br></pre></td></tr></table></figure><p>返回：</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;taskId&quot;</span><span class="punctuation">:</span><span class="number">3</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;createBy&quot;</span><span class="punctuation">:</span><span class="string">&quot;Anonymous&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span><span class="string">&quot;success&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;taskId&quot;</span><span class="punctuation">:</span><span class="number">3</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;createBy&quot;</span><span class="punctuation">:</span><span class="string">&quot;Anonymous&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span><span class="string">&quot;running&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>批量请求：</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">POST /batchTasks/1;2;3;</span><br></pre></td></tr></table></figure><p>批量返回：</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">[</span><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;taskId&quot;</span><span class="punctuation">:</span><span class="number">3</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;createBy&quot;</span><span class="punctuation">:</span><span class="string">&quot;Anonymous&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span><span class="string">&quot;success&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line"> <span class="punctuation">&#123;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="punctuation">&#123;</span><span class="punctuation">&#125;</span>...<span class="punctuation">]</span></span><br><span class="line"></span><br><span class="line"><span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="attr">&quot;from&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">,</span><span class="attr">&quot;to&quot;</span><span class="punctuation">:</span><span class="number">1</span><span class="punctuation">,</span><span class="attr">&quot;info&quot;</span><span class="punctuation">:</span><span class="string">&quot;Runing 50 %&quot;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="punctuation">&#123;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="punctuation">&#123;</span><span class="punctuation">&#125;</span>...<span class="punctuation">]</span></span><br></pre></td></tr></table></figure><p>如果任务的执行状态包括较多信息，可以把“执行状态”抽象成组合资源，客户端查询该状态资源了解任务的执行情况。</p><p>提交：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">GET /task/3/status</span><br></pre></td></tr></table></figure><p>返回：</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;progress&quot;</span><span class="punctuation">:</span><span class="string">&quot;50%&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;total&quot;</span><span class="punctuation">:</span><span class="number">18</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;success&quot;</span><span class="punctuation">:</span><span class="number">8</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;fail&quot;</span><span class="punctuation">:</span><span class="number">1</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><h3 id="7、Hypermedia-API"><a href="#7、Hypermedia-API" class="headerlink" title="7、Hypermedia API"></a>7、Hypermedia API</h3><p>RESTful API最好做到Hypermedia，即返回结果中提供链接，连向其他API方法，使得用户不查文档，也知道下一步应该做什么。</p><p>比如，当用户向api.doname.com的根目录发出请求，会得到这样一个文档。</p><blockquote><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span><span class="attr">&quot;link&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;rel&quot;</span><span class="punctuation">:</span>   <span class="string">&quot;collection https://www.example.com/zoos&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span>  <span class="string">&quot;https://api.example.com/zoos&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;List of zoos&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span>  <span class="string">&quot;application/vnd.yourformat+json&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></blockquote><p>上面代码表示，文档中有一个link属性，用户读取这个属性就知道下一步该调用什么API了。rel表示这个API与当前网址的关系（collection关系，并给出该collection的网址），href表示API的路径，title表示API的标题，type表示返回类型。</p><p>Hypermedia API的设计被称为<a href="http://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>。Github的API就是这种设计，访问<a href="https://api.github.com/">api.github.com</a>会得到一个所有可用API的网址列表。</p><blockquote><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;current_user_url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://api.github.com/user&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;authorizations_url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://api.github.com/authorizations&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></blockquote><p>从上面可以看到，如果想获取当前用户的信息，应该去访问<a href="https://api.github.com/user">api.github.com&#x2F;user</a>，然后就得到了下面结果。</p><blockquote><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;message&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Requires authentication&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;documentation_url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://developer.github.com/v3&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></blockquote><p>上面代码表示，服务器给出了提示信息，以及文档的网址。</p><h3 id="8、数据格式"><a href="#8、数据格式" class="headerlink" title="8、数据格式"></a>8、数据格式</h3><p>JSON 或 XML 按要求使用即可。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 后端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> restful </tag>
-            
-            <tag> 项目规范 </tag>
             
         </tags>
       
@@ -1623,6 +1548,33 @@
     
     
     <entry>
+      <title>restful接口设计规范</title>
+      <link href="/2022/03/21/restful/"/>
+      <url>/2022/03/21/restful/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p>本文学习 RESTful API 设计相关的一些原则和规范。</p><p>少量的API在使用时不知不觉，但是当后续API不断增加了，需求变动也会导致API版本的变化。主要是为了可以进行规范化开发，并非是只能使用该规范，其他做法亦可，只是作为前人大佬已经在实践中进行总结整理。学习好的编程设计规范总是便捷有利的。</p><h2 id="二、常见规范"><a href="#二、常见规范" class="headerlink" title="二、常见规范"></a>二、常见规范</h2><h3 id="1、协议和域名"><a href="#1、协议和域名" class="headerlink" title="1、协议和域名"></a>1、协议和域名</h3><p>API通讯使用http协议，如果能使用https尽量使用https。</p><p>尽量使用独立域名，</p><p><a href="https://ladfeng.top/">https://ladfeng.top</a></p><p><a href="http://ladfeng.top/">http://ladfeng.top</a></p><p>如果不能使用可以以api 打头区分访问</p><p><a href="https://ladfeng.top/api">https://ladfeng.top/api</a></p><h3 id="2、版本变化"><a href="#2、版本变化" class="headerlink" title="2、版本变化"></a>2、版本变化</h3><p>常见的三种版本方式：</p><ol><li>在uri中放版本信息：<code>GET /v1/users/1</code></li><li>Accept Header：<code>Accept: application/json+v1</code></li><li>自定义 Header：<code>X-Api-Version: 1</code></li></ol><p>推荐用第一种，虽然没有那么优雅，最明显最方便。</p><h3 id="3、URI资源"><a href="#3、URI资源" class="headerlink" title="3、URI资源"></a>3、URI资源</h3><h3 id="3、URI资源-1"><a href="#3、URI资源-1" class="headerlink" title="3、URI资源"></a>3、URI资源</h3><h4 id="（1）URI概念"><a href="#（1）URI概念" class="headerlink" title="（1）URI概念"></a>（1）URI概念</h4><p>URI 表示资源，资源一般对应服务器端领域模型中的实体类。<br>URI规范</p><ul><li>不用大写;</li><li>用中杠<code>-</code>而不用下杠<code>_</code>;</li><li>参数列表要encode;</li><li>URI中的名词表示资源集合，使用复数形式;</li><li>避免层级过深</li><li>带上版本号</li></ul><h4 id="（2）资源路径"><a href="#（2）资源路径" class="headerlink" title="（2）资源路径"></a>（2）资源路径</h4><p><strong>资源集合：</strong></p><p>所有动物园</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/zoos/　　　　</span><br></pre></td></tr></table></figure><p>id为1的动物园内的所有动物</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">/zoos/1/animals</span><br></pre></td></tr></table></figure><p><strong>单个资源：</strong></p><p>比如：id为1的动物园</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">/zoos/1      </span><br></pre></td></tr></table></figure><p>id为1,2,3的动物园</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">/zoos/1;2;3   </span><br></pre></td></tr></table></figure><p><strong>层级过深资源：</strong></p><p>过深的导航容易导致url膨胀，不易维护，如 <code>GET /zoos/1/areas/3/animals/4</code>，尽量使用查询参数代替路径中的实体导航，如<code>GET /animals?zoo=1&amp;area=3</code>;</p><h3 id="4、操作类型"><a href="#4、操作类型" class="headerlink" title="4、操作类型"></a>4、操作类型</h3><p>对于资源的具体操作类型，由HTTP动词表示。</p><p>常用的HTTP动词有下面五个。</p><table><thead><tr><th align="left">HTTP动作</th><th align="left">含义</th><th align="left">对应的SQL操作</th></tr></thead><tbody><tr><td align="left">GET</td><td align="left">从服务器取出资源（一项或多项）</td><td align="left">SELECT</td></tr><tr><td align="left">POST</td><td align="left">在服务器新建一个资源。</td><td align="left">CREATE</td></tr><tr><td align="left">PUT</td><td align="left">在服务器更新资源（客户端提供改变后的完整资源）</td><td align="left">UPDATE</td></tr><tr><td align="left">PATCH</td><td align="left">在服务器更新资源（客户端提供改变的属性）</td><td align="left">UPDATE</td></tr><tr><td align="left">DELETE</td><td align="left">从服务器删除资源。</td><td align="left">DELETE</td></tr><tr><td align="left">HEAD</td><td align="left">获取资源的元数据。</td><td align="left"></td></tr><tr><td align="left">OPTIONS</td><td align="left">获取信息，关于资源的哪些属性是客户端可以改变的。</td><td align="left"></td></tr></tbody></table><p>示例：</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">GET /zoos：列出所有动物园</span><br><span class="line">POST /zoos：新建一个动物园</span><br><span class="line">GET /zoos/ID：获取某个指定动物园的信息</span><br><span class="line">PUT /zoos/ID：更新某个指定动物园的信息（提供该动物园的全部信息）</span><br><span class="line">PATCH /zoos/ID：更新某个指定动物园的信息（提供该动物园的部分信息）</span><br><span class="line">DELETE /zoos/ID：删除某个动物园</span><br><span class="line">GET /zoos/ID/animals：列出某个指定动物园的所有动物</span><br><span class="line">DELETE /zoos/ID/animals/ID：删除某个指定动物园的指定动物</span><br></pre></td></tr></table></figure><h3 id="5、条件过滤"><a href="#5、条件过滤" class="headerlink" title="5、条件过滤"></a>5、条件过滤</h3><p>记录数量很多，不能全返回，需要对数据进行过滤。API应该提供参数，过滤返回结果。</p><p>下面是一些常见的参数（分页条件、查询条件）</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">?limit=10：指定返回记录的数量</span><br><span class="line">?offset=10：指定返回记录的开始位置。</span><br><span class="line">?page=2&amp;per_page=100：指定第几页，以及每页的记录数。</span><br><span class="line">?sortby=name&amp;order=asc：指定返回结果按照哪个属性排序，以及排序顺序。</span><br><span class="line">?animal_type_id=1：指定筛选条件</span><br></pre></td></tr></table></figure><p>参数的设计允许存在冗余，即允许API路径和URL参数偶尔有重复。比如，GET &#x2F;zoo&#x2F;ID&#x2F;animals 与 GET &#x2F;animals?zoo_id&#x3D;ID 的含义是相同的。</p><h3 id="6、状态码"><a href="#6、状态码" class="headerlink" title="6、状态码"></a>6、状态码</h3><h4 id="（1）常规状态码"><a href="#（1）常规状态码" class="headerlink" title="（1）常规状态码"></a>（1）常规状态码</h4><p>常规的状态主要是参考 HTTP 状态码。</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">200 OK - [GET]：服务器成功返回用户请求的数据，该操作是幂等的（Idempotent）。</span><br><span class="line">201 CREATED - [POST/PUT/PATCH]：用户新建或修改数据成功。</span><br><span class="line">202 Accepted - [*]：表示一个请求已经进入后台排队（异步任务）</span><br><span class="line">204 NO CONTENT - [DELETE]：用户删除数据成功。</span><br><span class="line">400 INVALID REQUEST - [POST/PUT/PATCH]：用户发出的请求有错误，服务器没有进行新建或修改数据的操作，该操作是幂等的。</span><br><span class="line">401 Unauthorized - [*]：表示用户没有权限（令牌、用户名、密码错误）。</span><br><span class="line">403 Forbidden - [*] 表示用户得到授权（与401错误相对），但是访问是被禁止的。</span><br><span class="line">404 NOT FOUND - [*]：用户发出的请求针对的是不存在的记录，服务器没有进行操作，该操作是幂等的。</span><br><span class="line">406 Not Acceptable - [GET]：用户请求的格式不可得（比如用户请求JSON格式，但是只有XML格式）。</span><br><span class="line">410 Gone -[GET]：用户请求的资源被永久删除，且不会再得到的。</span><br><span class="line">422 Unprocesable entity - [POST/PUT/PATCH] 当创建一个对象时，发生一个验证错误。</span><br><span class="line">500 INTERNAL SERVER ERROR - [*]：服务器发生错误，用户将无法判断发出的请求是否成功。</span><br></pre></td></tr></table></figure><p><a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">HTTP状态码</a></p><h4 id="（2）业务类状态码"><a href="#（2）业务类状态码" class="headerlink" title="（2）业务类状态码"></a>（2）业务类状态码</h4><p>系统较多的时候，将系统码也带上，使用数字的定义也可以参考HTTP进行设计。</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">业务系统码+四位数字</span><br></pre></td></tr></table></figure><p>具体的可以根据需求来。</p><h4 id="（3）错误与异常"><a href="#（3）错误与异常" class="headerlink" title="（3）错误与异常"></a>（3）错误与异常</h4><p>发生错误或异常时：</p><ol><li><p>不响应2xx开头的状态码，客户端可能会缓存成功的http请求；</p></li><li><p>正确设置http状态码，遵循HTTP协议规范；</p></li><li><p>Response body 需要提供的信息</p><ol><li><p>错误的代码，方便定位日志，排查问题；</p></li><li><p>直接正面的描述错误的文本。</p></li></ol></li></ol><p>如果状态码是4xx，就应该向用户返回出错信息。一般来说，返回的信息中将error作为键名，出错信息作为键值即可。</p><table><thead><tr><th align="left">状态码</th><th align="left">场景</th></tr></thead><tbody><tr><td align="left">400</td><td align="left">参数校验失败</td></tr><tr><td align="left">401</td><td align="left">未验证的用户，未登录</td></tr><tr><td align="left">403</td><td align="left">无权限</td></tr><tr><td align="left">404</td><td align="left">资源不存在</td></tr><tr><td align="left">500</td><td align="left">非业务类异常</td></tr></tbody></table><p>业务类异常，一般自定义Exception，见词知义。</p><p>常规异常：</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span><span class="string">&quot;failed&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span><span class="number">400</span>，</span><br><span class="line">    <span class="attr">&quot;error&quot;</span><span class="punctuation">:</span> <span class="string">&quot;参数xxx校验失败&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>业务类异常：系统名为ABCD</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span><span class="string">&quot;failed&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span>ABCD2001，</span><br><span class="line">    <span class="attr">&quot;error&quot;</span><span class="punctuation">:</span> <span class="string">&quot;XXX数据已经过期。&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><h4 id="（4）正常返回"><a href="#（4）正常返回" class="headerlink" title="（4）正常返回"></a>（4）正常返回</h4><p>正常返回，减少数据层级。</p><p>判断操作成功失败的标记 和操作的单个数据</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;success&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="number">200</span>，</span><br><span class="line">    <span class="attr">&quot;msg&quot;</span><span class="punctuation">:</span> <span class="string">&quot;操作成功&quot;</span>，</span><br><span class="line">    <span class="attr">&quot;data&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span><span class="string">&quot;1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span><span class="string">&quot;zhangxiaocai&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>msg可选。</p><p>分页查询</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;paging&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span><span class="attr">&quot;limit&quot;</span><span class="punctuation">:</span><span class="number">10</span><span class="punctuation">,</span><span class="attr">&quot;offset&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">,</span><span class="attr">&quot;total&quot;</span><span class="punctuation">:</span><span class="number">119</span><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;data&quot;</span><span class="punctuation">:</span><span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="punctuation">&#123;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="punctuation">&#123;</span><span class="punctuation">&#125;</span>...<span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>操作与响应</p><table><thead><tr><th align="left">HTTP操作</th><th align="left">响应格式</th></tr></thead><tbody><tr><td align="left">GET</td><td align="left">状态标记+集合、单个对象</td></tr><tr><td align="left">POST</td><td align="left">状态标记+新增成功的对象</td></tr><tr><td align="left">PUT&#x2F;PATCH</td><td align="left">状态标记+更新成功的对象</td></tr><tr><td align="left">DELETE</td><td align="left">状态标记</td></tr></tbody></table><h4 id="（5）异步任务"><a href="#（5）异步任务" class="headerlink" title="（5）异步任务"></a>（5）异步任务</h4><p>对耗时的异步任务，服务器端接受客户端传递的参数后，应返回创建成功的任务资源，其中包含了任务的执行状态。客户端可以轮训该任务获得最新的执行进度。</p><p>比如常见信息：</p><p>任务ID，任务执行状态，发起人。<br>请求：</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">GET /task/3    </span><br></pre></td></tr></table></figure><p>返回：</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;taskId&quot;</span><span class="punctuation">:</span><span class="number">3</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;createBy&quot;</span><span class="punctuation">:</span><span class="string">&quot;Anonymous&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span><span class="string">&quot;success&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;taskId&quot;</span><span class="punctuation">:</span><span class="number">3</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;createBy&quot;</span><span class="punctuation">:</span><span class="string">&quot;Anonymous&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span><span class="string">&quot;running&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>批量请求：</p><figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">POST /batchTasks/1;2;3;</span><br></pre></td></tr></table></figure><p>批量返回：</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">[</span><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;taskId&quot;</span><span class="punctuation">:</span><span class="number">3</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;createBy&quot;</span><span class="punctuation">:</span><span class="string">&quot;Anonymous&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span><span class="string">&quot;success&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line"> <span class="punctuation">&#123;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="punctuation">&#123;</span><span class="punctuation">&#125;</span>...<span class="punctuation">]</span></span><br><span class="line"></span><br><span class="line"><span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="attr">&quot;from&quot;</span><span class="punctuation">:</span><span class="number">0</span><span class="punctuation">,</span><span class="attr">&quot;to&quot;</span><span class="punctuation">:</span><span class="number">1</span><span class="punctuation">,</span><span class="attr">&quot;info&quot;</span><span class="punctuation">:</span><span class="string">&quot;Runing 50 %&quot;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="punctuation">&#123;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span><span class="punctuation">&#123;</span><span class="punctuation">&#125;</span>...<span class="punctuation">]</span></span><br></pre></td></tr></table></figure><p>如果任务的执行状态包括较多信息，可以把“执行状态”抽象成组合资源，客户端查询该状态资源了解任务的执行情况。</p><p>提交：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">GET /task/3/status</span><br></pre></td></tr></table></figure><p>返回：</p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;progress&quot;</span><span class="punctuation">:</span><span class="string">&quot;50%&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;total&quot;</span><span class="punctuation">:</span><span class="number">18</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;success&quot;</span><span class="punctuation">:</span><span class="number">8</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;fail&quot;</span><span class="punctuation">:</span><span class="number">1</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><h3 id="7、Hypermedia-API"><a href="#7、Hypermedia-API" class="headerlink" title="7、Hypermedia API"></a>7、Hypermedia API</h3><p>RESTful API最好做到Hypermedia，即返回结果中提供链接，连向其他API方法，使得用户不查文档，也知道下一步应该做什么。</p><p>比如，当用户向api.doname.com的根目录发出请求，会得到这样一个文档。</p><blockquote><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span><span class="attr">&quot;link&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;rel&quot;</span><span class="punctuation">:</span>   <span class="string">&quot;collection https://www.example.com/zoos&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span>  <span class="string">&quot;https://api.example.com/zoos&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;List of zoos&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span>  <span class="string">&quot;application/vnd.yourformat+json&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></blockquote><p>上面代码表示，文档中有一个link属性，用户读取这个属性就知道下一步该调用什么API了。rel表示这个API与当前网址的关系（collection关系，并给出该collection的网址），href表示API的路径，title表示API的标题，type表示返回类型。</p><p>Hypermedia API的设计被称为<a href="http://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>。Github的API就是这种设计，访问<a href="https://api.github.com/">api.github.com</a>会得到一个所有可用API的网址列表。</p><blockquote><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;current_user_url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://api.github.com/user&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;authorizations_url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://api.github.com/authorizations&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></blockquote><p>从上面可以看到，如果想获取当前用户的信息，应该去访问<a href="https://api.github.com/user">api.github.com&#x2F;user</a>，然后就得到了下面结果。</p><blockquote><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;message&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Requires authentication&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;documentation_url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://developer.github.com/v3&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></blockquote><p>上面代码表示，服务器给出了提示信息，以及文档的网址。</p><h3 id="8、数据格式"><a href="#8、数据格式" class="headerlink" title="8、数据格式"></a>8、数据格式</h3><p>JSON 或 XML 按要求使用即可。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 后端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> restful </tag>
+            
+            <tag> 项目规范 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>idea快捷键</title>
       <link href="/2022/03/21/idea%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
       <url>/2022/03/21/idea%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
@@ -1631,8 +1583,6 @@
       
       
       <categories>
-          
-          <category> 工具 </category>
           
           <category> 后端 </category>
           
@@ -1663,7 +1613,7 @@
           
           <category> 后端 </category>
           
-          <category> java后端 </category>
+          <category> java后 </category>
           
       </categories>
       
@@ -1691,8 +1641,6 @@
       <categories>
           
           <category> 后端 </category>
-          
-          <category> Java后端 </category>
           
       </categories>
       
@@ -1722,8 +1670,6 @@
       <categories>
           
           <category> 后端 </category>
-          
-          <category> jwt </category>
           
       </categories>
       
@@ -1772,8 +1718,14 @@
       <link href="/2022/03/20/typora%E5%92%8Cpicgo%E7%9A%84%E7%BB%93%E5%90%88/"/>
       <url>/2022/03/20/typora%E5%92%8Cpicgo%E7%9A%84%E7%BB%93%E5%90%88/</url>
       
-        <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/ladidol/figurebed@main/img/%E5%A4%87%E7%94%A814.png" alt="备用14"></p><p>图床上传软件picgo的一些简单配置<a href="https://blog.csdn.net/yefcion/article/details/88412025">传送门</a></p><p>结合详情请看这个博客<a href="https://blog.csdn.net/bruce_6/article/details/104821531?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_paycolumn_v3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_paycolumn_v3&utm_relevant_index=1">传送门</a></p><p>这个也是一个<a href="https://blog.csdn.net/u011291916/article/details/119194338">传送门</a></p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul><li>作为图床的仓库最好<strong>不能超过 1G</strong>，因为仓库超过 1G 后会有人工审核仓库内容。一旦发现用于图床可能会被删库也可能会被封号！！！所以建议在 1G 之前就换个仓库</li><li>仓库是<strong>公开</strong>的，所以图片放上去要注意隐私问题，特别是单位的一些涉密资料</li></ul>]]></content>
+        <content type="html"><![CDATA[<p><img src="https://qiniu.ladidol.top/img/%E5%A4%87%E7%94%A814.png" alt="备用14"></p><p>图床上传软件picgo的一些简单配置<a href="https://blog.csdn.net/yefcion/article/details/88412025">传送门</a></p><p>结合详情请看这个博客<a href="https://blog.csdn.net/bruce_6/article/details/104821531?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_paycolumn_v3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1.pc_relevant_paycolumn_v3&utm_relevant_index=1">传送门</a></p><p>这个也是一个<a href="https://blog.csdn.net/u011291916/article/details/119194338">传送门</a></p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul><li>作为图床的仓库最好<strong>不能超过 1G</strong>，因为仓库超过 1G 后会有人工审核仓库内容。一旦发现用于图床可能会被删库也可能会被封号！！！所以建议在 1G 之前就换个仓库</li><li>仓库是<strong>公开</strong>的，所以图片放上去要注意隐私问题，特别是单位的一些涉密资料</li></ul>]]></content>
       
+      
+      <categories>
+          
+          <category> 破解教程 </category>
+          
+      </categories>
       
       
         <tags>
@@ -1798,10 +1750,6 @@
           
           <category> 后端 </category>
           
-          <category> java后端 </category>
-          
-          <category> 项目开发 </category>
-          
       </categories>
       
       
@@ -1810,6 +1758,10 @@
             <tag> java </tag>
             
             <tag> 工具类 </tag>
+            
+            <tag> java后端 </tag>
+            
+            <tag> 项目开发 </tag>
             
         </tags>
       
@@ -1828,8 +1780,6 @@
       <categories>
           
           <category> 后端 </category>
-          
-          <category> java后端 </category>
           
       </categories>
       
@@ -1862,8 +1812,6 @@
           
           <category> 后端 </category>
           
-          <category> java后端 </category>
-          
       </categories>
       
       
@@ -1893,8 +1841,6 @@
           
           <category> 前端 </category>
           
-          <category> web前端基础 </category>
-          
       </categories>
       
       
@@ -1921,8 +1867,6 @@
       <categories>
           
           <category> 后端 </category>
-          
-          <category> java后端 </category>
           
       </categories>
       
@@ -1951,8 +1895,6 @@
           
           <category> 后端 </category>
           
-          <category> linux </category>
-          
       </categories>
       
       
@@ -1977,8 +1919,6 @@
       <categories>
           
           <category> 后端 </category>
-          
-          <category> java后端 </category>
           
       </categories>
       
