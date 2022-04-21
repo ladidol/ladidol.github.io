@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>数据库中的时间日期类型 | 小小的博客乐园</title><meta name="keywords" content="数据库"><meta name="author" content="ladidol"><meta name="copyright" content="ladidol"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言:大家好, 这里是小小! 今天, 实验室的一个学长发现我提交的一次代码有问题! 差点以为要被特殊关心, 好了说正事了! 看到数据库中时间日期类型, 很多人就会说了哈, 直接存字符串String类型呀!简单点~emm 最开始我也是这么想的, 然后被驳回了!  字符串存储日期  把日期和时间当做一个字符串进行存储，进而将日期和时间拆分成两个字段，一个字段记录日期（如yyyy-MM-dd）,另外一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据库中的时间日期类型">
+<meta property="og:url" content="http://ladfeng.top/2022/04/21/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E7%B1%BB%E5%9E%8B/index.html">
+<meta property="og:site_name" content="小小的博客乐园">
+<meta property="og:description" content="前言:大家好, 这里是小小! 今天, 实验室的一个学长发现我提交的一次代码有问题! 差点以为要被特殊关心, 好了说正事了! 看到数据库中时间日期类型, 很多人就会说了哈, 直接存字符串String类型呀!简单点~emm 最开始我也是这么想的, 然后被驳回了!  字符串存储日期  把日期和时间当做一个字符串进行存储，进而将日期和时间拆分成两个字段，一个字段记录日期（如yyyy-MM-dd）,另外一个">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://qiniu.ladidol.top/img/52999bc8d61fcaca832ac89d3331913e81873af2_raw.jpg">
+<meta property="article:published_time" content="2022-04-21T13:13:35.000Z">
+<meta property="article:modified_time" content="2022-04-21T15:53:58.948Z">
+<meta property="article:author" content="ladidol">
+<meta property="article:tag" content="数据库">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://qiniu.ladidol.top/img/52999bc8d61fcaca832ac89d3331913e81873af2_raw.jpg"><link rel="shortcut icon" href="https://qiniu.ladidol.top/img/favicon.png"><link rel="canonical" href="http://ladfeng.top/2022/04/21/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E7%B1%BB%E5%9E%8B/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '数据库中的时间日期类型',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-21 23:53:58'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_1.css"><meta name="generator" content="Hexo 6.1.0"></head><body>
+    
+<div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://qiniu.ladidol.top/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">92</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博客</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-diamond"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/sport/"><i class="fa-fw fa fa-paper-plane"></i><span> 运动记录</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://qiniu.ladidol.top/img/52999bc8d61fcaca832ac89d3331913e81873af2_raw.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小小的博客乐园</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博客</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-diamond"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/sport/"><i class="fa-fw fa fa-paper-plane"></i><span> 运动记录</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">数据库中的时间日期类型</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-04-21T13:13:35.000Z" title="发表于 2022-04-21 21:13:35">2022-04-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-04-21T15:53:58.948Z" title="更新于 2022-04-21 23:53:58">2022-04-21</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="数据库中的时间日期类型"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h2><p>大家好, 这里是小小! 今天, 实验室的一个学长发现我提交的一次代码有问题! <del>差点以为要被特殊关心</del>, 好了说正事了!</p>
+<p>看到数据库中时间日期类型, 很多人就会说了哈, 直接存字符串String类型呀!简单点~emm</p>
+<p><del>最开始我也是这么想的, 然后被驳回了!</del></p>
+<p><img src="https://qiniu.ladidol.top/img/image-20220421235357244.png" alt="image-20220421235357244"></p>
+<h2 id="字符串存储日期"><a href="#字符串存储日期" class="headerlink" title="字符串存储日期"></a>字符串存储日期</h2><blockquote>
+<p> 把日期和时间当做一个字符串进行存储，进而将日期和时间拆分成两个字段，一个字段记录日期（如yyyy-MM-dd）,另外一个字段存储时间（如：HH:mm:ss）的形式。此种方式就不多说，除非极个别的场景，不建议使用。当使用此种方式进行处理日期，不仅性能有问题，比较、处理、取范围等都是麻烦事。之所以提出这种方式，也是提醒大家，如果你的数据库日期字段还在用字符串存储，需要慎重考虑一下了。</p>
+</blockquote>
+<p>比如:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">前端展示日期 我假设现在是yyyyMMdd hh:mm:ss</span><br><span class="line">那前端现在改成了MMddyyyy 那该怎么办呢?</span><br><span class="line">碰到时区问题该怎么办呢?</span><br></pre></td></tr></table></figure>
+
+<p>雀氏 如果就存一个字符串的话! 很难进行改变!</p>
+<p>所以就会使用下面这个字符串:</p>
+<h2 id="DateTime类型"><a href="#DateTime类型" class="headerlink" title="DateTime类型"></a>DateTime类型</h2><blockquote>
+<p>DateTime类型存储的值既有日期又有时间。我们直观看到的格式为：yyyy-MM-dd HH:mm:ss。它支持的时间范围是“1000-00-00 00:00:00”到“9999-12-31 23:59:59”。<br>但DateTime中并未存储时区信息，只存储了本地时间。也就是说：如果你将<a target="_blank" rel="noopener" href="https://cloud.tencent.com/product/cvm?from=10680">服务器</a>的时区进行修改，数据库中记录的日期和时间并不会对应的变化。<br>那么，读出的数据与新存储的数据便是不一致的，也可以说是错误的。<br>通常，针对此种情况，如果涉及到跨时区问题，可考虑单独用一个字段来存储时区。</p>
+</blockquote>
+<p>有时候还会使用:</p>
+<h2 id="Timestamp类型"><a href="#Timestamp类型" class="headerlink" title="Timestamp类型"></a>Timestamp类型</h2><blockquote>
+<p>Timestamp类型：也是既有日期又有时间的数据。存储和显示的格式跟Datetime一样。支持的时间范围是“1970-01-01 00:00:01”到“2038-01-19 03:14:07”。<br>Timestamp类型不仅存储了日期和时间，还存储了时区信息。如果以Timestamp类型存储，各数据库的实现会有所不相同，有的进行了内部时区自动转换。<br>如果应用服务器的时区和数据库服务器的时区不一致，你无法确定数据库驱动程序会不会自动帮你转换。<br>同时，时间范围是Timestamp硬伤。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TIMESTAMP(14)</td>
+<td>YYYYMMDDHHMMSS</td>
+</tr>
+<tr>
+<td>TIMESTAMP(12)</td>
+<td>YYMMDDHHMMSS</td>
+</tr>
+<tr>
+<td>TIMESTAMP(10)</td>
+<td>YYMMDDHHMM</td>
+</tr>
+<tr>
+<td>TIMESTAMP(8)</td>
+<td>YYYYMMDD</td>
+</tr>
+<tr>
+<td>TIMESTAMP(6)</td>
+<td>YYMMDD</td>
+</tr>
+<tr>
+<td>TIMESTAMP(4)</td>
+<td>YYMM</td>
+</tr>
+<tr>
+<td>TIMESTAMP(2)</td>
+<td>YY</td>
+</tr>
+</tbody></table>
+<h2 id="Unix-timestamp"><a href="#Unix-timestamp" class="headerlink" title="Unix timestamp"></a>Unix timestamp</h2><p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/unix%E6%97%B6%E9%97%B4%E6%88%B3/2078227">百度百科</a></p>
+<p>由于时区问题，地球上不同地方的人看到太阳升起的时间是不一样的。比如欧洲和北京时差有6-7个小时，当早上8点在北京看到太阳时，欧洲还处于凌晨1-2点。</p>
+<p>除了上面所说的通过Timestamp类型存储包含时区的日期和时间外，还可以通过“绝对时间”来进行计算，单位为秒。</p>
+<p>在计算机中，当前时间是指从一个基准时间（1970-1-1 00:00:00 +0:00）到现在的秒数，用一个整数表示。</p>
+<p>有一个很神奇的东西, 就是<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/2038%E5%B9%B4%E9%97%AE%E9%A2%98/10578442">2038年问题</a></p>
+<blockquote>
+<p>为了调研数据库日期和时间的设置，也参考了阿里的开发手册，令人疑惑的是阿里使用的竟然是datetime类型。</p>
+<p>的确如此，毕竟每个公司的业务范围不同，使用场景也不同。优秀的理念可以参考，但不能照搬。就好比本篇文章，介绍了不同类型的日期和时间存储，而根据你的业务场景选择最适合的那便是最好的。我这里最终决定用绝对时间戳来进行处理。</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">ladidol</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://ladfeng.top/2022/04/21/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E7%B1%BB%E5%9E%8B/">http://ladfeng.top/2022/04/21/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E7%B1%BB%E5%9E%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://ladfeng.top" target="_blank">小小的博客乐园</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></div><div class="post_share"><div class="social-share" data-image="https://qiniu.ladidol.top/img/52999bc8d61fcaca832ac89d3331913e81873af2_raw.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/04/21/%5B%E9%87%8D%E8%A6%81%5Dweb%E5%89%8D%E7%AB%AF%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%92%8C%E9%A1%B9%E7%9B%AE/"><img class="prev-cover" src="https://qiniu.ladidol.top/img/ff93dd26105614f5a8be567cd59e4c35.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">web前端需求分析和项目</div></div></a></div><div class="next-post pull-right"><a href="/2022/04/19/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5D%E5%AF%B9%E4%BA%8Essm%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E5%A4%A7%E6%80%BB%E7%BB%93/"><img class="next-cover" src="https://qiniu.ladidol.top/img/a94f94a771f98cfd8d5581a3d1b333962391fbaf_raw.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">(未完成)对于ssm常见错误大总结(springboot)</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://qiniu.ladidol.top/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ladidol</div><div class="author-info__description">这是一个小小小枸杞</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">92</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/ladidol"><i class="fab fa-github"></i><span>Follow On Github</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">本站主要用于学习和分享,和自娱自乐罢了</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%98%E5%82%A8%E6%97%A5%E6%9C%9F"><span class="toc-number">2.</span> <span class="toc-text">字符串存储日期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DateTime%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">DateTime类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Timestamp%E7%B1%BB%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text">Timestamp类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Unix-timestamp"><span class="toc-number">5.</span> <span class="toc-text">Unix timestamp</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/21/%5B%E9%87%8D%E8%A6%81%5Dweb%E5%89%8D%E7%AB%AF%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%92%8C%E9%A1%B9%E7%9B%AE/" title="web前端需求分析和项目"><img src="https://qiniu.ladidol.top/img/ff93dd26105614f5a8be567cd59e4c35.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="web前端需求分析和项目"/></a><div class="content"><a class="title" href="/2022/04/21/%5B%E9%87%8D%E8%A6%81%5Dweb%E5%89%8D%E7%AB%AF%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%92%8C%E9%A1%B9%E7%9B%AE/" title="web前端需求分析和项目">web前端需求分析和项目</a><time datetime="2022-04-21T13:13:35.000Z" title="发表于 2022-04-21 21:13:35">2022-04-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/21/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E7%B1%BB%E5%9E%8B/" title="数据库中的时间日期类型"><img src="https://qiniu.ladidol.top/img/52999bc8d61fcaca832ac89d3331913e81873af2_raw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据库中的时间日期类型"/></a><div class="content"><a class="title" href="/2022/04/21/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E7%B1%BB%E5%9E%8B/" title="数据库中的时间日期类型">数据库中的时间日期类型</a><time datetime="2022-04-21T13:13:35.000Z" title="发表于 2022-04-21 21:13:35">2022-04-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/19/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5D%E5%AF%B9%E4%BA%8Essm%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E5%A4%A7%E6%80%BB%E7%BB%93/" title="(未完成)对于ssm常见错误大总结(springboot)"><img src="https://qiniu.ladidol.top/img/a94f94a771f98cfd8d5581a3d1b333962391fbaf_raw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="(未完成)对于ssm常见错误大总结(springboot)"/></a><div class="content"><a class="title" href="/2022/04/19/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5D%E5%AF%B9%E4%BA%8Essm%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E5%A4%A7%E6%80%BB%E7%BB%93/" title="(未完成)对于ssm常见错误大总结(springboot)">(未完成)对于ssm常见错误大总结(springboot)</a><time datetime="2022-04-19T14:23:53.000Z" title="发表于 2022-04-19 22:23:53">2022-04-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/19/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dvue%E7%9A%84%E5%AD%A6%E4%B9%A0/" title="(未完成)vue的学习"><img src="https://qiniu.ladidol.top/img/adb9fb54128d822f758fe2c3d83707f5402e12a7_raw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="(未完成)vue的学习"/></a><div class="content"><a class="title" href="/2022/04/19/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5Dvue%E7%9A%84%E5%AD%A6%E4%B9%A0/" title="(未完成)vue的学习">(未完成)vue的学习</a><time datetime="2022-04-19T14:23:53.000Z" title="发表于 2022-04-19 22:23:53">2022-04-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/19/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5DLambdaQueryWrapper%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/" title="LambdaQueryWrapper条件查询"><img src="https://qiniu.ladidol.top/img/6234e9a9ce2e85f96c068a8cb2eac10f42cd037c_raw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LambdaQueryWrapper条件查询"/></a><div class="content"><a class="title" href="/2022/04/19/%5B%E6%9C%AA%E5%AE%8C%E6%88%90%5DLambdaQueryWrapper%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/" title="LambdaQueryWrapper条件查询">LambdaQueryWrapper条件查询</a><time datetime="2022-04-19T13:13:35.000Z" title="发表于 2022-04-19 21:13:35">2022-04-19</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By ladidol</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'yCA2jFnRuIUXINItIXDuuGgx-9Nh9j0Va',
+      appKey: 'u4C7GUNrW6Lqmqe1axkRqKTt',
+      avatar: 'wavatar',
+      serverURLs: '',
+      enableQQ: true,
+      placeholder: 'hi，如果要评论的话，请一定写上自己的基本信息，不然身份都是匿名者！评论支持Markdown语法，暂时只能使用随机头像。',
+      pageSize: '10',
+      master: '9f8e9371a0cbeaa8737f5f1baa1d0f10',
+      tagMeta: ["博主","小伙伴","访客"],
+      visitor: 'true',
+      //md5jiami.51240.com ,md5加密推荐这个网站
+      friends: ["8f5657bb65c4fb1e2621401dd5003f5b","c94e74ad7b2afcda9e661919adb66076",
+      "56e41b3fa26fbd1f720a2cd3fd9423fb","f690c9dffa8c8b592fe45e8750712b24"],
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script type="text/javascript" src="/js/fairyDustCursor.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="/%5Bobject%20Object%5D" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
